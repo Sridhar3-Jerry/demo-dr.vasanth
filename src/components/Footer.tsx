@@ -4,8 +4,8 @@ import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaFacebookF, FaWhatsapp, FaInst
 const Footer = () => {
   return (
     <footer id="footer" className="bg-[#f5f0eb]">
-      <div className="max-w-7xl mx-auto px-6 py-12">
-        <div className="grid md:grid-cols-4 gap-10 mb-8">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 py-8 md:py-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-10 mb-8">
           <div>
             <div className="flex items-center gap-2 mb-6">
               <div className="w-10 h-10 bg-[#b8956a] rounded"></div>
@@ -91,7 +91,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="bg-[#b8956a] px-6 py-4">
+      <div className="bg-[#b8956a] px-4 md:px-6 py-4">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-white text-sm">Copyright 2025 – Ivory Dentistry</p>
           <div className="flex gap-6">

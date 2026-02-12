@@ -4,14 +4,14 @@ import aboutUsImage from '../assets/aboutus-1.jpg';
 
 const AboutUs = () => {
   return (
-    <section id="about" className="bg-[#f5f0eb] px-6 py-20">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    <section id="about" className="bg-[#f5f0eb] px-4 md:px-6 py-12 md:py-20">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 md:gap-12 items-center">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="space-y-6"
+          className="space-y-4 md:space-y-6"
         >
           <motion.img
             whileHover={{ scale: 1.02 }}
@@ -23,7 +23,7 @@ const AboutUs = () => {
             whileHover={{ scale: 1.02 }}
             src={aboutUsImage}
             alt="Ivory Dentistry Clinic"
-            className="w-full rounded-2xl shadow-lg"
+            className="w-full rounded-2xl shadow-lg hidden md:block"
           />
         </motion.div>
 
@@ -60,7 +60,8 @@ const AboutUs = () => {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="bg-[#8b7355] text-white px-8 py-3 rounded-lg hover:bg-[#6d5a43] transition-colors"
+            onClick={() => window.location.href = '/book-appointment'}
+            className="bg-[#8b7355] text-white px-8 py-3 rounded-lg hover:bg-[#6d5a43] transition-colors cursor-pointer"
           >
             Book Appointment
           </motion.button>

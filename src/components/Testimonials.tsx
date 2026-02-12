@@ -42,7 +42,7 @@ const Testimonials = () => {
   }, [testimonials.length]);
 
   return (
-    <section id="testimonials" className="bg-white px-6 py-24">
+    <section id="testimonials" className="bg-white px-4 md:px-6 py-12 md:py-24">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -58,13 +58,14 @@ const Testimonials = () => {
         </motion.div>
 
         <div className="relative overflow-hidden p-2">
+          {/* Desktop - 4 cards */}
           <motion.div 
             key={currentIndex}
             initial={{ x: 300, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: -300, opacity: 0 }}
             transition={{ duration: 0.8, ease: [0.4, 0, 0.2, 1] }}
-            className="grid grid-cols-1 md:grid-cols-4 gap-6"
+            className="hidden md:grid grid-cols-4 gap-6"
           >
             {[0, 1, 2, 3].map((offset) => {
               const index = (currentIndex + offset) % testimonials.length;
@@ -112,6 +113,59 @@ const Testimonials = () => {
                 </div>
               );
             })}
+          </motion.div>
+
+          {/* Mobile - 1 card */}
+          <motion.div 
+            key={currentIndex}
+            initial={{ x: 300, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            exit={{ x: -300, opacity: 0 }}
+            transition={{ duration: 0.5 }}
+            className="md:hidden"
+          >
+            {(() => {
+              const testimonial = testimonials[currentIndex];
+              const isExpanded = expandedCard === currentIndex;
+              const truncatedText = testimonial.text.length > 120 
+                ? testimonial.text.substring(0, 120) + '...' 
+                : testimonial.text;
+              
+              return (
+                <div className="bg-white rounded-3xl p-7 min-h-[280px] flex flex-col shadow-md border border-[#d4a574]/10">
+                  <div className="flex items-start gap-3 mb-4">
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#d4a574] to-[#b8956a] flex items-center justify-center flex-shrink-0">
+                      <FaUser className="text-white text-sm" />
+                    </div>
+                    <div>
+                      <h4 className="text-[#b8956a] font-bold text-sm">{testimonial.name}</h4>
+                      <p className="text-[#8b7355] text-xs italic">{testimonial.role}</p>
+                    </div>
+                  </div>
+                  <div className="relative flex-grow">
+                    <div className="absolute -left-2 -top-2 text-[#d4a574] text-6xl font-serif opacity-40">&ldquo;</div>
+                    <p className="text-[#6b5d4f] text-sm leading-relaxed relative z-10 pl-6">
+                      {isExpanded ? testimonial.text : truncatedText}
+                    </p>
+                  </div>
+                  <div className="mt-3 flex items-center justify-between">
+                    <div className="flex gap-1">
+                      {[...Array(5)].map((_, i) => (
+                        <FaStar key={i} className="text-[#d4a574] text-xs" />
+                      ))}
+                    </div>
+                    {testimonial.text.length > 120 && (
+                      <button
+                        onClick={() => setExpandedCard(isExpanded ? null : currentIndex)}
+                        className="text-[#b8956a] text-xs font-semibold hover:text-[#8b7355] transition-colors"
+                      >
+                        {isExpanded ? 'Show less' : 'Read more'}
+                      </button>
+                    )}
+                  </div>
+                </div>
+              );
+            })()}
           </motion.div>
         </div>
 

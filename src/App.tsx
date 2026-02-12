@@ -1,4 +1,5 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import AboutUs from './components/AboutUs'
@@ -11,8 +12,17 @@ import Footer from './components/Footer'
 import TreatmentDetail from './components/TreatmentDetail'
 import Contact from './components/Contact'
 import AboutPage from './components/AboutPage'
+import TeamPage from './components/TeamPage'
+import DentalInsights from './components/DentalInsights'
+import BookAppointment from './components/BookAppointment'
 
 function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
   return (
     <>
       <Header />
@@ -31,6 +41,9 @@ function App() {
         <Route path="/treatment/:id" element={<TreatmentDetail />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/team" element={<TeamPage />} />
+        <Route path="/insights" element={<DentalInsights />} />
+        <Route path="/book-appointment" element={<BookAppointment />} />
       </Routes>
       <Footer />
     </>

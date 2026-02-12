@@ -3,7 +3,7 @@ import { FaClock, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa'
 
 const Contact = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#f5f0eb] via-white to-[#f5f0eb] pt-24 pb-16">
+    <div className="min-h-screen bg-gradient-to-br from-[#f5f0eb] via-white to-[#f5f0eb] pt-14 pb-16">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <motion.div
