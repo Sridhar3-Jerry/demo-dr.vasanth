@@ -9,6 +9,8 @@ import WhyChooseUs from './components/WhyChooseUs'
 import FAQ from './components/FAQ'
 import Footer from './components/Footer'
 import TreatmentDetail from './components/TreatmentDetail'
+import Contact from './components/Contact'
+import AboutPage from './components/AboutPage'
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
           </>
         } />
         <Route path="/treatment/:id" element={<TreatmentDetail />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<AboutPage />} />
       </Routes>
       <Footer />
     </>

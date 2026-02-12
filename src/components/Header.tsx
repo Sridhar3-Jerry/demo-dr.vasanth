@@ -1,17 +1,17 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaTooth, FaChild, FaTeethOpen, FaSyringe, FaCrown, FaSmile, FaXRay, FaUserMd, FaStethoscope, FaHome, FaInfoCircle, FaUsers, FaBlog, FaPhone } from 'react-icons/fa';
+import { FaTooth, FaChild, FaTeethOpen, FaSyringe, FaCrown, FaSmile, FaXRay, FaUserMd, FaStethoscope, FaHome, FaInfoCircle, FaUsers, FaBlog, FaPhoneAlt } from 'react-icons/fa';
 
 const Header = () => {
   const [showServicesDropdown, setShowServicesDropdown] = useState(false);
 
   const menuItems = [
-    { name: 'Home', icon: FaHome, href: '#hero' },
-    { name: 'About Us', icon: FaInfoCircle, href: '#about' },
-    { name: 'Our Team', icon: FaUsers, href: '#team' },
-    { name: 'Dental Insights', icon: FaBlog, href: '#testimonials' },
-    { name: 'Contact', icon: FaPhone, href: '#footer' }
+    { name: 'Home', icon: FaHome, href: '/' },
+    { name: 'About Us', icon: FaInfoCircle, href: '/about' },
+    { name: 'Our Team', icon: FaUsers, href: '/#team' },
+    { name: 'Dental Insights', icon: FaBlog, href: '/#testimonials' },
+    { name: 'Contact', icon: FaPhoneAlt, href: '/contact' }
   ];
 
   const services = [

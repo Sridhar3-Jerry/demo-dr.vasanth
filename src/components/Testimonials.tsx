@@ -42,7 +42,7 @@ const Testimonials = () => {
   }, [testimonials.length]);
 
   return (
-    <section id="testimonials" className="bg-white px-6 py-20">
+    <section id="testimonials" className="bg-white px-6 py-24">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -57,7 +57,7 @@ const Testimonials = () => {
           </p>
         </motion.div>
 
-        <div className="relative overflow-hidden">
+        <div className="relative overflow-hidden p-2">
           <motion.div 
             key={currentIndex}
             initial={{ x: 300, opacity: 0 }}
@@ -77,9 +77,9 @@ const Testimonials = () => {
               return (
                 <div
                   key={index}
-                  className="bg-white rounded-3xl p-6 min-h-[280px] flex flex-col shadow-md hover:shadow-xl transition-shadow border border-[#d4a574]/10"
+                  className="bg-white rounded-3xl p-7 min-h-[280px] flex flex-col shadow-md hover:shadow-xl transition-shadow border border-[#d4a574]/10"
                 >
-                  <div className="flex items-start gap-3 mb-3">
+                  <div className="flex items-start gap-3 mb-4">
                     <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#d4a574] to-[#b8956a] flex items-center justify-center flex-shrink-0">
                       <FaUser className="text-white text-sm" />
                     </div>

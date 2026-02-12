@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaFacebookF, FaWhatsapp, FaInstagram, FaYoutube, FaArrowUp } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaFacebookF, FaWhatsapp, FaInstagram, FaYoutube, FaArrowUp } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -76,7 +76,7 @@ const Footer = () => {
               </div>
               <div>
                 <p className="text-[#b8956a] font-semibold text-sm mb-2 flex items-center gap-2">
-                  <FaPhone className="text-base" /> Call Us
+                  <FaPhoneAlt className="text-base" /> Call Us
                 </p>
                 <p className="text-[#8b7355] text-sm">+91-9087669000 / +91-9514229000</p>
               </div>
