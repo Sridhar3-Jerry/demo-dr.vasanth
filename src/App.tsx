@@ -15,7 +15,9 @@ import AboutPage from './components/AboutPage'
 import TeamPage from './components/TeamPage'
 import DentalInsights from './components/DentalInsights'
 import BookAppointment from './components/BookAppointment'
+import Gallery from './components/Gallery'
 import Braces from './components/Braces'
+import WhatsAppFloat from './components/WhatsAppFloat'
 
 function App() {
   const location = useLocation();
@@ -44,10 +46,11 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/team" element={<TeamPage />} />
-        <Route path="/insights" element={<DentalInsights />} />
+        <Route path="/gallery" element={<Gallery />} />
         <Route path="/book-appointment" element={<BookAppointment />} />
       </Routes>
       <Footer />
+      <WhatsAppFloat />
     </>
   )
 }

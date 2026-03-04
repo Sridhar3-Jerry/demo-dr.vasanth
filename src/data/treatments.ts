@@ -1,25 +1,3 @@
-import oralMed1 from '../assets/Oral Medicine and Pathology-1.png';
-import oralMed2 from '../assets/Oral Medicine and Pathology-2.png';
-import restorative from '../assets/Restorativedentistry.png';
-import endo1 from '../assets/Endodontics-1.png';
-import endo2 from '../assets/Endodontics-2.png';
-import perio1 from '../assets/Periodontics-1.png';
-import perio2 from '../assets/Periodontics-2.png';
-import oral1 from '../assets/Oral and maxillo facial surgery-1.png';
-import oral2 from '../assets/Oral and maxillo facial surgery-2.png';
-import prostho1 from '../assets/Prosthodontics-1.png';
-import prostho2 from '../assets/Prosthodontics-2.png';
-import ortho1 from '../assets/Orthodontics-1.png';
-import ortho2 from '../assets/Orthodontics-2.png';
-import implant1 from '../assets/Dental Implants-1.png';
-import implant2 from '../assets/Dental Implants-2.png';
-import laser1 from '../assets/Laser Dentistry-1.png';
-import laser2 from '../assets/Laser Dentistry-2.png';
-import laser3 from '../assets/Laser Dentistry-3.png';
-import pedia1 from '../assets/Pediatric Dentistry-1.png';
-import pedia2 from '../assets/Pediatric Dentistry-2.png';
-import pedia3 from '../assets/Pediatric Dentistry-3.png';
-
 export interface Treatment {
   id: string;
   title: string;
@@ -36,8 +14,8 @@ export const treatmentData: Treatment[] = [
     id: 'oral-medicine-pathology',
     title: 'Oral Medicine and Pathology',
     images: [
-      oralMed1,
-      oralMed2,
+      '/src/assets/Oral Medicine and Pathology-1.png',
+      '/src/assets/Oral Medicine and Pathology-2.png',
       'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800',
       'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800'
     ],
@@ -69,7 +47,7 @@ export const treatmentData: Treatment[] = [
     id: 'restorative-dentistry',
     title: 'Restorative Dentistry',
     images: [
-      restorative,
+      '/src/assets/Restorativedentistry.png',
       'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800',
       'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800',
       'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800'
@@ -100,8 +78,8 @@ export const treatmentData: Treatment[] = [
     id: 'endodontics',
     title: 'Endodontics',
     images: [
-      endo1,
-      endo2,
+      '/src/assets/Endodontics-1.png',
+      '/src/assets/Endodontics-2.png',
       'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800',
       'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=800'
     ],
@@ -133,8 +111,8 @@ export const treatmentData: Treatment[] = [
     id: 'periodontics',
     title: 'Periodontics',
     images: [
-      perio1,
-      perio2,
+      '/src/assets/Periodontics-1.png',
+      '/src/assets/Periodontics-2.png',
       'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800',
       'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800'
     ],
@@ -164,8 +142,8 @@ export const treatmentData: Treatment[] = [
     id: 'oral-maxillofacial-surgery',
     title: 'Oral and Maxillofacial Surgery',
     images: [
-      oral1,
-      oral2,
+      '/src/assets/Oral and maxillo facial surgery-1.png',
+      '/src/assets/Oral and maxillo facial surgery-2.png',
       'https://images.unsplash.com/photo-1609840114035-3c981407e31f?w=800',
       'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800'
     ],
@@ -192,8 +170,8 @@ export const treatmentData: Treatment[] = [
     id: 'prosthodontics',
     title: 'Prosthodontics',
     images: [
-      prostho1,
-      prostho2,
+      '/src/assets/Prosthodontics-1.png',
+      '/src/assets/Prosthodontics-2.png',
       'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?w=800',
       'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800'
     ],
@@ -220,8 +198,8 @@ export const treatmentData: Treatment[] = [
     id: 'orthodontics',
     title: 'Orthodontics',
     images: [
-      ortho1,
-      ortho2,
+      '/src/assets/Orthodontics-1.png',
+      '/src/assets/Orthodontics-2.png',
       'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800',
       'https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800'
     ],
@@ -248,8 +226,8 @@ export const treatmentData: Treatment[] = [
     id: 'implant-dentistry',
     title: 'Implant Dentistry',
     images: [
-      implant1,
-      implant2,
+      '/src/assets/Dental Implants-1.png',
+      '/src/assets/Dental Implants-2.png',
       'https://images.unsplash.com/photo-1588776814546-daab30f310ce?w=800',
       'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=800'
     ],
@@ -277,9 +255,9 @@ export const treatmentData: Treatment[] = [
     id: 'laser-dentistry',
     title: 'Laser Dentistry',
     images: [
-      laser1,
-      laser2,
-      laser3,
+      '/src/assets/Laser Dentistry-1.png',
+      '/src/assets/Laser Dentistry-2.png',
+      '/src/assets/Laser Dentistry-3.png',
       'https://images.unsplash.com/photo-1629909615957-be38b9e8e4c4?w=800'
     ],
     introduction: 'Laser dentistry is an effective and precise way of performing various dental procedures. Laser dentistry has the potential to improve various dental procedures, but all depends on the personnel skill of the dentist i.e. his ability and skill to control the exposure of laser on the gum as well as the teeth surface, and control over power output. Special care is required as the laser should not damage the surrounding tissues.',
@@ -305,9 +283,9 @@ export const treatmentData: Treatment[] = [
     id: 'pediatric-dentistry',
     title: 'Pediatric Dentistry',
     images: [
-      pedia1,
-      pedia2,
-      pedia3,
+      '/src/assets/Pediatric Dentistry-1.png',
+      '/src/assets/Pediatric Dentistry-2.png',
+      '/src/assets/Pediatric Dentistry-3.png',
       'https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=800'
     ],
     introduction: 'Pediatric dentistry specializes in/takes care of the oral health of infant, children and adolescent. This dentistry also treats children with special needs, who are physically and mentally challenged. This branch of dentistry studies child growth, psychology and development. Such dentists take care of wide variety of dental problems of children e.g. cavity, tooth decay, malocclusion, emergency care, crooked teeth etc.',
