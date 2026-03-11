@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { colors } from '../colors';
 import aboutUsImage1 from '../assets/aboutus-1.jpg';
 import aboutUsImage2 from '../assets/Dental banner.jpg';
 

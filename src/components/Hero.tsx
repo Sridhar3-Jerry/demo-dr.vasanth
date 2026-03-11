@@ -1,7 +1,6 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { FaClock, FaPhoneAlt, FaStar } from 'react-icons/fa';
-import { colors } from '../colors';
 import doctor1 from '../assets/doctor-1.jpg';
 import doctor2 from '../assets/doctor-2.jpg';
 import doctor3 from '../assets/doctor-3.jpg';

@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { colors } from '../colors';
 import { FaCheckCircle } from 'react-icons/fa';
 import braces1 from '../assets/Braces-1.jpg';
 import braces2 from '../assets/Braces-2.jpeg';

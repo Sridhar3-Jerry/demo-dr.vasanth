@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { colors } from '../colors';
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaFacebookF, FaWhatsapp, FaInstagram, FaYoutube, FaArrowUp } from 'react-icons/fa';
 
 const Footer = () => {

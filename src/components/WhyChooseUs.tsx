@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { colors } from '../colors';
 import { FaTooth } from 'react-icons/fa';
 import whychooseus from '../assets/whychooseus.jpg'
 

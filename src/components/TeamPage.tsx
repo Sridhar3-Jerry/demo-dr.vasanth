@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { colors } from '../colors';
 import { useState } from 'react';
 import { FaTimes } from 'react-icons/fa';
 import doctor1 from '../assets/doctor-1.jpg';

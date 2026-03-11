@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { colors } from '../colors';
 import { FaCheckCircle } from 'react-icons/fa';
 import aboutUsImage from '../assets/aboutus-1.jpg';
 

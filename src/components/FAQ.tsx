@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { colors } from '../colors';
 import { useState } from 'react';
 import { FaChevronDown } from 'react-icons/fa';
 import faqImage from '../assets/faq.jpg';

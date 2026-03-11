@@ -1,5 +1,4 @@
 import { motion, AnimatePresence } from 'framer-motion';
-import { colors } from '../colors';
 import { useState, useEffect } from 'react';
 import { FaQuoteLeft, FaStar, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 

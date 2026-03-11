@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { colors } from '../colors';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
