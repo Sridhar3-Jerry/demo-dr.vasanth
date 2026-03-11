@@ -8,10 +8,10 @@ import doctor4 from '../assets/doctor-4.jpg';
 
 const Hero = () => {
   const [doctors, setDoctors] = useState([
-    { name: 'Dr. Mehjabeen', degree: 'BDS', id: 1, image: doctor1 },
-    { name: 'Dr. B. Keerthika', degree: 'BDS', id: 2, image: doctor2 },
-    { name: 'Dr. J. Sathiya Jeeva', degree: 'BDS, MDS, PhD', id: 3, image: doctor3 },
-    { name: 'Dr. Basil M Mathew', degree: 'BDS, MDS - Pedodontics', id: 4, image: doctor4 }
+    { name: 'Dr. Vasanthan', degree: 'MDS., Ph.D.', id: 1, image: doctor1 },
+    { name: 'Dr. Sabitha Vasanthan', degree: 'MDS., Ph.D., FDSRCPS (UK)', id: 2, image: doctor2 },
+    { name: 'Dr. CHITHRA', degree: 'MDS', id: 3, image: doctor3 },
+    { name: 'Dr. John Peter', degree: 'MDS', id: 4, image: doctor4 }
   ]);
 
   useEffect(() => {
