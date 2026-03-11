@@ -37,7 +37,7 @@ const Contact = () => {
             <div className="bg-[var(--bg-light)] rounded-3xl p-8 shadow-lg border-2 border-[var(--border)]">
               <FaPhoneAlt className="text-[var(--primary)] text-3xl mb-4" />
               <h3 className="text-xl font-bold text-[var(--secondary)] mb-3">Call Us Directly</h3>
-              <a href="tel:+919087669000" className="block hover:text-[var(--primary)] mb-1 font-medium text-gray-700">+91-9087669000</a>
+              <a href="tel:+919787644466" className="block hover:text-[var(--primary)] mb-1 font-medium text-gray-700">+91-9787644466</a>
               <a href="tel:+919514229000" className="block hover:text-[var(--primary)] font-medium text-gray-700">+91-9514229000</a>
             </div>
 

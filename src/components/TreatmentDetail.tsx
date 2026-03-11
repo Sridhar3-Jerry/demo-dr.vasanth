@@ -612,10 +612,10 @@ const TreatmentDetail = () => {
           <h3 className="text-3xl font-semibold mb-4">Ready to Get Started?</h3>
           <p className="mb-8 text-lg">Book your appointment today and let us take care of your smile</p>
           <a 
-            href="tel:+919876543210"
+            href="tel:+919787644466"
             className="inline-block bg-white text-[var(--primary)] px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors shadow-lg"
           >
-            Call Now: +91 98765 43210
+            Call Now: +91 97876 44466
           </a>
         </motion.div>
       </div>

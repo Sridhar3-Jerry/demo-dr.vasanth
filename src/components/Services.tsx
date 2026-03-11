@@ -1,60 +1,77 @@
 import { motion } from 'framer-motion';
 import { colors } from '../colors';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Services = () => {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
+  const navigate = useNavigate();
 
   const services = [
     {
-      title: 'Oral Medicine and Pathology',
-      description: 'Oral Medicine Diagnosis pathology & Radiology is the specialty that focuses on the diagnosis and medical management of diseases of the Head and Neck.',
-      fullText: 'The Department emphasizes the responsibility of the dentist to see problems affecting the oral region in the context of overall health status. Oral pathology and oral medicine is concerned with the health of the mouth and the diagnosis and management of diseases of the oral region.'
+      id: 'braces',
+      title: 'Braces',
+      description: 'Traditional metal braces are the most common type of orthodontic treatment. They use metal brackets and wires to gradually move teeth into proper alignment.'
     },
     {
-      title: 'Restorative Dentistry',
-      description: 'Restorative dentistry focused on restoring the function and appearance of damaged or missing teeth. It involves various treatments and procedures to repair teeth affected by decay, trauma, wear, or other dental issues.',
-      fullText: 'Restorative dentistry aims to improve oral health, restore natural tooth structure, and enhance the overall aesthetics of the smile. Common restorative procedures include dental fillings, veneers, crowns.'
+      id: 'invisalign',
+      title: 'Invisalign',
+      description: 'Clear, removable aligners that gradually straighten teeth without the need for metal brackets and wires. Nearly invisible and comfortable to wear.'
     },
     {
-      title: 'Endodontics',
-      description: 'Endodontics is a branch of dentistry that deals with the diagnosis, prevention, and treatment of diseases and injuries that affect the dental pulp and the surrounding tissues of the tooth.',
-      fullText: 'Root canal therapy saves infected or damaged teeth by removing the infected pulp, cleaning the canal, and sealing it. Using modern techniques and anesthesia, we make the procedure comfortable and pain-free.'
+      id: 'cosmetic-dentistry',
+      title: 'Cosmetic Dentistry',
+      description: 'Comprehensive cosmetic treatments to enhance your smile including teeth whitening, bonding, and smile makeovers for improved aesthetics.'
     },
     {
-      title: 'Periodontics',
-      description: 'Periodontics is a specialized branch of dentistry that focuses on the prevention, diagnosis, and treatment of diseases and conditions affecting the supporting structures of the teeth.',
-      fullText: 'Our periodontal services include gum disease treatment, scaling and root planing, gum grafting, and dental implant placement. We help maintain healthy gums and prevent tooth loss.'
+      id: 'veneers',
+      title: 'Veneers/Laminates',
+      description: 'Thin porcelain or composite shells bonded to the front surface of teeth to improve appearance, covering stains, chips, or gaps.'
     },
     {
-      title: 'Oral and Maxillofacial Surgery',
-      description: 'Oral and Maxillofacial Surgery is a specialized field of dentistry that focuses on the diagnosis and surgical treatment of diseases, injuries, and defects affecting the mouth, jaws, face, and neck.',
-      fullText: 'Our oral surgery services include wisdom teeth extraction, dental implants, jaw surgery, and complex tooth extractions. We use advanced techniques and sedation options to ensure your comfort throughout the procedure.'
-    },
-    {
-      title: 'Prosthodontics',
-      description: 'Prosthodontics is a specialized branch of dentistry that focuses on the restoration and replacement of missing or damaged teeth and oral structures.',
-      fullText: 'We offer comprehensive prosthodontic services including crowns, bridges, dentures, and implant-supported restorations. Our custom solutions restore both function and aesthetics.'
-    },
-    {
-      title: 'Orthodontics',
-      description: 'Orthodontics is a specialized branch of dentistry that focuses on the diagnosis, prevention, and treatment of dental and facial irregularities, particularly those related to the alignment of teeth and jaws.',
-      fullText: 'Our orthodontic services include traditional braces, clear aligners, and other corrective appliances. We create beautiful, healthy smiles through personalized treatment plans.'
-    },
-    {
-      title: 'Implant Dentistry',
-      description: 'Implant dentistry is a specialized field of dentistry that focuses on the placement and restoration of dental implants to replace missing teeth.',
-      fullText: 'Dental implants are the gold standard for tooth replacement. Our implant services include single tooth implants, multiple implants, and implant-supported dentures using advanced technology.'
-    },
-    {
+      id: 'laser-dentistry',
       title: 'Laser Dentistry',
-      description: 'Laser dentistry is a modern and innovative approach to dental treatment that utilizes laser technology to perform various dental procedures with precision and minimal discomfort.',
-      fullText: 'Our laser dentistry technology offers minimally invasive treatments with faster healing times. We use lasers for gum reshaping, cavity treatment, teeth whitening, and soft tissue procedures.'
+      description: 'Advanced laser technology for precise, minimally invasive dental procedures with reduced pain, bleeding, and faster healing times.'
     },
     {
-      title: 'Pediatric Dentistry',
-      description: 'Pediatric dentistry is a specialized branch of dentistry that focuses on the oral health and dental care of infants, children, and adolescents.',
-      fullText: 'Our pediatric dentistry services create positive dental experiences for children. We provide gentle care including cleanings, fluoride treatments, sealants, and cavity treatment in a fun, child-friendly environment.'
+      id: 'root-canal-treatment',
+      title: 'Root Canal Treatment',
+      description: 'Endodontic therapy to save infected or severely damaged teeth by removing infected pulp and sealing the tooth to prevent further infection.'
+    },
+    {
+      id: 'dental-filling',
+      title: 'Dental Filling',
+      description: 'Tooth-colored composite fillings to restore teeth affected by decay, providing natural-looking and durable results.'
+    },
+    {
+      id: 'dental-crown-bridges',
+      title: 'Dental Crown and Bridges',
+      description: 'Custom-made crowns to restore damaged teeth and bridges to replace missing teeth, restoring both function and appearance.'
+    },
+    {
+      id: 'dental-implants',
+      title: 'Dental Implants',
+      description: 'Permanent tooth replacement solution using titanium implants that integrate with your jawbone to support crowns, bridges, or dentures.'
+    },
+    {
+      id: 'tmj-treatment',
+      title: 'TMJ/TMD Treatments',
+      description: 'Comprehensive treatment for temporomandibular joint disorders, addressing jaw pain, clicking, and dysfunction with various therapeutic approaches.'
+    },
+    {
+      id: 'gum-recontouring',
+      title: 'Gum Recontouring',
+      description: 'Cosmetic gum reshaping to create a more balanced and attractive smile by removing excess gum tissue or reshaping the gum line.'
+    },
+    {
+      id: 'child-dentistry',
+      title: 'Child Dentistry',
+      description: 'Specialized pediatric dental care for infants, children, and adolescents, focusing on prevention, education, and gentle treatment approaches.'
+    },
+    {
+      id: 'wisdom-tooth-removal',
+      title: 'Wisdom Tooth Removal',
+      description: 'Safe and comfortable extraction of wisdom teeth to prevent crowding, impaction, and other oral health complications.'
     }
   ];
 
@@ -67,7 +84,7 @@ const Services = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-[var(--tertiary)] mb-4">Our Services</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-[var(--tertiary)] mb-4">Our Treatments</h2>
           <p className="text-gray-800 max-w-3xl mx-auto">
             From general dentistry wellness, to perfecting cosmetic imperfections, to restoring implants and fillings, to those painful oral emergencies—we have you covered.
           </p>
@@ -91,6 +108,7 @@ const Services = () => {
               <p className="text-gray-800 text-sm leading-relaxed mb-4">{service.description}</p>
               
               <motion.button
+                onClick={() => navigate(`/treatment/${service.id}`)}
                 onHoverStart={() => setHoveredCard(index)}
                 onHoverEnd={() => setHoveredCard(null)}
                 animate={{

@@ -15,8 +15,8 @@ const TeamPage = () => {
   const team = [
     {
       name: 'Dr. Vasanthan',
-      role: 'Specialist Orthodontist',
-      degree: 'B.SC, BDS, MDS, (ortho), PhD,(ortho) DHA (ortho), QCHP (ortho)',
+      role: 'Orthodontist',
+      degree: 'MDS., Ph.D..',
       yearsExperience: '15+ Years',
       image: doctor1,
       bio: 'Dr. Vasanthan is a dedicated orthodontist whose practice is defined by precision, innovation, and an unwavering commitment to lifelong learning. With a patient-centered approach, he transforms smiles through cutting-edge orthodontic solutions.',
@@ -32,7 +32,7 @@ const TeamPage = () => {
     {
       name: 'Dr. Sabitha Vasanthan',
       role: 'Oral and Maxillofacial Surgeon',
-      degree: 'MDS, PhD, MFDS RCPS (Glasg), FDS RCPS (Glasg)',
+      degree: 'MDS., Ph.D., FDSRCPS (UK)',
       yearsExperience: '20+ Years',
       image: doctor2,
       bio: 'Dr. Sabitha is a distinguished dental professional with over two decades of expertise in Oral and Maxillofacial Surgery, and Cosmetic Dentistry.',
@@ -46,31 +46,48 @@ const TeamPage = () => {
       ]
     },
     {
-      name: 'Dr. Basil M Mathew',
-      role: 'Pediatric Dentist',
-      degree: 'BDS, MDS',
+      name: 'Dr. CHITHRA',
+      role: 'Endodontist',
+      degree: 'MDS',
       yearsExperience: '10+ Years',
       image: doctor3,
-      bio: 'Dr. Basil specializes in pediatric dentistry, making dental visits fun and stress-free for children. His gentle approach helps kids develop healthy dental habits.',
-      specialties: ['Pediatric Dentistry', 'Child Dental Care', 'Preventive Treatments']
+      bio: 'Dr. CHITHRA specializes in endodontic treatments, providing expert root canal therapy and saving natural teeth with advanced techniques.',
+      education: 'MDS in Endodontics from a prestigious dental college.',
+      experience: 'Over 10 years of specialized experience in endodontic treatments and root canal procedures.',
+      specialties: ['Root Canal Treatment', 'Endodontic Surgery', 'Pulp Therapy', 'Dental Pain Management']
     },
     {
-      name: 'Prof. Dr. J Sathiya Jeeva',
+      name: 'Dr. John Peter',
       role: 'Implantologist',
-      degree: 'BDS, MDS, PhD',
+      degree: 'MDS',
       yearsExperience: '25+ Years',
       image: doctor4,
-      bio: 'Prof. Dr. Sathiya Jeeva is a renowned implantologist with extensive experience in dental implants and advanced restorative procedures.',
-      specialties: ['Dental Implants', 'Bone Grafting', 'Full Mouth Rehabilitation']
+      bio: 'Dr. John Peter is a renowned implantologist with extensive experience in dental implants and advanced restorative procedures.',
+      education: 'MDS in Oral and Maxillofacial Surgery with specialization in Implantology.',
+      experience: 'Over 25 years of experience in dental implants, bone grafting, and full mouth rehabilitation.',
+      specialties: ['Dental Implants', 'Bone Grafting', 'Full Mouth Rehabilitation', 'All-on-4 Implants']
     },
     {
-      name: 'Dr. Adhavan Balaji K L M',
-      role: 'Endodontist and Aesthetic Dental Specialist',
-      degree: 'B.D.S. M.D.S. F.C.C.C',
+      name: 'Dr. Senthil',
+      role: 'Oral and maxillofacial surgeon- Implant Specialist',
+      degree: 'MDS',
       yearsExperience: '12+ Years',
       image: doctor5,
-      bio: 'Dr. Adhavan is an expert in root canal treatments and aesthetic dentistry, combining technical precision with artistic vision for beautiful smiles.',
-      specialties: ['Root Canal Treatment', 'Smile Makeovers', 'Aesthetic Dentistry']
+      bio: 'Dr. Senthil is an expert in oral and maxillofacial surgery with specialized training in dental implants, combining surgical precision with implant expertise.',
+      education: 'MDS in Oral and Maxillofacial Surgery with advanced implant training.',
+      experience: 'Over 12 years of experience in oral surgery, dental implants, and complex surgical procedures.',
+      specialties: ['Oral Surgery', 'Dental Implants', 'Wisdom Tooth Extraction', 'Jaw Surgery']
+    },
+    {
+      name: 'Dr. Raj Kumar',
+      role: 'Periodontist',
+      degree: 'MDS',
+      yearsExperience: '8+ Years',
+      image: doctor1,
+      bio: 'Dr. Raj Kumar specializes in periodontal treatments and gum health, providing comprehensive care for gum diseases and maintaining oral health.',
+      education: 'MDS in Periodontics from a prestigious dental college.',
+      experience: 'Over 8 years of specialized experience in periodontal treatments and gum surgeries.',
+      specialties: ['Periodontal Treatment', 'Gum Surgery', 'Oral Health Maintenance', 'Scaling and Root Planing']
     }
   ];
 

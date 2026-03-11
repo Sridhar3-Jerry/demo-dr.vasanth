@@ -18,16 +18,19 @@ const Header = () => {
   ];
 
   const services = [
-    { name: 'Oral Medicine and Pathology', icon: FaStethoscope, id: 'oral-medicine-pathology' },
-    { name: 'Restorative Dentistry', icon: FaTooth, id: 'restorative-dentistry' },
-    { name: 'Endodontics', icon: FaSyringe, id: 'endodontics' },
-    { name: 'Periodontics', icon: FaTeethOpen, id: 'periodontics' },
-    { name: 'Oral and maxilla facial surgery', icon: FaUserMd, id: 'oral-maxillofacial-surgery' },
-    { name: 'Prosthodontics', icon: FaCrown, id: 'prosthodontics' },
-    { name: 'Orthodontics', icon: FaSmile, id: 'orthodontics' },
-    { name: 'Implant Dentistry', icon: FaTooth, id: 'implant-dentistry' },
+    { name: 'Braces', icon: FaSmile, id: 'braces' },
+    { name: 'Invisalign', icon: FaTeethOpen, id: 'invisalign' },
+    { name: 'Cosmetic Dentistry', icon: FaSmile, id: 'cosmetic-dentistry' },
+    { name: 'Veneers/Laminates', icon: FaTooth, id: 'veneers' },
     { name: 'Laser Dentistry', icon: FaXRay, id: 'laser-dentistry' },
-    { name: 'Pediatric Dentistry', icon: FaChild, id: 'pediatric-dentistry' }
+    { name: 'Root Canal Treatment', icon: FaSyringe, id: 'root-canal-treatment' },
+    { name: 'Dental Filling', icon: FaTooth, id: 'dental-filling' },
+    { name: 'Dental Crown and Bridges', icon: FaCrown, id: 'dental-crown-bridges' },
+    { name: 'Dental Implants', icon: FaTooth, id: 'dental-implants' },
+    { name: 'TMJ/TMD Treatments', icon: FaUserMd, id: 'tmj-treatment' },
+    { name: 'Gum Recontouring', icon: FaTeethOpen, id: 'gum-recontouring' },
+    { name: 'Child Dentistry', icon: FaChild, id: 'child-dentistry' },
+    { name: 'Wisdom Tooth Removal', icon: FaStethoscope, id: 'wisdom-tooth-removal' }
   ];
 
   return (
@@ -43,7 +46,7 @@ const Header = () => {
           whileHover={{ scale: 1.05 }}
           className="flex items-center gap-2"
         >
-          <img src="/dental clip logo.png" alt="Dental Clip Logo" className="w-24 h-24 object-contain" />
+          <img src="/dental clip logo.png" alt="Dental Clip Logo" className="w-30 h-30 object-contain" />
           <div className="hidden md:block">
             <div className="font-bold text-xl" style={{ color: colors.primary }}>DENTAL CLIP</div>
             <div className="text-xs tracking-wider font-medium" style={{ color: colors.secondary }}>DENTAL CLINIC</div>
@@ -79,7 +82,7 @@ const Header = () => {
               className="cursor-pointer flex items-center gap-2 hover:opacity-80 transition-colors"
             >
               <FaTooth className="text-md" />
-              Services
+              Treatments
             </a>
             
             {showServicesDropdown && (
@@ -190,7 +193,7 @@ const Header = () => {
                 >
                   <div className="flex items-center gap-3">
                     <FaTooth />
-                    Services
+                    Treatments
                   </div>
                   <span className={`transition-transform ${showServicesDropdown ? 'rotate-180' : ''}`}>▼</span>
                 </button>

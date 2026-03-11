@@ -5,10 +5,12 @@ import whychooseus from '../assets/whychooseus.jpg'
 
 const WhyChooseUs = () => {
   const features = [
-    'Enjoy personalized appointments',
-    'Specialized dental care',
-    'Custom treatment plan and follow-up appointments',
-    'Family Dentistry'
+    'Experienced team of doctors',
+    'Superior Hygienic environment',
+    'Modern equipment',
+    'Comprehensive services', 
+    'Affordable cost'
+    
   ];
 
   return (
@@ -20,9 +22,9 @@ const WhyChooseUs = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-[var(--tertiary)] mb-6">Why Choose US?</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-[var(--tertiary)] mb-6">Why People Trust Us?</h2>
             <p className="text-[#6b7280] mb-8 leading-relaxed">
-              We use latest treatment techniques, procedures & dental materials that enable us to deliver a wide range of options to suit your needs. We use a wide variety of cosmetic dentistry options and treatments to transform your regular smile into a million dollar one. We offer all your treatments in the same place, whichever specialist you may need to see, you will find them available here.
+              At Dental Clip Dental Clinic, we prioritize a hygienic environment and patient safety through rigorous sterilization protocols. We ensure the highest standards of infection control.   
             </p>
 
             <div className="space-y-4">

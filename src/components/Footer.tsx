@@ -45,7 +45,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li><a href="#hero" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Home</a></li>
               <li><a href="#about" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">About Us</a></li>
-              <li><a href="#services" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Our Services</a></li>
+              <li><a href="#services" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Our Treatments</a></li>
               <li><a href="#team" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Our Team</a></li>
               <li><a href="/gallery" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Gallery</a></li>
               <li><a href="#footer" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Contact</a></li>
@@ -53,21 +53,24 @@ const Footer = () => {
           </div>
 
           <div className="md:col-span-2">
-            <h3 className="text-[var(--secondary)] font-bold text-lg mb-6">Services</h3>
+            <h3 className="text-[var(--secondary)] font-bold text-lg mb-6">Treatments</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8">
               <ul className="space-y-3">
-                <li><a href="/treatment/oral-medicine-pathology" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Oral Medicine and Pathology</a></li>
-                <li><a href="/treatment/restorative-dentistry" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Restorative Dentistry</a></li>
-                <li><a href="/treatment/endodontics" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Endodontics</a></li>
-                <li><a href="/treatment/periodontics" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Periodontics</a></li>
-                <li><a href="/treatment/oral-maxillofacial-surgery" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Oral and Maxillofacial Surgery</a></li>
+                <li><a href="/treatment/braces" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Braces</a></li>
+                <li><a href="/treatment/invisalign" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Invisalign</a></li>
+                <li><a href="/treatment/cosmetic-dentistry" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Cosmetic Dentistry</a></li>
+                <li><a href="/treatment/veneers" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Veneers/Laminates</a></li>
+                <li><a href="/treatment/laser-dentistry" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Laser Dentistry</a></li>
+                <li><a href="/treatment/root-canal-treatment" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Root Canal Treatment</a></li>
+                <li><a href="/treatment/dental-filling" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Dental Filling</a></li>
               </ul>
               <ul className="space-y-3">
-                <li><a href="/treatment/prosthodontics" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Prosthodontics</a></li>
-                <li><a href="/treatment/orthodontics" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Orthodontics</a></li>
-                <li><a href="/treatment/implant-dentistry" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Implant Dentistry</a></li>
-                <li><a href="/treatment/laser-dentistry" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Laser Dentistry</a></li>
-                <li><a href="/treatment/pediatric-dentistry" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Pediatric Dentistry</a></li>
+                <li><a href="/treatment/dental-crown-bridges" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Dental Crown and Bridges</a></li>
+                <li><a href="/treatment/dental-implants" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Dental Implants</a></li>
+                <li><a href="/treatment/tmj-treatment" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">TMJ/TMD Treatments</a></li>
+                <li><a href="/treatment/gum-recontouring" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Gum Recontouring</a></li>
+                <li><a href="/treatment/child-dentistry" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Child Dentistry</a></li>
+                <li><a href="/treatment/wisdom-tooth-removal" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Wisdom Tooth Removal</a></li>
               </ul>
             </div>
           </div>
@@ -87,7 +90,7 @@ const Footer = () => {
                 <p className="text-[var(--secondary)] font-bold text-sm mb-2 flex items-center gap-2">
                   <FaPhoneAlt className="text-[var(--primary)] text-lg" /> Call Us
                 </p>
-                <p className="text-gray-700 text-sm font-medium">+91-9087669000 / +91-9514229000</p>
+                <p className="text-gray-700 text-sm font-medium">+91-9787644466</p>
               </div>
               <div>
                 <p className="text-[var(--secondary)] font-bold text-sm mb-2 flex items-center gap-2">

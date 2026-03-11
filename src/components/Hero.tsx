@@ -64,7 +64,7 @@ const Hero = () => {
             transition={{ delay: 0.2 }}
             className="text-[var(--primary)] uppercase tracking-wider text-sm font-semibold mb-4 text-lg font-semibold text-center md:text-left"
           >
-            Ivory Dentistry
+            Dental Clip
           </motion.p>
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
@@ -72,7 +72,7 @@ const Hero = () => {
             transition={{ delay: 0.3 }}
             className="text-4xl md:text-4xl lg:text-7xl font-bold text-[var(--secondary)] mb-6 leading-tight"
           >
-            Experience The Expert Dental Care Like Never Before
+            EXPERIENCE THE EXPERT DENTAL CARE
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0 }}
@@ -80,7 +80,24 @@ const Hero = () => {
             transition={{ delay: 0.4 }}
             className="text-gray-800 mb-6 text-lg"
           >
-            Feel our gentle care and skilled doctors will keep you smiling forever.
+            THE MOST TRUSTED DENTAL CLINIC IN PARAMTHI VELUR
+          </motion.p>
+          <motion.p 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.4 }}
+            className="text-gray-800 mb-6 text-lg"
+          >
+            
+            Welcome to<span className="font-semibold text-[var(--primary)]"> Dental Clip-Dental Clinic!</span> 
+          </motion.p>
+          <motion.p 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.4 }}
+            className="text-gray-800 mb-6 text-lg"
+          >
+            Looking For The Best <span className="font-semibold">DENTAL CLINIC In PARAMTHI VELUR ?</span>
           </motion.p>
           <motion.p 
             initial={{ opacity: 0 }}
@@ -88,7 +105,15 @@ const Hero = () => {
             transition={{ delay: 0.5 }}
             className="text-gray-800 mb-8 leading-relaxed"
           >
-            At <span className="font-semibold text-[var(--primary)]">Dental Clip</span>, we provide world-class dental solutions tailored to every member of your family. From routine <span className="font-semibold">dental checkups</span> to advanced <span className="font-semibold">laser treatments</span> and <span className="font-semibold">smile makeovers</span>, our expert team in Paramathi Velur ensures a painless and comfortable experience. We combine state-of-the-art technology with a gentle touch to keep your smile healthy, bright, and confident.
+            At our <span className="font-semibold text-[var(--primary)]">Dental Clip</span>, we <span className="font-semibold">prioritize hygiene</span> for every patient and offer quality dental care with all facilities at a highly <span className="font-semibold">affordable cost.</span>
+          </motion.p>
+          <motion.p 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.5 }}
+            className="text-gray-800 mb-8 leading-relaxed"
+          >
+            Our clinic is home to a team of highly <span className="font-semibold">Experienced Specialist Dentists.</span> We specialize in Dental <span className="font-semibold">Braces (Dental Clip), and Advanced Aligner Therapy (Invisalign).</span> We also provide dental services from routine dental check-ups to advanced treatments, including Cosmetic Dentistry, Restorative Dentistry, Prosthodontics- Crown and bridges, Implants, Periodontal treatment- Gum Surgeries, Laser Dentistry, and Minor Surgical Procedures.
           </motion.p>
           <motion.button 
             initial={{ opacity: 0 }}
@@ -187,7 +212,7 @@ const Hero = () => {
               </div>
               <div>
                 <p className="font-bold text-[var(--primary)] mb-1">Need Dental Services?</p>
-                <p className="text-sm text-gray-800">Call: +91-9087669000</p>
+                <p className="text-sm text-gray-800">Call: +91-9787644466</p>
               </div>
             </motion.div>
         </div>

@@ -5,7 +5,7 @@ import { colors } from '../colors';
 
 const WhatsAppFloat = () => {
   const [showQR, setShowQR] = useState(false);
-  const phoneNumber = '916374669154'; // WhatsApp number
+  const phoneNumber = '919787644466'; // WhatsApp number
   const message = 'Hello! I would like to book an appointment at Dental Clip.Dental.';
 
   const handleWhatsAppClick = () => {
