@@ -105,7 +105,7 @@ const Footer = () => {
 
       <div className="bg-gray-900 px-4 md:px-6 py-5">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-white text-sm font-medium">Copyright 2025 – Dental Clip. Dental Clinic</p>
+          <p className="text-white text-sm font-medium">Copyright 2026 – Dental Clip. Dental Clinic</p>
           <div className="flex gap-8">
             <a href="#" className="text-white text-sm hover:underline font-medium">Terms & Conditions</a>
             <a href="#" className="text-white text-sm hover:underline font-medium">Privacy Policy</a>

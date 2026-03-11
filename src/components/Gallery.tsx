@@ -21,7 +21,7 @@ const Gallery = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white pt-14 pb-16">
+    <div className="min-h-screen bg-white pt-4 md:pt-10 pb-16">
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: -20 }}

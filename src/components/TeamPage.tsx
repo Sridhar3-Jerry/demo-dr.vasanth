@@ -105,7 +105,7 @@ const TeamPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white pt-24 pb-16">
+    <div className="min-h-screen bg-white pt-4 md:pt-10 pb-16">
       {/* Doctor Details Modal */}
       {selectedDoctor !== null && (
         <motion.div

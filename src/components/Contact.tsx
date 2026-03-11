@@ -4,7 +4,7 @@ import { FaClock, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa'
 
 const Contact = () => {
   return (
-    <div className="min-h-screen bg-white pt-14 pb-16">
+    <div className="min-h-screen bg-white pt-4 md:pt-10 pb-16">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <motion.div

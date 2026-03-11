@@ -5,9 +5,9 @@ import aboutUsImage from '../assets/aboutus-1.jpg';
 
 const AboutPage = () => {
   return (
-    <div className="min-h-screen bg-white pt-10 md:pt-15 pb-12 md:pb-16">
+    <div className="min-h-screen bg-white pt-4 md:pt-10 pb-12 md:pb-16">
       {/* Section 1 */}
-      <section className="max-w-7xl mx-auto px-4 md:px-6 py-0 md:py-18">
+      <section className="max-w-7xl mx-auto px-4 md:px-6 py-0 md:py-8">
         <div className="grid lg:grid-cols-2 gap-20 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}

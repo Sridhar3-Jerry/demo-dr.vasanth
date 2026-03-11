@@ -27,7 +27,7 @@ const TreatmentDetail = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white pt-24 pb-16">
+    <div className="min-h-screen bg-white pt-4 md:pt-10 pb-16">
       <div className="max-w-7xl mx-auto px-6">
         <motion.button
           initial={{ opacity: 0, x: -20 }}
