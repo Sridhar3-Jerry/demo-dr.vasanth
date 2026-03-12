@@ -6,13 +6,13 @@ import aboutUsImage2 from '../assets/Dental banner.jpg';
 const AboutUs = () => {
   return (
     <section id="about" className="bg-white px-4 md:px-6 py-12 md:py-20">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="space-y-4 md:space-y-6"
+          className="space-y-4 md:space-y-6 order-2 md:order-1"
         >
           <motion.img
             whileHover={{ scale: 1.02 }}
@@ -33,6 +33,7 @@ const AboutUs = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
+          className="order-1 md:order-2"
         >
           <p className="text-[var(--primary)] uppercase tracking-wider text-sm font-semibold mb-4">About Us</p>
           <h2 className="text-4xl md:text-5xl font-bold text-[var(--secondary)] mb-6 leading-tight">

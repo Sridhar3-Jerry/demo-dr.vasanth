@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Services = () => {
-  const [hoveredCard, setHoveredCard] = useState<number | null>(null);
   const navigate = useNavigate();
 
   const services = [
@@ -81,7 +80,7 @@ const Services = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-12"
+          className="text-left md:text-center mb-12"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-[var(--tertiary)] mb-4">Our Treatments</h2>
           <p className="text-gray-800 max-w-3xl mx-auto">
@@ -89,62 +88,31 @@ const Services = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {services.map((service, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              whileHover={{ y: -5 }}
-              className="bg-white rounded-2xl p-8 shadow-lg relative"
+              transition={{ delay: index * 0.03 }}
+              whileHover={{ x: 5, boxShadow: "0 10px 30px rgba(0,0,0,0.15)" }}
+              onClick={() => navigate(`/treatment/${service.id}`)}
+              className="bg-white rounded-lg p-4 shadow-md hover:shadow-xl transition-all cursor-pointer border border-gray-100 group"
             >
-              <div className="w-12 h-12 bg-white border-2 border-[var(--primary)] rounded-full flex items-center justify-center mb-4">
-                <span className="text-2xl">🦷</span>
+              <div className="flex items-center justify-between gap-3">
+                <div className="flex items-center gap-3 flex-1">
+                  <div className="w-10 h-10 bg-gradient-to-br from-[var(--primary)] to-[var(--primary)] rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                    <span className="text-xl">🦷</span>
+                  </div>
+                  <h3 className="text-sm md:text-base font-semibold text-[var(--secondary)] group-hover:text-[var(--primary)] transition-colors leading-tight">
+                    {service.title}
+                  </h3>
+                </div>
+                <div className="w-8 h-8 rounded-full border-2 border-[var(--primary)] flex items-center justify-center flex-shrink-0 group-hover:bg-[var(--primary)] transition-all">
+                  <span className="text-[var(--primary)] group-hover:text-white text-lg font-bold transition-colors">+</span>
+                </div>
               </div>
-              <h3 className="text-xl font-bold text-[var(--secondary)] mb-3">{service.title}</h3>
-              <p className="text-gray-800 text-sm leading-relaxed mb-4">{service.description}</p>
-              
-              <motion.button
-                onClick={() => navigate(`/treatment/${service.id}`)}
-                onHoverStart={() => setHoveredCard(index)}
-                onHoverEnd={() => setHoveredCard(null)}
-                animate={{
-                  width: hoveredCard === index ? '140px' : '40px'
-                }}
-                transition={{ 
-                  duration: 0.5,
-                  ease: [0.34, 1.56, 0.64, 1]
-                }}
-                className="h-10 border-2 border-[var(--primary)] rounded-full flex items-center text-[var(--primary)] hover:bg-[var(--primary)] hover:text-white transition-colors overflow-hidden relative"
-              >
-                <motion.div
-                  animate={{
-                    x: hoveredCard === index ? 8 : 0
-                  }}
-                  transition={{ 
-                    duration: 0.5,
-                    ease: [0.34, 1.56, 0.64, 1]
-                  }}
-                  className="absolute left-0 w-9 h-full flex items-center justify-center"
-                >
-                  <span className="text-lg">+</span>
-                </motion.div>
-                <motion.span
-                  animate={{ 
-                    opacity: hoveredCard === index ? 1 : 0,
-                    x: hoveredCard === index ? 0 : -25
-                  }}
-                  transition={{ 
-                    duration: 0.5,
-                    ease: [0.34, 1.56, 0.64, 1]
-                  }}
-                  className="text-sm font-medium whitespace-nowrap ml-12"
-                >
-                  Read more
-                </motion.span>
-              </motion.button>
             </motion.div>
           ))}
         </div>

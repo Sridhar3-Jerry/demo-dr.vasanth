@@ -26,13 +26,13 @@ const Gallery = () => {
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-12"
+          className="mb-12"
         >
-          <p className="text-[var(--primary)] uppercase tracking-wider text-sm font-semibold mb-4">Our Gallery</p>
-          <h1 className="text-5xl md:text-6xl font-bold text-[var(--secondary)] mb-6">
+          <p className="text-[var(--primary)] uppercase tracking-wider text-sm font-semibold mb-4 text-center">Our Gallery</p>
+          <h1 className="text-4xl md:text-5xl font-bold text-[var(--secondary)] mb-6 text-left md:text-center">
             Dental Clip. Dental Clinic Gallery
           </h1>
-          <p className="text-gray-700 max-w-2xl mx-auto">
+          <p className="text-gray-700 max-w-2xl mx-auto text-left md:text-center">
             Take a look at our modern clinic facilities, comfortable environment, and the professional team that makes your dental experience exceptional.
           </p>
         </motion.div>

@@ -168,10 +168,10 @@ const DentalInsights = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-16"
+          className="text-left md:text-center mb-16"
         >
-          <p className="text-[var(--primary)] uppercase tracking-wider text-sm font-semibold mb-4 text-sm font-bold tracking-widest uppercase">Dental Insights</p>
-          <h1 className="text-5xl md:text-6xl font-bold text-[var(--secondary)] mb-6">Expert Tips for a Healthier Smile</h1>
+          <p className="text-[var(--primary)] uppercase tracking-wider text-sm font-semibold mb-4 text-sm font-bold tracking-widest uppercase text-center">Dental Insights</p>
+          <h1 className="text-4xl md:text-5xl font-bold text-[var(--secondary)] mb-6 text-left md:text-center">Expert Tips for a Healthier Smile</h1>
           <p className="text-gray-800 max-w-2xl mx-auto text-lg">
             Stay informed with the latest dental care tips, treatment insights, and oral health advice from our experts.
           </p>

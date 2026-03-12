@@ -189,10 +189,10 @@ const TeamPage = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-16"
+          className="text-left md:text-center mb-16"
         >
-          <p className="text-[var(--primary)] uppercase tracking-wider text-sm font-semibold mb-4 text-sm font-bold tracking-widest uppercase">Meet Our Team</p>
-          <h1 className="text-5xl md:text-6xl font-bold text-[var(--secondary)] mb-6">Our Expert Dental Professionals</h1>
+          <p className="text-[var(--primary)] uppercase tracking-wider text-sm font-semibold mb-4 text-sm font-bold tracking-widest uppercase text-center">Meet Our Team</p>
+          <h1 className="text-4xl md:text-5xl font-bold text-[var(--secondary)] mb-6 text-left md:text-center">Our Expert Dental Professionals</h1>
           <p className="text-gray-800 max-w-2xl mx-auto text-lg">
             Our experienced dental team is here to make every visit positive and personalized with gentle hands and caring hearts.
           </p>

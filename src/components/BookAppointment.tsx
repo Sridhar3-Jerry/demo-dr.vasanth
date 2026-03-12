@@ -26,10 +26,10 @@ const BookAppointment = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-12"
+          className="text-left md:text-center mb-12"
         >
-          <p className="text-[var(--primary)] uppercase tracking-wider text-sm font-semibold mb-4 text-sm font-bold tracking-widest uppercase">Schedule Your Visit</p>
-          <h1 className="text-5xl md:text-6xl font-bold text-[var(--secondary)] mb-6">Book Your Appointment</h1>
+          <p className="text-[var(--primary)] uppercase tracking-wider text-sm font-semibold mb-4 text-sm font-bold tracking-widest uppercase text-center">Schedule Your Visit</p>
+          <h1 className="text-4xl md:text-5xl font-bold text-[var(--secondary)] mb-6 text-left md:text-center">Book Your Appointment</h1>
           <p className="text-gray-700 max-w-2xl mx-auto text-lg">
             Book your appointment today for expert dental care tailored to your needs. Healthy, beautiful smiles start with a simple step, schedule now!
           </p>

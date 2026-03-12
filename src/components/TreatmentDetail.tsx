@@ -42,8 +42,8 @@ const TreatmentDetail = () => {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-12"
         >
-          <p className="text-[var(--primary)] mb-2 text-lg">Our Specialities</p>
-          <h1 className="text-5xl md:text-6xl font-bold text-[var(--secondary)] mb-6">{treatment.title}</h1>
+          <p className="text-[var(--primary)] mb-2 text-lg text-center">Our Specialities</p>
+          <h1 className="text-4xl md:text-5xl font-bold text-[var(--secondary)] mb-6 text-center">{treatment.title}</h1>
         </motion.div>
 
         {/* Layout 1: Overlapping images with decorative elements */}

@@ -4,34 +4,50 @@ import { FaQuoteLeft, FaStar, FaChevronLeft, FaChevronRight } from 'react-icons/
 
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [expandedCards, setExpandedCards] = useState<Set<number>>(new Set());
 
   const testimonials = [
     {
       name: 'Karthika',
       role: 'Patient',
-      text: 'Hi extracted from Dental Clip. Dental Clinic.It was vry good rience pain at any stage doctor work was clean.I ommend this clinic to my frds.'
+      text: 'Hi extracted from Dental Clip. Dental Clinic.It was vry good rience pain at any stage doctor work was clean.I ommend this clinic to my frds.',
+      shortText: 'Hi extracted from Dental Clip. Dental Clinic.It was vry good rience pain at any stage...'
     },
     {
       name: 'Senthil Raja',
       role: 'Patient',
-      text: 'I am very Happy with the well experienced dental surgery Doctor. First of all, the clinic is very nice and modern, not like the other I had when I was a child. The Doctors are friendly, always explains what is going on in the mouth, as well as what are all the options to fix it. Quality treatment with quick recovery of dental issues. Clinic staff are very polite and kind with patients. Appointment system is effectively implemented and not much waiting time. Thanks to all the dental staff.'
+      text: 'I am very Happy with the well experienced dental surgery Doctor. First of all, the clinic is very nice and modern, not like the other I had when I was a child. The Doctors are friendly, always explains what is going on in the mouth, as well as what are all the options to fix it. Quality treatment with quick recovery of dental issues. Clinic staff are very polite and kind with patients. Appointment system is effectively implemented and not much waiting time. Thanks to all the dental staff.',
+      shortText: 'I am very Happy with the well experienced dental surgery Doctor. First of all, the clinic is very nice and modern...'
     },
     {
       name: 'Santhosh J',
       role: 'Patient',
-      text: 'Dental Clip offers exceptional dental care with a highly professional and friendly team. The clinic is well-maintained, and appointments are efficiently managed. My wife had a very comfortable experience, and the treatment was thorough and effective. Highly recommended for anyone seeking quality dental services in Paramathi Velur.'
+      text: 'Dental Clip offers exceptional dental care with a highly professional and friendly team. The clinic is well-maintained, and appointments are efficiently managed. My wife had a very comfortable experience, and the treatment was thorough and effective. Highly recommended for anyone seeking quality dental services in Paramathi Velur.',
+      shortText: 'Dental Clip offers exceptional dental care with a highly professional and friendly team. The clinic is well-maintained...'
     },
     {
       name: 'Shiva',
       role: 'Patient',
-      text: 'My recent visit to Dental Clip. Dental Clinic Hospital was an amazing experience. The hospital has hygienic, comfortable facilities and up-to-date technologies.I was put at ease as soon as I came in by the friendly and extremely professional staff. The doctors and staff were professional.He took the time to go over my treatment options and answer all of my questions. The clinic is highly convenient because it provides a variety of dental services under one roof, such as orthodontics, cosmetic operations, and general dentistry. The post-treatment care was similarly remarkable, and the team makes sure the patient is well taken care of.I felt secure and pleased with my care when I left the hospital.'
+      text: 'My recent visit to Dental Clip. Dental Clinic Hospital was an amazing experience. The hospital has hygienic, comfortable facilities and up-to-date technologies.I was put at ease as soon as I came in by the friendly and extremely professional staff. The doctors and staff were professional.He took the time to go over my treatment options and answer all of my questions. The clinic is highly convenient because it provides a variety of dental services under one roof, such as orthodontics, cosmetic operations, and general dentistry. The post-treatment care was similarly remarkable, and the team makes sure the patient is well taken care of.I felt secure and pleased with my care when I left the hospital.',
+      shortText: 'My recent visit to Dental Clip. Dental Clinic Hospital was an amazing experience. The hospital has hygienic, comfortable facilities...'
     },
     {
       name: 'Krishna Prakash',
       role: 'Patient',
-      text: 'I had good experience at this clinic for my root canal treatment. The doctors and staff were professional,friendly and took me through out the process. The ambience was good.'
+      text: 'I had good experience at this clinic for my root canal treatment. The doctors and staff were professional,friendly and took me through out the process. The ambience was good.',
+      shortText: 'I had good experience at this clinic for my root canal treatment. The doctors and staff were professional...'
     }
   ];
+
+  const toggleExpanded = (index: number) => {
+    const newExpanded = new Set(expandedCards);
+    if (newExpanded.has(index)) {
+      newExpanded.delete(index);
+    } else {
+      newExpanded.add(index);
+    }
+    setExpandedCards(newExpanded);
+  };
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -64,10 +80,10 @@ const Testimonials = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-left md:text-center mb-16"
         >
-          <p className="text-[var(--primary)] uppercase tracking-wider text-sm font-semibold mb-4">Testimonials</p>
-          <h2 className="text-4xl md:text-5xl font-bold text-[var(--secondary)] mb-4">Our Happy Customers</h2>
+          <p className="text-[var(--primary)] uppercase tracking-wider text-sm font-semibold mb-4 text-center">Testimonials</p>
+          <h2 className="text-4xl md:text-5xl font-bold text-[var(--secondary)] mb-4 text-left md:text-center">Our Happy Customers</h2>
           <p className="text-gray-800 max-w-2xl mx-auto">
             Join thousands of happy patients who trust us for gentle, expert care and beautiful smiles. Your perfect dental experience starts here!
           </p>
@@ -83,33 +99,53 @@ const Testimonials = () => {
               transition={{ duration: 0.5, ease: "easeInOut" }}
               className="grid grid-cols-1 md:grid-cols-3 gap-8"
             >
-              {getVisibleTestimonials().map((testimonial, index) => (
-                <div
-                  key={`${currentIndex}-${index}`}
-                  className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all relative"
-                >
-                  <div className="absolute -top-4 left-8 w-12 h-12 bg-[var(--primary)] rounded-full flex items-center justify-center shadow-lg">
-                    <FaQuoteLeft className="text-white text-xl" />
-                  </div>
-                  <div className="flex gap-1 mb-4 mt-4">
-                    {[...Array(5)].map((_, i) => (
-                      <FaStar key={i} className="text-[var(--primary)] text-lg" />
-                    ))}
-                  </div>
-                  <p className="text-gray-800 leading-relaxed mb-6 text-sm">
-                    {testimonial.text}
-                  </p>
-                  <div className="flex items-center gap-4 pt-4 border-t border-gray-200">
-                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[var(--primary)] to-[#9a7a5c] flex items-center justify-center text-white font-bold text-lg">
-                      {testimonial.name.charAt(0)}
+              {getVisibleTestimonials().map((testimonial, index) => {
+                const actualIndex = (currentIndex + index) % testimonials.length;
+                const isExpanded = expandedCards.has(actualIndex);
+                
+                return (
+                  <motion.div
+                    key={`${currentIndex}-${index}`}
+                    layout
+                    className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all relative"
+                    style={{ minHeight: isExpanded ? 'auto' : '320px' }}
+                  >
+                    <div className="absolute -top-4 left-8 w-12 h-12 bg-[var(--primary)] rounded-full flex items-center justify-center shadow-lg">
+                      <FaQuoteLeft className="text-white text-xl" />
                     </div>
-                    <div>
-                      <h4 className="text-[var(--secondary)] font-bold">{testimonial.name}</h4>
-                      <p className="text-gray-600 text-sm">{testimonial.role}</p>
+                    <div className="flex gap-1 mb-4 mt-4">
+                      {[...Array(5)].map((_, i) => (
+                        <FaStar key={i} className="text-[var(--primary)] text-lg" />
+                      ))}
                     </div>
-                  </div>
-                </div>
-              ))}
+                    <motion.div
+                      layout
+                      className="mb-6"
+                    >
+                      <p className="text-gray-800 leading-relaxed text-sm">
+                        {isExpanded ? testimonial.text : testimonial.shortText}
+                      </p>
+                      {testimonial.text.length > testimonial.shortText.length && (
+                        <button
+                          onClick={() => toggleExpanded(actualIndex)}
+                          className="text-[var(--primary)] text-sm font-semibold mt-2 hover:underline transition-colors"
+                        >
+                          {isExpanded ? 'Read Less' : 'Read More'}
+                        </button>
+                      )}
+                    </motion.div>
+                    <div className="flex items-center gap-4 pt-4 border-t border-gray-200 mt-auto">
+                      <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[var(--primary)] to-[#9a7a5c] flex items-center justify-center text-white font-bold text-lg">
+                        {testimonial.name.charAt(0)}
+                      </div>
+                      <div>
+                        <h4 className="text-[var(--secondary)] font-bold">{testimonial.name}</h4>
+                        <p className="text-gray-600 text-sm">{testimonial.role}</p>
+                      </div>
+                    </div>
+                  </motion.div>
+                );
+              })}
             </motion.div>
           </AnimatePresence>
 

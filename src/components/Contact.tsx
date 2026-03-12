@@ -9,10 +9,10 @@ const Contact = () => {
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-12"
+          className="mb-12"
         >
-          <p className="text-[var(--primary)] uppercase tracking-wider text-sm font-semibold mb-4">Get In Touch With Paramathi Velur's Preferred Dental Experts</p>
-          <h1 className="text-5xl md:text-6xl font-bold text-[var(--secondary)] mb-6">
+          <p className="text-[var(--primary)] uppercase tracking-wider text-sm font-semibold mb-4 text-center">Get In Touch With Paramathi Velur's Preferred Dental Experts</p>
+          <h1 className="text-4xl md:text-5xl font-bold text-[var(--secondary)] mb-6 text-left md:text-center">
             We Are Always Ready to Help<br />You and Answer Your Questions
           </h1>
         </motion.div>
@@ -24,37 +24,42 @@ const Contact = () => {
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2 }}
-            className="lg:col-span-1 space-y-6"
+            className="lg:col-span-1 space-y-4"
           >
-            <div className="bg-[var(--bg-light)] rounded-3xl p-8 shadow-lg border-2 border-[var(--border)]">
-              <FaClock className="text-[var(--primary)] text-3xl mb-4" />
-              <h3 className="text-xl font-bold text-[var(--secondary)] mb-3">We're Open</h3>
-              <p className="text-gray-700">Monday – Friday</p>
-              <p className="text-gray-700 font-semibold">09.00 Am – 8.30 Pm</p>
+            <div className="bg-[var(--bg-light)] rounded-2xl p-6 shadow-lg border-2 border-[var(--border)]">
+              <div className="flex items-center gap-4 mb-2">
+                <FaClock className="text-[var(--primary)] text-2xl" />
+                <h3 className="text-lg font-bold text-[var(--secondary)]">We're Open</h3>
+              </div>
+              <p className="text-gray-700 text-sm ml-10">Monday – Friday</p>
+              <p className="text-gray-700 font-semibold text-sm ml-10">09.00 Am – 8.30 Pm</p>
             </div>
 
-            <div className="bg-[var(--bg-light)] rounded-3xl p-8 shadow-lg border-2 border-[var(--border)]">
-              <FaPhoneAlt className="text-[var(--primary)] text-3xl mb-4" />
-              <h3 className="text-xl font-bold text-[var(--secondary)] mb-3">Call Us Directly</h3>
-              <a href="tel:+919787644466" className="block hover:text-[var(--primary)] mb-1 font-medium text-gray-700">+91-9787644466</a>
-              <a href="tel:+919514229000" className="block hover:text-[var(--primary)] font-medium text-gray-700">+91-9514229000</a>
+            <div className="bg-[var(--bg-light)] rounded-2xl p-6 shadow-lg border-2 border-[var(--border)]">
+              <div className="flex items-center gap-4 mb-2">
+                <FaPhoneAlt className="text-[var(--primary)] text-2xl" />
+                <h3 className="text-lg font-bold text-[var(--secondary)]">Call Us Directly</h3>
+              </div>
+              <a href="tel:+919344310422" className="block hover:text-[var(--primary)] font-medium text-gray-700 text-sm ml-10">+91-9344310422</a>
             </div>
 
-            <div className="bg-[var(--bg-light)] rounded-3xl p-8 shadow-lg border-2 border-[var(--border)]">
-              <FaMapMarkerAlt className="text-[var(--primary)] text-3xl mb-4" />
-              <h3 className="text-xl font-bold text-[var(--secondary)] mb-3">Clinic Location</h3>
-              <p className="text-gray-700 leading-relaxed">
-                No 17/3A6B, Alagapuram village,<br />
-                Junction Main Road, State Bank<br />
+            <div className="bg-[var(--bg-light)] rounded-2xl p-6 shadow-lg border-2 border-[var(--border)]">
+              <div className="flex items-center gap-4 mb-2">
+                <FaMapMarkerAlt className="text-[var(--primary)] text-2xl" />
+                <h3 className="text-lg font-bold text-[var(--secondary)]">Clinic Location</h3>
+              </div>
+              <p className="text-gray-700 leading-relaxed text-sm ml-10">
                 First Floor, Latha Rajagopalan Hospital, Old Bypass Road, Paramathi Velur, Namakkal – 638182,<br />
                 Tamil Nadu, India.
               </p>
             </div>
 
-            <div className="bg-[var(--bg-light)] rounded-3xl p-8 shadow-lg border-2 border-[var(--border)]">
-              <FaEnvelope className="text-[var(--primary)] text-3xl mb-4" />
-              <h3 className="text-xl font-bold text-[var(--secondary)] mb-3">Send a Message</h3>
-              <a href="mailto:dentalclip.dentalclinic@gmail.com" className="text-gray-700 hover:text-[var(--primary)] break-all font-medium">
+            <div className="bg-[var(--bg-light)] rounded-2xl p-6 shadow-lg border-2 border-[var(--border)]">
+              <div className="flex items-center gap-4 mb-2">
+                <FaEnvelope className="text-[var(--primary)] text-2xl" />
+                <h3 className="text-lg font-bold text-[var(--secondary)]">Send a Message</h3>
+              </div>
+              <a href="mailto:dentalclip.dentalclinic@gmail.com" className="text-gray-700 hover:text-[var(--primary)] break-all font-medium text-sm ml-10">
                 dentalclip.dentalclinic@gmail.com
               </a>
             </div>

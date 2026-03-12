@@ -34,7 +34,6 @@ function App() {
             <Hero />
             <AboutUs />
             <Services />
-            <Braces />
             <Team />
             <Testimonials />
             <WhyChooseUs />
