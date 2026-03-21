@@ -1,122 +1,116 @@
 import { motion } from 'framer-motion';
-import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaFacebookF, FaWhatsapp, FaInstagram, FaYoutube, FaArrowUp } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaFacebookF, FaWhatsapp, FaInstagram, FaYoutube, FaArrowUp, FaClock } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer id="footer" className="bg-[var(--bg-light)] border-t-2 border-[var(--primary)]">
+    <footer id="footer" className="bg-[var(--secondary)] text-white">
       <div className="max-w-7xl mx-auto px-4 md:px-6 py-12 md:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-12 mb-8">
-          <div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+          {/* Company Info */}
+          <div className="lg:col-span-1 order-1">
             <div className="flex items-center gap-3 mb-6">
-              <img src="/dental clip logo.png" alt="Dental Clip Logo" className="w-14 h-14 object-contain" />
+              <img src="/dental clip logo.png" alt="Dental Clip Logo" className="w-12 h-12 object-contain" />
               <div>
-                <div className="text-black font-bold text-2xl">DENTAL CLIP</div>
-                <div className="text-[var(--primary)] text-xs tracking-widest font-semibold">DENTAL CLINIC</div>
+                <div className="text-white font-bold text-xl">DENTAL CLIP</div>
+                <div className="text-[var(--primary)] text-xs tracking-wider font-medium">DENTAL CLINIC</div>
               </div>
             </div>
-            <p className="text-gray-700 text-sm mb-6 leading-relaxed">
-              We are committed to providing our patients with compassionate and professional dental care of the highest standards in a comfortable and relaxed environment.
+            <p className="text-gray-300 text-sm mb-6 leading-relaxed">
+              The destination for creating a beautiful smile.
             </p>
-            <div className="mb-6">
-              <p className="text-[var(--secondary)]font-bold text-sm mb-3 flex items-center gap-2">
-                <FaMapMarkerAlt className="text-[var(--primary)] text-lg" /> Working hours
-              </p>
-              <p className="text-gray-700 text-sm font-medium">Mon – Sat  9:00 AM – 8:30 PM</p>
-            </div>
-            <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-white border-2 border-[var(--primary)] flex items-center justify-center text-[var(--primary)] hover:bg-[var(--primary)] hover:text-white transition-all">
-                <FaFacebookF className="text-base" />
+            <div className="flex gap-3">
+              <a href="#" className="w-10 h-10 rounded-lg bg-[var(--primary)] flex items-center justify-center text-white hover:bg-opacity-80 transition-all">
+                <FaFacebookF className="text-sm" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white border-2 border-[var(--primary)] flex items-center justify-center text-[var(--primary)] hover:bg-[var(--primary)] hover:text-white transition-all">
-                <FaWhatsapp className="text-base" />
+              <a href="#" className="w-10 h-10 rounded-lg bg-[var(--primary)] flex items-center justify-center text-white hover:bg-opacity-80 transition-all">
+                <FaWhatsapp className="text-sm" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white border-2 border-[var(--primary)] flex items-center justify-center text-[var(--primary)] hover:bg-[var(--primary)] hover:text-white transition-all">
-                <FaInstagram className="text-base" />
+              <a href="#" className="w-10 h-10 rounded-lg bg-[var(--primary)] flex items-center justify-center text-white hover:bg-opacity-80 transition-all">
+                <FaInstagram className="text-sm" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white border-2 border-[var(--primary)] flex items-center justify-center text-[var(--primary)] hover:bg-[var(--primary)] hover:text-white transition-all">
-                <FaYoutube className="text-base" />
+              <a href="#" className="w-10 h-10 rounded-lg bg-[var(--primary)] flex items-center justify-center text-white hover:bg-opacity-80 transition-all">
+                <FaYoutube className="text-sm" />
               </a>
             </div>
           </div>
 
-          <div>
-            <h3 className="text-[var(--secondary)] font-bold text-lg mb-6">Company</h3>
+          {/* Quick Links */}
+          <div className="order-2">
+            <h3 className="text-white font-bold text-lg mb-6">Quick Links</h3>
             <ul className="space-y-3">
-              <li><a href="#hero" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Home</a></li>
-              <li><a href="#about" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">About Us</a></li>
-              <li><a href="#services" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Our Treatments</a></li>
-              <li><a href="#team" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Our Team</a></li>
-              <li><a href="/gallery" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Gallery</a></li>
-              <li><a href="#footer" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Contact</a></li>
+              <li><a href="/" className="text-gray-300 text-sm hover:text-[var(--primary)] transition-colors">Home</a></li>
+              <li><a href="/about" className="text-gray-300 text-sm hover:text-[var(--primary)] transition-colors">About Us</a></li>
+              <li><a href="/treatment/braces" className="text-gray-300 text-sm hover:text-[var(--primary)] transition-colors">Treatments</a></li>
+              <li><a href="/team" className="text-gray-300 text-sm hover:text-[var(--primary)] transition-colors">Our Team</a></li>
+              <li><a href="/gallery" className="text-gray-300 text-sm hover:text-[var(--primary)] transition-colors">Gallery</a></li>
+              <li><a href="/contact" className="text-gray-300 text-sm hover:text-[var(--primary)] transition-colors">Contact</a></li>
             </ul>
           </div>
 
-          <div className="md:col-span-2">
-            <h3 className="text-[var(--secondary)] font-bold text-lg mb-6">Treatments</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8">
-              <ul className="space-y-3">
-                <li><a href="/treatment/braces" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Braces</a></li>
-                <li><a href="/treatment/invisalign" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Invisalign</a></li>
-                <li><a href="/treatment/cosmetic-dentistry" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Cosmetic Dentistry</a></li>
-                <li><a href="/treatment/veneers" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Veneers/Laminates</a></li>
-                <li><a href="/treatment/laser-dentistry" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Laser Dentistry</a></li>
-                <li><a href="/treatment/root-canal-treatment" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Root Canal Treatment</a></li>
-                <li><a href="/treatment/dental-filling" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Dental Filling</a></li>
-              </ul>
-              <ul className="space-y-3">
-                <li><a href="/treatment/dental-crown-bridges" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Dental Crown and Bridges</a></li>
-                <li><a href="/treatment/dental-implants" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Dental Implants</a></li>
-                <li><a href="/treatment/tmj-treatment" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">TMJ/TMD Treatments</a></li>
-                <li><a href="/treatment/gum-recontouring" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Gum Recontouring</a></li>
-                <li><a href="/treatment/child-dentistry" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Child Dentistry</a></li>
-                <li><a href="/treatment/wisdom-tooth-removal" className="text-gray-700 text-sm hover:text-[var(--primary)] transition-colors font-medium">Wisdom Tooth Removal</a></li>
-              </ul>
-            </div>
+          {/* Services */}
+          <div className="order-3">
+            <h3 className="text-white font-bold text-lg mb-6">Our Treatments</h3>
+            <ul className="space-y-3">
+              <li><a href="/treatment/braces" className="text-gray-300 text-sm hover:text-[var(--primary)] transition-colors">Braces & Orthodontics</a></li>
+              <li><a href="/treatment/dental-implants" className="text-gray-300 text-sm hover:text-[var(--primary)] transition-colors">Dental Implants</a></li>
+              <li><a href="/treatment/cosmetic-dentistry" className="text-gray-300 text-sm hover:text-[var(--primary)] transition-colors">Cosmetic Dentistry</a></li>
+              <li><a href="/treatment/root-canal-treatment" className="text-gray-300 text-sm hover:text-[var(--primary)] transition-colors">Root Canal</a></li>
+              <li><a href="/treatment/laser-dentistry" className="text-gray-300 text-sm hover:text-[var(--primary)] transition-colors">Laser Dentistry</a></li>
+              <li><a href="/treatment/child-dentistry" className="text-gray-300 text-sm hover:text-[var(--primary)] transition-colors">Child Dentistry</a></li>
+            </ul>
           </div>
 
-          <div>
-            <h3 className="text-[var(--secondary)] font-bold text-lg mb-6">Contact Us</h3>
-            <div className="space-y-5">
-              <div>
-                <p className="text-[var(--secondary)] font-bold text-sm mb-2 flex items-center gap-2">
-                  <FaMapMarkerAlt className="text-[var(--primary)] text-lg" /> Clinic Location
-                </p>
-                <p className="text-gray-700 text-sm leading-relaxed">
-                  First Floor, Latha Rajagopalan Hospital, Old Bypass Road, Paramathi Velur, Namakkal – 638182, Tamil Nadu, India.
-                </p>
+          {/* Contact Info */}
+          <div className="order-4">
+            <h3 className="text-white font-bold text-lg mb-6">Contact Info</h3>
+            <div className="space-y-4">
+              <div className="flex items-start gap-3">
+                <FaMapMarkerAlt className="text-[var(--primary)] text-lg mt-1 flex-shrink-0" />
+                <div>
+                  <p className="text-gray-300 text-sm leading-relaxed">
+                    First Floor, Latha Rajagopalan Hospital,<br />
+                    Old Bypass Road, Paramathi Velur,<br />
+                    Namakkal – 638182, Tamil Nadu
+                  </p>
+                </div>
               </div>
-              <div>
-                <p className="text-[var(--secondary)] font-bold text-sm mb-2 flex items-center gap-2">
-                  <FaPhoneAlt className="text-[var(--primary)] text-lg" /> Call Us
-                </p>
-                <p className="text-gray-700 text-sm font-medium">+91-9787644466</p>
+              <div className="flex items-center gap-3">
+                <FaPhoneAlt className="text-[var(--primary)] text-lg flex-shrink-0" />
+                <a href="tel:+919344310422" className="text-gray-300 text-sm hover:text-[var(--primary)] transition-colors">+91-9344310422</a>
               </div>
-              <div>
-                <p className="text-[var(--secondary)] font-bold text-sm mb-2 flex items-center gap-2">
-                  <FaEnvelope className="text-[var(--primary)] text-lg" /> Send a Message
-                </p>
-                <p className="text-gray-700 text-sm font-medium">dentalclip.dentalclinic@gmail.com</p>
+              <div className="flex items-center gap-3">
+                <FaEnvelope className="text-[var(--primary)] text-lg flex-shrink-0" />
+                <a href="mailto:dentalclip.dentalclinic@gmail.com" className="text-gray-300 text-sm hover:text-[var(--primary)] transition-colors break-all">
+                  dentalclip.dentalclinic@gmail.com
+                </a>
+              </div>
+              <div className="flex items-center gap-3">
+                <FaClock className="text-[var(--primary)] text-lg flex-shrink-0" />
+                <div className="text-gray-300 text-sm">
+                  <p>Mon – Sat: 9:00 AM – 8:30 PM</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div className="bg-gray-900 px-4 md:px-6 py-5">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-white text-sm font-medium">Copyright 2026 – Dental Clip. Dental Clinic</p>
-          <div className="flex gap-8">
-            <a href="#" className="text-white text-sm hover:underline font-medium">Terms & Conditions</a>
-            <a href="#" className="text-white text-sm hover:underline font-medium">Privacy Policy</a>
+        {/* Bottom Bar */}
+        <div className="border-t border-gray-600 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-gray-300 text-sm">© 2026 Dental Clip. Dental Clinic. All rights reserved.</p>
+            <div className="flex gap-6">
+              <a href="#" className="text-gray-300 text-sm hover:text-[var(--primary)] transition-colors">Privacy Policy</a>
+              <a href="#" className="text-gray-300 text-sm hover:text-[var(--primary)] transition-colors">Terms of Service</a>
+            </div>
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              className="w-10 h-10 bg-[var(--primary)] rounded-lg flex items-center justify-center text-white hover:bg-opacity-80 transition-all"
+            >
+              <FaArrowUp className="text-sm" />
+            </motion.button>
           </div>
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="w-11 h-11 bg-white rounded-full flex items-center justify-center text-[var(--primary)] hover:bg-gray-100 transition-colors shadow-lg"
-          >
-            <FaArrowUp className="text-lg" />
-          </motion.button>
         </div>
       </div>
     </footer>

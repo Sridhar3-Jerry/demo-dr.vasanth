@@ -1,143 +1,104 @@
 import { motion } from 'framer-motion';
-import { FaCheckCircle } from 'react-icons/fa';
+import { FaTooth, FaHeart, FaAward, FaUsers } from 'react-icons/fa';
 import aboutUsImage from '../assets/aboutus-1.jpg';
 
 const AboutPage = () => {
   return (
-    <div className="min-h-screen bg-white pt-4 md:pt-10 pb-12 md:pb-16">
-      {/* Section 1 */}
-      <section className="max-w-7xl mx-auto px-4 md:px-6 py-0 md:py-8">
-        <div className="grid lg:grid-cols-2 gap-20 items-center">
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="text-left pt-10 md:pt-0"
-          >
-            <p className="text-[var(--primary)] mb-3 text-sm font-bold tracking-widest uppercase text-center">About Us</p>
-            <h2 className="text-4xl md:text-5xl font-bold text-[var(--secondary)] mb-6 leading-tight">
-              Professionals and Personalized Dental Excellence
-            </h2>
-            <p className="text-gray-800 mb-10 leading-relaxed text-lg">
-              We offer high-quality dental care tailored for the whole family. From routine checkups to advanced treatments, our compassionate team ensures your smile stays healthy and confident.
-            </p>
-            <div className="grid grid-cols-2 gap-4 mb-10">
-              {[
-                'Personalized Treatment Plans',
-                'State-of-the-Art Technology',
-                'Gentle Care for Kids and Adults',
-                'Flexible Appointment Scheduling'
-              ].map((item, i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.1 * i }}
-                  whileHover={{ scale: 1.05 }}
-                  className="flex items-start gap-3 p-4 bg-white rounded-2xl shadow-md"
-                >
-                  <FaCheckCircle className="text-[var(--primary)] text-lg mt-0.5 flex-shrink-0" />
-                  <span className="text-gray-800 text-sm font-medium leading-snug">{item}</span>
-                </motion.div>
-              ))}
-            </div>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={() => window.location.href = '/book-appointment'}
-              className="bg-[var(--primary)] text-white px-12 py-4 rounded-full font-semibold text-lg shadow-2xl cursor-pointer"
-            >
-              Book Appointment
-            </motion.button>
-          </motion.div>
+    <div className="min-h-screen bg-white pt-32 pb-16">
+      <div className="max-w-6xl mx-auto px-6">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
+          <h1 className="text-5xl font-bold text-[var(--secondary)] mb-4">About Us</h1>
+          <p className="text-xl text-gray-600">Your trusted partner in dental care</p>
+        </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="relative h-[600px]"
-          >
-            <motion.div
-              whileHover={{ scale: 1.03 }}
-              className="absolute top-0 right-0 w-[70%] h-[48%] rounded-[3rem] overflow-hidden shadow-2xl z-20"
-            >
-              <img src={aboutUsImage} alt="Dental care" className="w-full h-full object-cover" />
-            </motion.div>
-            <motion.div
-              whileHover={{ scale: 1.03 }}
-              className="absolute bottom-0 left-0 w-[70%] h-[48%] rounded-[3rem] overflow-hidden shadow-2xl z-10"
-            >
-              <img src={aboutUsImage} alt="Dental treatment" className="w-full h-full object-cover" />
-            </motion.div>
-            <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-transparent rounded-full blur-3xl"></div>
-          </motion.div>
-        </div>
-      </section>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="bg-white rounded-3xl shadow-xl overflow-hidden mb-12"
+        >
+          <img src={aboutUsImage} alt="Dental Clinic" className="w-full h-80 object-cover" />
+        </motion.div>
 
-      {/* Section 2 */}
-      <section className="py-12 md:py-20">
-        <div className="max-w-7xl mx-auto px-4 md:px-6">
-          <div className="grid lg:grid-cols-2 gap-20 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="grid grid-cols-2 gap-5"
-            >
-              {[0, 1, 2, 3].map((i) => (
-                <motion.div
-                  key={i}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.1 }}
-                  whileHover={{ scale: 1.05 }}
-                  className={`rounded-3xl overflow-hidden shadow-xl ${i === 1 ? 'mt-8' : i === 2 ? '-mt-8' : ''}`}
-                >
-                  <img src={aboutUsImage} alt="Dental" className="w-full h-56 object-cover" />
-                </motion.div>
-              ))}
-            </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="text-center mb-16"
+        >
+          <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
+            We provide exceptional dental care for the whole family. Our experienced team combines modern technology with compassionate service to ensure every visit is comfortable and effective.
+          </p>
+        </motion.div>
 
+        <div className="grid md:grid-cols-2 gap-8 mb-16">
+          {[
+            { img: aboutUsImage, title: 'Our Mission', desc: 'Delivering personalized, high-quality dental care that enhances your oral health and overall well-being.' },
+            { img: aboutUsImage, title: 'Our Vision', desc: 'To be the leading dental care provider known for innovation, excellence, and patient-centered service.' }
+          ].map((item, i) => (
             <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="text-left"
+              key={i}
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.6 + i * 0.1 }}
+              whileHover={{ scale: 1.02 }}
+              className="bg-white rounded-2xl shadow-lg overflow-hidden"
             >
-              <p className="text-[var(--primary)] mb-3 text-sm font-bold tracking-widest uppercase text-center">Why Choose Our Dental Care</p>
-              <h2 className="text-4xl md:text-5xl font-bold text-[var(--secondary)] mb-6 leading-tight">
-                Exceptional Service With a Personal Touch
-              </h2>
-              <p className="text-gray-800 mb-10 leading-relaxed text-lg">
-                Choosing the right dental provider matters. We combine expert care, advanced technology, and a warm atmosphere to ensure every visit is comfortable, efficient, and tailored to your unique needs.
-              </p>
-              <div className="grid grid-cols-2 gap-5">
-                {[
-                  { title: 'Experienced Dental', desc: 'Skilled care backed by years of trusted dental experience.' },
-                  { title: 'Advanced Technology', desc: 'Modern tools ensure accurate and efficient treatments.' },
-                  { title: 'Personalized Treatment', desc: 'Custom care plans made to fit your smile and lifestyle.' },
-                  { title: 'Family-Friendly', desc: 'Welcoming space for kids, teens, adults, and seniors.' }
-                ].map((item, i) => (
-                  <motion.div
-                    key={i}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.1 * i }}
-                    whileHover={{ y: -5 }}
-                    className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all"
-                  >
-                    <h3 className="text-[var(--primary)] font-bold text-lg mb-2">{item.title}</h3>
-                    <p className="text-gray-800 text-sm leading-relaxed">{item.desc}</p>
-                  </motion.div>
-                ))}
+              <img src={item.img} alt={item.title} className="w-full h-48 object-cover" />
+              <div className="p-6">
+                <h3 className="text-2xl font-bold text-[var(--primary)] mb-3">{item.title}</h3>
+                <p className="text-gray-700">{item.desc}</p>
               </div>
             </motion.div>
-          </div>
+          ))}
         </div>
-      </section>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          {[
+            { icon: FaTooth, title: 'Expert Care', desc: 'Skilled professionals dedicated to your smile' },
+            { icon: FaHeart, title: 'Patient First', desc: 'Compassionate service tailored to you' },
+            { icon: FaAward, title: 'Quality Service', desc: 'Excellence in every treatment' },
+            { icon: FaUsers, title: 'Family Friendly', desc: 'Welcoming care for all ages' }
+          ].map((item, i) => {
+            const Icon = item.icon;
+            return (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.8 + i * 0.1 }}
+                whileHover={{ y: -8, scale: 1.02 }}
+                className="bg-white rounded-2xl p-8 shadow-lg text-center"
+              >
+                <Icon className="text-5xl text-[var(--primary)] mx-auto mb-4" />
+                <h3 className="text-xl font-bold text-[var(--secondary)] mb-2">{item.title}</h3>
+                <p className="text-gray-600">{item.desc}</p>
+              </motion.div>
+            );
+          })}
+        </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 1.2 }}
+          className="text-center"
+        >
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={() => window.location.href = '/book-appointment'}
+            className="bg-[var(--primary)] text-white px-10 py-4 rounded-full font-semibold text-lg shadow-lg"
+          >
+            Book Your Appointment
+          </motion.button>
+        </motion.div>
+      </div>
     </div>
   );
 };

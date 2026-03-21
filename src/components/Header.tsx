@@ -17,6 +17,15 @@ const Header = () => {
     { name: 'Contact', icon: FaPhoneAlt, href: '/contact' }
   ];
 
+  const mobileMenuItems = [
+    { name: 'Home', icon: FaHome, href: '/' },
+    { name: 'About Us', icon: FaInfoCircle, href: '/about' },
+    { name: 'Treatments', icon: FaTooth, href: '#services', isDropdown: true },
+    { name: 'Our Team', icon: FaUsers, href: '/team' },
+    { name: 'Gallery', icon: FaImages, href: '/gallery' },
+    { name: 'Contact', icon: FaPhoneAlt, href: '/contact' }
+  ];
+
   const services = [
     { name: 'Braces', icon: FaSmile, id: 'braces' },
     { name: 'Invisalign', icon: FaTeethOpen, id: 'invisalign' },
@@ -39,14 +48,14 @@ const Header = () => {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
       style={{ backgroundColor: colors.white }}
-      className="px-6 py-4 sticky top-0 z-50"
+      className="px-4 md:px-6 py-2 md:py-2 fixed top-0 left-0 right-0 z-50 shadow-md"
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <motion.div 
           whileHover={{ scale: 1.05 }}
           className="flex items-center gap-2"
         >
-          <img src="/dental clip logo.png" alt="Dental Clip Logo" className="w-30 h-30 object-contain" />
+          <img src="/dental clip logo.png" alt="Dental Clip Logo" className="w-16 h-16 md:w-24 md:h-24 object-contain" />
           <div className="hidden md:block">
             <div className="font-bold text-xl" style={{ color: colors.primary }}>DENTAL CLIP</div>
             <div className="text-xs tracking-wider font-medium" style={{ color: colors.secondary }}>DENTAL CLINIC</div>
@@ -164,8 +173,49 @@ const Header = () => {
             className="md:hidden rounded-2xl mt-4 overflow-hidden shadow-xl max-h-[80vh] overflow-y-auto"
           >
             <nav className="flex flex-col">
-              {menuItems.map((item) => {
+              {mobileMenuItems.map((item) => {
                 const Icon = item.icon;
+                
+                if (item.isDropdown) {
+                  return (
+                    <div key={item.name} className="border-b" style={{ borderBottomColor: colors.border }}>
+                      <button
+                        onClick={() => setShowServicesDropdown(!showServicesDropdown)}
+                        style={{ color: colors.primary }}
+                        className="w-full flex items-center justify-between gap-3 px-6 py-4 transition-colors"
+                        onMouseEnter={(e) => e.currentTarget.style.backgroundColor = colors.background.light}
+                        onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
+                      >
+                        <div className="flex items-center gap-3">
+                          <Icon />
+                          {item.name}
+                        </div>
+                        <span className={`transition-transform ${showServicesDropdown ? 'rotate-180' : ''}`}>▼</span>
+                      </button>
+                      {showServicesDropdown && (
+                        <div style={{ backgroundColor: colors.background.light }}>
+                          {services.map((service, index) => {
+                            const ServiceIcon = service.icon;
+                            return (
+                              <Link
+                                key={index}
+                                to={`/treatment/${service.id}`}
+                                onClick={() => setMobileMenuOpen(false)}
+                                className="flex items-center gap-3 px-10 py-3 text-gray-800 transition-colors text-sm"
+                                onMouseEnter={(e) => e.currentTarget.style.backgroundColor = colors.white}
+                                onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
+                              >
+                                <ServiceIcon style={{ color: colors.primary }} />
+                                <span>{service.name}</span>
+                              </Link>
+                            );
+                          })}
+                        </div>
+                      )}
+                    </div>
+                  );
+                }
+                
                 return (
                   <a
                     key={item.name}
@@ -181,43 +231,6 @@ const Header = () => {
                   </a>
                 );
               })}
-              
-              {/* Services Submenu */}
-              <div className="border-b" style={{ borderBottomColor: colors.border }}>
-                <button
-                  onClick={() => setShowServicesDropdown(!showServicesDropdown)}
-                  style={{ color: colors.primary }}
-                  className="w-full flex items-center justify-between gap-3 px-6 py-4 transition-colors"
-                  onMouseEnter={(e) => e.currentTarget.style.backgroundColor = colors.background.light}
-                  onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
-                >
-                  <div className="flex items-center gap-3">
-                    <FaTooth />
-                    Treatments
-                  </div>
-                  <span className={`transition-transform ${showServicesDropdown ? 'rotate-180' : ''}`}>▼</span>
-                </button>
-                {showServicesDropdown && (
-                  <div style={{ backgroundColor: colors.background.light }}>
-                    {services.map((service, index) => {
-                      const Icon = service.icon;
-                      return (
-                        <Link
-                          key={index}
-                          to={`/treatment/${service.id}`}
-                          onClick={() => setMobileMenuOpen(false)}
-                          className="flex items-center gap-3 px-10 py-3 text-gray-800 transition-colors text-sm"
-                          onMouseEnter={(e) => e.currentTarget.style.backgroundColor = colors.white}
-                          onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
-                        >
-                          <Icon style={{ color: colors.primary }} />
-                          <span>{service.name}</span>
-                        </Link>
-                      );
-                    })}
-                  </div>
-                )}
-              </div>
 
               <div className="px-6 py-4">
                 <button

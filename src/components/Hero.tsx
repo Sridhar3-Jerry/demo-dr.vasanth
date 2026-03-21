@@ -29,7 +29,7 @@ const Hero = () => {
   ];
 
   return (
-    <section id="hero" className="bg-white min-h-screen px-4 md:px-6 py-6 md:py-10">
+    <section id="hero" className="bg-white min-h-screen px-4 md:px-6 py-6 md:py-10 pt-28 md:pt-32">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
         {/* Mobile Image First */}
         <div className="md:hidden relative h-[400px] rounded-3xl overflow-hidden shadow-2xl order-1">

@@ -40,12 +40,15 @@ const AboutUs = () => {
             Dental Clip – The Best Dental Care in Paramathi Velur
           </h2>
           <p className="text-gray-800 mb-6">
-            Our practice is led by <span className="font-semibold">Dr. Vasanthan</span>, an internationally experienced Orthodontist & <span className="font-semibold">Dr. Sabitha</span>, a skilled Oral & Maxillofacial Surgeon. By combining advanced technology, advanced expertise, and a patient-first philosophy, we deliver exceptional results to our patients.
+            Our practice is led by <span className='font-semibold'>Dr. Vasanthan</span>, an internationally experienced Orthodontist & <span className='font-semibold'>Dr. Sabitha</span>, a skilled Oral & Maxillofacial Surgeon. 
           </p>
           <p className="text-gray-800 mb-6">
-            Our team of <span className="font-semibold">highly skilled and experienced dentists in Paramathi Velur</span> is committed to delivering top-quality care using the latest advancements in dental technology. As a premier <span className="font-semibold">multispeciality dental hospital</span>, we take pride in offering a comprehensive range of treatments tailored to your unique needs:
+            Dental clip - Dental clinic is a modern dental clinic providing effective dental treatments personalized to your unique needs. We provide world – class treatments in dentistry and ensure the highest standard of infection control.
           </p>
-          <div className="space-y-4 mb-8">
+           <p className="text-gray-800 mb-6">
+            It is the destination for comprehensive dental care in Paramthi-Velur.
+          </p>
+          {/* <div className="space-y-4 mb-8">
             <p className="text-gray-800">
               <span className="font-semibold">Advanced Orthodontics:</span> Modern braces and clear aligner solutions.
             </p>
@@ -58,7 +61,7 @@ const AboutUs = () => {
             <p className="text-gray-800">
               <span className="font-semibold">Laser & Implants:</span> Cutting-edge technology for faster healing and permanent results.
             </p>
-          </div>
+          </div> */}
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
