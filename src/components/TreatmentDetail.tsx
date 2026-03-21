@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaArrowLeft, FaCheckCircle, FaTooth, FaPhone } from 'react-icons/fa';
+import { FaArrowLeft, FaCheckCircle, FaTooth } from 'react-icons/fa';
 import { useNavigate, useParams } from 'react-router-dom';
 import { treatmentData } from '../data/treatments';
 
