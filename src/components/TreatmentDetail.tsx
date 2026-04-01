@@ -379,7 +379,7 @@ const TreatmentDetail = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             whileHover={{ y: -5, boxShadow: "0 20px 40px rgba(0,0,0,0.1)" }}
-            className="bg-white p-8 rounded-2xl shadow-lg mb-8 border-l-4 border-[var(--primary)]"
+            className="bg-white p-8 rounded-2xl shadow-lg mb-8 mt-8 border-l-4 border-[var(--primary)]"
           >
             <motion.h2 
               initial={{ opacity: 0, x: -20 }}

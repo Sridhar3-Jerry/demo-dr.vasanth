@@ -1,3 +1,30 @@
+import Braces1 from '../assets/Braces-1.jpg';
+import Braces2 from '../assets/Braces-2.jpeg';
+import Orthodontics1 from '../assets/Orthodontics-1.png';
+import Orthodontics2 from '../assets/Orthodontics-2.png';
+import Invisalign1 from '../assets/invisalign-1.jpeg';
+import Invisalign2 from '../assets/invisalign.jpg';
+import Invisalign3 from '../assets/invisalign-3.jpg';
+import OralMedicine1 from '../assets/Oral Medicine and Pathology-1.png';
+import OralMedicine2 from '../assets/Oral Medicine and Pathology-2.png';
+import Restorativedentistry from '../assets/Restorativedentistry.png';
+import Prosthodontics1 from '../assets/Prosthodontics-1.png';
+import Prosthodontics2 from '../assets/Prosthodontics-2.png';
+import LaserDentistry1 from '../assets/Laser Dentistry-1.png';
+import LaserDentistry2 from '../assets/Laser Dentistry-2.png';
+import LaserDentistry3 from '../assets/Laser Dentistry-3.png';
+import Endodontics1 from '../assets/Endodontics-1.png';
+import Endodontics2 from '../assets/Endodontics-2.png';
+import DentalImplants1 from '../assets/Dental Implants-1.png';
+import DentalImplants2 from '../assets/Dental Implants-2.png';
+import OralSurgery1 from '../assets/Oral and maxillo facial surgery-1.png';
+import OralSurgery2 from '../assets/Oral and maxillo facial surgery-2.png';
+import Periodontics1 from '../assets/Periodontics-1.png';
+import Periodontics2 from '../assets/Periodontics-2.png';
+import PediatricDentistry1 from '../assets/Pediatric Dentistry-1.png';
+import PediatricDentistry2 from '../assets/Pediatric Dentistry-2.png';
+import PediatricDentistry3 from '../assets/Pediatric Dentistry-3.png';
+
 export interface Treatment {
   id: string;
   title: string;
@@ -14,10 +41,10 @@ export const treatmentData: Treatment[] = [
     id: 'braces',
     title: 'Braces',
     images: [
-      '/src/assets/Braces-1.jpg',
-      '/src/assets/Braces-2.jpeg',
-      '/src/assets/Orthodontics-1.png',
-      '/src/assets/Orthodontics-2.png'
+      Braces1,
+      Braces2,
+      Orthodontics1,
+      Orthodontics2
     ],
     introduction: 'Braces are orthodontic devices used to correct misaligned teeth and jaw problems. They gradually move teeth into the correct position to improve both dental function and appearance.',
     description: 'Braces use brackets, wires, and bands to slowly adjust teeth into the desired alignment. They help fix issues like crooked teeth, overcrowding, and bite problems such as overbite or underbite.',
@@ -44,8 +71,9 @@ export const treatmentData: Treatment[] = [
     id: 'invisalign',
     title: 'Invisalign',
     images: [
-      '/src/assets/Orthodontics-1.png',
-      '/src/assets/Orthodontics-2.png'
+      Invisalign1,
+      Invisalign3,
+      Invisalign2
     ],
     introduction: 'Invisalign is a modern orthodontic treatment that uses clear aligners to straighten teeth discreetly.',
     description: 'Unlike traditional braces, Invisalign uses removable transparent trays that gradually shift teeth into the correct position.',
@@ -71,7 +99,7 @@ export const treatmentData: Treatment[] = [
     id: 'cosmetic-dentistry',
     title: 'Cosmetic Dentistry',
     images: [
-      '/src/assets/Restorativedentistry.png'
+      Restorativedentistry
     ],
     introduction: 'Cosmetic dentistry focuses on improving the appearance of teeth, gums, and smile.',
     description: 'It includes procedures like teeth whitening, veneers, bonding, and smile makeovers to enhance dental aesthetics.',
@@ -96,8 +124,8 @@ export const treatmentData: Treatment[] = [
     id: 'veneers',
     title: 'Veneers / Laminates',
     images: [
-      '/src/assets/Prosthodontics-1.png',
-      '/src/assets/Prosthodontics-2.png'
+      Prosthodontics1,
+      Prosthodontics2
     ],
     introduction: 'Dental veneers are thin shells placed on the front surface of teeth to improve their appearance.',
     description: 'They are commonly made from porcelain or composite resin and help correct discoloration, gaps, and minor misalignment.',
@@ -123,9 +151,9 @@ export const treatmentData: Treatment[] = [
     id: 'laser-dentistry',
     title: 'Laser Dentistry',
     images: [
-      '/src/assets/Laser Dentistry-1.png',
-      '/src/assets/Laser Dentistry-2.png',
-      '/src/assets/Laser Dentistry-3.png'
+      LaserDentistry1,
+      LaserDentistry2,
+      LaserDentistry3
     ],
     introduction: 'Laser dentistry uses advanced laser technology to perform dental procedures with precision and minimal discomfort.',
     description: 'It is used for gum treatments, cavity removal, teeth whitening, and other dental procedures.',
@@ -150,8 +178,8 @@ export const treatmentData: Treatment[] = [
     id: 'root-canal-treatment',
     title: 'Root Canal Treatment',
     images: [
-      '/src/assets/Endodontics-1.png',
-      '/src/assets/Endodontics-2.png'
+      Endodontics1,
+      Endodontics2
     ],
     introduction: 'Root canal treatment removes infected pulp from inside the tooth to save it from extraction.',
     description: 'The procedure cleans and seals the inner part of the tooth to eliminate infection and prevent further damage.',
@@ -177,7 +205,7 @@ export const treatmentData: Treatment[] = [
     id: 'dental-filling',
     title: 'Dental Filling',
     images: [
-      '/src/assets/Restorativedentistry.png'
+      Restorativedentistry
     ],
     introduction: 'Dental fillings restore teeth damaged by cavities.',
     description: 'The decayed portion of the tooth is removed and replaced with filling material such as composite resin.',
@@ -202,8 +230,8 @@ export const treatmentData: Treatment[] = [
     id: 'dental-crown-bridges',
     title: 'Dental Crown and Bridges',
     images: [
-      '/src/assets/Prosthodontics-1.png',
-      '/src/assets/Prosthodontics-2.png'
+      Prosthodontics1,
+      Prosthodontics2
     ],
     introduction: 'Crowns and bridges restore damaged or missing teeth.',
     description: 'Crowns cover damaged teeth, while bridges replace missing teeth using neighboring teeth as support.',
@@ -228,8 +256,8 @@ export const treatmentData: Treatment[] = [
     id: 'dental-implants',
     title: 'Dental Implants',
     images: [
-      '/src/assets/Dental Implants-1.png',
-      '/src/assets/Dental Implants-2.png'
+      DentalImplants1,
+      DentalImplants2
     ],
     introduction: 'Dental implants replace missing teeth using artificial tooth roots.',
     description: 'A titanium implant is placed in the jawbone to support crowns, bridges, or dentures.',
@@ -254,8 +282,8 @@ export const treatmentData: Treatment[] = [
     id: 'tmj-treatment',
     title: 'TMJ / TMD Treatments',
     images: [
-      '/src/assets/Oral and maxillo facial surgery-1.png',
-      '/src/assets/Oral and maxillo facial surgery-2.png'
+      OralSurgery1,
+      OralSurgery2
     ],
     introduction: 'TMJ treatment addresses disorders of the jaw joint and surrounding muscles.',
     description: 'It helps relieve pain, clicking sounds, and restricted jaw movement.',
@@ -280,8 +308,8 @@ export const treatmentData: Treatment[] = [
     id: 'gum-recontouring',
     title: 'Gum Recontouring',
     images: [
-      '/src/assets/Periodontics-1.png',
-      '/src/assets/Periodontics-2.png'
+      Periodontics1,
+      Periodontics2
     ],
     introduction: 'Gum recontouring reshapes the gum line to improve the appearance of the smile.',
     description: 'Excess gum tissue is removed or reshaped using laser or surgical methods.',
@@ -305,9 +333,9 @@ export const treatmentData: Treatment[] = [
     id: 'child-dentistry',
     title: 'Child Dentistry',
     images: [
-      '/src/assets/Pediatric Dentistry-1.png',
-      '/src/assets/Pediatric Dentistry-2.png',
-      '/src/assets/Pediatric Dentistry-3.png'
+      PediatricDentistry1,
+      PediatricDentistry2,
+      PediatricDentistry3
     ],
     introduction: 'Child dentistry focuses on the dental health of infants, children, and adolescents.',
     description: 'It includes preventive care, cavity treatment, and education about oral hygiene.',
@@ -332,8 +360,8 @@ export const treatmentData: Treatment[] = [
     id: 'wisdom-tooth-removal',
     title: 'Wisdom Tooth Removal',
     images: [
-      '/src/assets/Oral and maxillo facial surgery-1.png',
-      '/src/assets/Oral and maxillo facial surgery-2.png'
+      OralSurgery1,
+      OralSurgery2
     ],
     introduction: 'Wisdom tooth removal is a surgical procedure to remove impacted or problematic third molars.',
     description: 'It prevents pain, infection, and crowding caused by wisdom teeth.',
