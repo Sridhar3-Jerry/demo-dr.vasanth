@@ -5,8 +5,6 @@ import Orthodontics2 from '../assets/Orthodontics-2.png';
 import Invisalign1 from '../assets/invisalign-1.jpeg';
 import Invisalign2 from '../assets/invisalign.jpg';
 import Invisalign3 from '../assets/invisalign-3.jpg';
-import OralMedicine1 from '../assets/Oral Medicine and Pathology-1.png';
-import OralMedicine2 from '../assets/Oral Medicine and Pathology-2.png';
 import Restorativedentistry from '../assets/Restorativedentistry.png';
 import Prosthodontics1 from '../assets/Prosthodontics-1.png';
 import Prosthodontics2 from '../assets/Prosthodontics-2.png';
