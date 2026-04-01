@@ -37,16 +37,19 @@ const AboutUs = () => {
         >
           <p className="text-[var(--primary)] uppercase tracking-wider text-sm font-semibold mb-4">About Us</p>
           <h2 className="text-4xl md:text-5xl font-bold text-[var(--secondary)] mb-6 leading-tight">
-            Dental Clip – The Best Dental Care in Paramathi Velur
+            Dental Clip – The Best Dental Care in Paramathi-Velur
           </h2>
           <p className="text-gray-800 mb-6">
-            Our practice is led by <span className='font-semibold'>Dr. Vasanthan</span>, an internationally experienced Orthodontist & <span className='font-semibold'>Dr. Sabitha</span>, a skilled Oral & Maxillofacial Surgeon. 
+            Our practice is led by <span className='font-semibold'>Dr. Vasanthan</span>, an internationally experienced Orthodontist & <span className='font-semibold'>Dr. Sabitha</span>, a skilled Oral & Maxillofacial Surgeon. With <span className='font-semibold'>20+ years of clinical experience,</span> <span className='font-semibold text-[var(--primary)]'>Dental Clip-Dental Clinic</span> has built a strong foundation for providing dental care, beyond their expectations.
           </p>
           <p className="text-gray-800 mb-6">
-            Dental clip - Dental clinic is a modern dental clinic providing effective dental treatments personalized to your unique needs. We provide world – class treatments in dentistry and ensure the highest standard of infection control.
+            Our state-of-the-art facility is equipped with the <span className='font-semibold'>latest technologies</span> and supported by a dedicated team of <span className='font-semibold'>experienced specialist dentists.</span>
           </p>
            <p className="text-gray-800 mb-6">
-            It is the destination for comprehensive dental care in Paramthi-Velur.
+            In a unique ambience, <span className='font-semibold text-[var(--primary)]'>Dental Clip- Dental Clinic</span> provides <span className='font-semibold'>world-class dental treatments</span> and ensures the highest standard of <span className='font-semibold'>infection control.</span>
+          </p>
+          <p className="text-gray-800 mb-6">
+            It is the premier dental care provider in Paramathi-Velur.
           </p>
           {/* <div className="space-y-4 mb-8">
             <p className="text-gray-800">

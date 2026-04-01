@@ -69,18 +69,18 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="text-4xl md:text-4xl lg:text-7xl font-bold text-[var(--secondary)] mb-6 leading-tight"
+            className="text-4xl md:text-4xl lg:text-5xl font-bold text-[var(--secondary)] mb-6 leading-tight"
           >
-            EXPERIENCE THE EXPERT DENTAL CARE
+            THE MOST TRUSTED DENTAL CLINIC IN PARAMTHI VELUR
           </motion.h1>
-          <motion.p 
+          {/* <motion.p 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
             className="text-gray-800 mb-6 text-lg"
           >
             THE MOST TRUSTED DENTAL CLINIC IN PARAMTHI VELUR
-          </motion.p>
+          </motion.p> */}
           <motion.p 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -90,13 +90,21 @@ const Hero = () => {
             
             Welcome to<span className="font-semibold text-[var(--primary)]"> Dental Clip-Dental Clinic!</span> 
           </motion.p>
-          <motion.p 
+          {/* <motion.p 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
             className="text-gray-800 mb-6 text-lg"
           >
-            Looking For The Best <span className="font-semibold">DENTAL CLINIC In PARAMTHI VELUR ?</span>
+            At our <span className="font-semibold">Dental Clip,</span>
+          </motion.p> */}
+          <motion.p 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.5 }}
+            className="text-gray-800 mb-8 leading-relaxed"
+          >
+            At our <span className="font-semibold text-[var(--primary)]">Dental Clip,</span> we <span className="font-semibold">prioritize hygiene</span> for every patient and offer quality dental care with all facilities at a highly <span className="font-semibold">affordable cost.</span>
           </motion.p>
           <motion.p 
             initial={{ opacity: 0 }}
@@ -104,15 +112,7 @@ const Hero = () => {
             transition={{ delay: 0.5 }}
             className="text-gray-800 mb-8 leading-relaxed"
           >
-            At our <span className="font-semibold text-[var(--primary)]">Dental Clip</span>, we <span className="font-semibold">prioritize hygiene</span> for every patient and offer quality dental care with all facilities at a highly <span className="font-semibold">affordable cost.</span>
-          </motion.p>
-          <motion.p 
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.5 }}
-            className="text-gray-800 mb-8 leading-relaxed"
-          >
-            Our clinic is home to a team of highly <span className="font-semibold">Experienced Specialist Dentists.</span> We specialize in Dental <span className="font-semibold">Braces (Dental Clip), and Advanced Aligner Therapy (Invisalign).</span> We also provide dental services from routine dental check-ups to advanced treatments, including Cosmetic Dentistry, Restorative Dentistry, Prosthodontics- Crown and bridges, Implants, Periodontal treatment- Gum Surgeries, Laser Dentistry, and Minor Surgical Procedures.
+            In our clinic, we have a team of highly <span className="font-semibold">Experienced Specialist Dentists.</span> We specialize in Dental <span className="font-semibold">Braces (Dental Clip), and Advanced Aligner Therapy (Clear Aligner-Invisalign).</span> We also provide dental services from routine dental check-ups to advanced treatments, including Cosmetic Dentistry- Smile designing, Tooth whitening, Restorative Dentistry, Prosthodontics- Crown and bridges, Implants, Periodontal treatment- Gum Recontouring, Child Dental care, Laser Dentistry, and Minor Dental Surgeries.
           </motion.p>
           <motion.button 
             initial={{ opacity: 0 }}

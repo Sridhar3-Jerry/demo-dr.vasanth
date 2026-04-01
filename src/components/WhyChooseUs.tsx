@@ -4,10 +4,11 @@ import whychooseus from '../assets/whychooseus.jpg'
 
 const WhyChooseUs = () => {
   const features = [
-    'Experienced team of doctors',
-    'Superior Hygienic environment',
-    'Modern equipment',
-    'Comprehensive services', 
+    'Experienced Team of Doctors',
+    'Superior Hygienic Environment',
+    'Modern Equipment',
+    'Pain-Free Procedure',
+    'Comprehensive Services',
     'Affordable cost'
     
   ];
@@ -23,7 +24,7 @@ const WhyChooseUs = () => {
           >
             <h2 className="text-4xl md:text-5xl font-bold text-[var(--tertiary)] mb-6">Why People Trust Us?</h2>
             <p className="text-[#6b7280] mb-8 leading-relaxed">
-              At Dental Clip Dental Clinic, we prioritize a hygienic environment and patient safety through rigorous sterilization protocols. We ensure the highest standards of infection control.   
+              At Dental Clip Dental Clinic, we prioritize a hygienic environment and patient safety through rigorous sterilization protocols. We ensure the highest standards of infection control during dental procedures.
             </p>
 
             <div className="space-y-4">
