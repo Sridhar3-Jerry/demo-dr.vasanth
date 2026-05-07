@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { FaTimes } from 'react-icons/fa';
+import drVasanthan from '../assets/dr.vasanthan.jpeg';
 import doctor1 from '../assets/doctor-1.jpg';
 import doctor2 from '../assets/doctor-2.jpg';
 import doctor3 from '../assets/doctor-3.jpg';
@@ -17,7 +18,7 @@ const TeamPage = () => {
       role: 'Orthodontist',
       degree: 'MDS., Ph.D..',
       yearsExperience: '15+ Years',
-      image: doctor1,
+      image: drVasanthan,
       bio: 'Dr. Vasanthan is a dedicated orthodontist whose practice is defined by precision, innovation, and an unwavering commitment to lifelong learning. With a patient-centered approach, he transforms smiles through cutting-edge orthodontic solutions.',
       education: 'BDS from Tamil Nadu Dr. MGR Medical University, MDS in Orthodontics from Saveetha University, PhD from Vinayaka Mission\'s Research Foundation University.',
       experience: 'Professor and Head of Department of Orthodontics at Vinayaka Mission Dental College. International licenses: DHA (Dubai) and QCHP (Qatar).',
@@ -133,7 +134,7 @@ const TeamPage = () => {
                   <img
                     src={team[selectedDoctor].image}
                     alt={team[selectedDoctor].name}
-                    className="w-full h-96 object-cover"
+                    className="w-full h-96 object-cover object-[center_20%]"
                   />
                 </div>
               </div>
@@ -213,9 +214,8 @@ const TeamPage = () => {
                 <img 
                   src={member.image} 
                   alt={member.name} 
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
+                  className="w-full h-full object-cover object-[center_20%] group-hover:scale-110 transition-transform duration-500" 
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
               </div>
               <div className="p-6 text-center">
                 <h3 className="text-[var(--primary)] font-bold text-xl mb-2">{member.name}</h3>

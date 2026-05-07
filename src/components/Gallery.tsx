@@ -1,8 +1,9 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { FaTimes } from 'react-icons/fa';
-import dentalBanner from '../assets/Dental banner.jpg';
-import aboutUs1 from '../assets/aboutus-1.jpg';
+import outerPoster from '../assets/outer-poster.jpeg';
+import receptionist from '../assets/receptionist.jpeg';
+import treatmentRoom from '../assets/treatment-room.jpeg';
 import whyChooseUs from '../assets/whychooseus.jpg';
 import faq from '../assets/faq.jpg';
 import doctor1 from '../assets/doctor-1.jpg';
@@ -12,9 +13,9 @@ const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const galleryImages = [
-    { src: dentalBanner, title: 'Modern Dental Clinic', description: 'Our state-of-the-art dental facility with modern equipment' },
-    { src: aboutUs1, title: 'Reception Area', description: 'Comfortable and welcoming reception area for our patients' },
-    { src: whyChooseUs, title: 'Treatment Room', description: 'Clean and hygienic treatment rooms with advanced technology' },
+    { src: outerPoster, title: 'Modern Dental Clinic', description: 'Our state-of-the-art dental facility with modern equipment' },
+    { src: receptionist, title: 'Reception Area', description: 'Comfortable and welcoming reception area for our patients' },
+    { src: treatmentRoom, title: 'Treatment Room', description: 'Clean and hygienic treatment rooms with advanced technology' },
     { src: faq, title: 'Consultation Area', description: 'Private consultation rooms for patient discussions' },
     { src: doctor1, title: 'Our Expert Team', description: 'Experienced dental professionals providing quality care' },
     { src: doctor2, title: 'Patient Care', description: 'Dedicated staff ensuring comfortable patient experience' }

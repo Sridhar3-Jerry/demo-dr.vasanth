@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { FaTooth, FaHeart, FaAward, FaUsers } from 'react-icons/fa';
-import aboutUsImage from '../assets/aboutus-1.jpg';
+import treatmentRoom from '../assets/treatment-room.jpeg';
 
 const AboutPage = () => {
   return (
@@ -22,7 +22,7 @@ const AboutPage = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="bg-white rounded-3xl shadow-xl overflow-hidden mb-12"
         >
-          <img src={aboutUsImage} alt="Dental Clinic" className="w-full h-80 object-cover" />
+          <img src={treatmentRoom} alt="Dental Clinic" className="w-full h-80 object-cover" />
         </motion.div>
 
         <motion.div
@@ -38,8 +38,8 @@ const AboutPage = () => {
 
         <div className="grid md:grid-cols-2 gap-8 mb-16">
           {[
-            { img: aboutUsImage, title: 'Our Mission', desc: 'Delivering personalized, high-quality dental care that enhances your oral health and overall well-being.' },
-            { img: aboutUsImage, title: 'Our Vision', desc: 'To be the leading dental care provider known for innovation, excellence, and patient-centered service.' }
+            { img: treatmentRoom, title: 'Our Mission', desc: 'Delivering personalized, high-quality dental care that enhances your oral health and overall well-being.' },
+            { img: treatmentRoom, title: 'Our Vision', desc: 'To be the leading dental care provider known for innovation, excellence, and patient-centered service.' }
           ].map((item, i) => (
             <motion.div
               key={i}

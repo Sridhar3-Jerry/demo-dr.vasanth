@@ -1,5 +1,6 @@
 import { motion, useMotionValue, useTransform, animate, useInView } from 'framer-motion';
 import { useEffect, useState, useRef } from 'react';
+import drVasanthan from '../assets/dr.vasanthan.jpeg';
 import doctor1 from '../assets/doctor-1.jpg';
 import doctor2 from '../assets/doctor-2.jpg';
 import doctor3 from '../assets/doctor-3.jpg';
@@ -45,7 +46,7 @@ const Team = () => {
       role: 'Orthodontist',
       degree: 'MDS., Ph.D..',
       yearsExperience: '15+ Years',
-      image: doctor1,
+      image: drVasanthan,
       bio: 'Dr. Vasanthan is a dedicated orthodontist whose practice is defined by precision, innovation, and an unwavering commitment to lifelong learning. With a patient-centered approach, he transforms smiles through cutting-edge orthodontic solutions.',
       education: 'BDS from Tamil Nadu Dr. MGR Medical University, MDS in Orthodontics from Saveetha University, PhD from Vinayaka Mission\'s Research Foundation University.',
       experience: 'Professor and Head of Department of Orthodontics at Vinayaka Mission Dental College. International licenses: DHA (Dubai) and QCHP (Qatar).',
@@ -150,7 +151,7 @@ const Team = () => {
             >
               <div className="h-64 bg-gradient-to-b from-[var(--primary)]/20 to-transparent relative overflow-hidden flex items-center justify-center">
                 <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0ic3RyaXBlcyIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwMCI+PHJlY3Qgd2lkdGg9IjEwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2Q0YTU3NCIgb3BhY2l0eT0iMC4zIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI3N0cmlwZXMpIi8+PC9zdmc+')] opacity-30"></div>
-                <img src={member.image} alt={member.name} className="w-full h-full object-cover relative z-10" />
+                  <img src={member.image} alt={member.name} className="w-full h-full object-cover object-[center_20%] relative z-10" />
               </div>
               <div className="p-6 text-center">
                 <h3 className="text-[var(--primary)] font-bold text-lg mb-2">{member.name}</h3>
