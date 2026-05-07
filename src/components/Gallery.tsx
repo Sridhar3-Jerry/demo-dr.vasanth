@@ -4,7 +4,6 @@ import { FaTimes } from 'react-icons/fa';
 import outerPoster from '../assets/outer-poster.jpeg';
 import receptionist from '../assets/receptionist.jpeg';
 import treatmentRoom from '../assets/treatment-room.jpeg';
-import whyChooseUs from '../assets/whychooseus.jpg';
 import faq from '../assets/faq.jpg';
 import doctor1 from '../assets/doctor-1.jpg';
 import doctor2 from '../assets/doctor-2.jpg';
