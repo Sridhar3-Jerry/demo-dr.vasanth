@@ -3,9 +3,9 @@ import { useState } from 'react';
 import { FaTimes } from 'react-icons/fa';
 import drVasanthan from '../assets/dr.vasanthan.jpeg';
 import doctor1 from '../assets/doctor-1.jpg';
-import doctor2 from '../assets/doctor-2.jpg';
+import drSabitha from '../assets/dr.sabita.jpeg';
 import doctor3 from '../assets/doctor-3.jpg';
-import doctor4 from '../assets/doctor-4.jpg';
+import drPeterJohn from '../assets/dr.peter john.jpeg';
 import doctor5 from '../assets/doctor-5.jpg';
 
 const TeamPage = () => {
@@ -34,7 +34,7 @@ const TeamPage = () => {
       role: 'Oral and Maxillofacial Surgeon',
       degree: 'MDS., Ph.D., FDSRCPS (UK)',
       yearsExperience: '20+ Years',
-      image: doctor2,
+      image: drSabitha,
       bio: 'Dr. Sabitha is a distinguished dental professional with over two decades of expertise in Oral and Maxillofacial Surgery, and Cosmetic Dentistry.',
       education: 'BDS from Saveetha Dental College & Hospital, MDS in Oral and Maxillofacial Surgery from Tamil Nadu Dr. MGR Medical University, PhD in Dentistry from Vinayaka Mission\'s Research Foundation.',
       experience: 'Over two decades of progressive achievements in Education, Clinical Practice, and Cosmetic dentistry. International credentials: MFDS RCPS(Glasgow) and FDS RCPS(Glasgow) from Royal College of Physicians & Surgeons of Glasgow, UK.',
@@ -61,7 +61,7 @@ const TeamPage = () => {
       role: 'Implantologist',
       degree: 'MDS',
       yearsExperience: '25+ Years',
-      image: doctor4,
+      image: drPeterJohn,
       bio: 'Dr. John Peter is a renowned implantologist with extensive experience in dental implants and advanced restorative procedures.',
       education: 'MDS in Oral and Maxillofacial Surgery with specialization in Implantology.',
       experience: 'Over 25 years of experience in dental implants, bone grafting, and full mouth rehabilitation.',

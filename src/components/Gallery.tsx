@@ -6,7 +6,7 @@ import receptionist from '../assets/receptionist.jpeg';
 import treatmentRoom from '../assets/treatment-room.jpeg';
 import faq from '../assets/faq.jpg';
 import doctor1 from '../assets/doctor-1.jpg';
-import doctor2 from '../assets/doctor-2.jpg';
+import drSabitha from '../assets/dr.sabita.jpeg';
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -17,7 +17,7 @@ const Gallery = () => {
     { src: treatmentRoom, title: 'Treatment Room', description: 'Clean and hygienic treatment rooms with advanced technology' },
     { src: faq, title: 'Consultation Area', description: 'Private consultation rooms for patient discussions' },
     { src: doctor1, title: 'Our Expert Team', description: 'Experienced dental professionals providing quality care' },
-    { src: doctor2, title: 'Patient Care', description: 'Dedicated staff ensuring comfortable patient experience' }
+    { src: drSabitha, title: 'Patient Care', description: 'Dedicated staff ensuring comfortable patient experience' }
   ];
 
   return (

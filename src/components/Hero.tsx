@@ -2,16 +2,16 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { FaClock, FaPhoneAlt, FaStar } from 'react-icons/fa';
 import drVasanthan from '../assets/dr.vasanthan.jpeg';
-import doctor2 from '../assets/doctor-2.jpg';
+import drSabitha from '../assets/dr.sabita.jpeg';
 import doctor3 from '../assets/doctor-3.jpg';
-import doctor4 from '../assets/doctor-4.jpg';
+import drPeterJohn from '../assets/dr.peter john.jpeg';
 
 const Hero = () => {
   const [doctors, setDoctors] = useState([
     { name: 'Dr. Vasanthan', degree: 'MDS., Ph.D.', id: 1, image: drVasanthan },
-    { name: 'Dr. Sabitha Vasanthan', degree: 'MDS., Ph.D., FDSRCPS (UK)', id: 2, image: doctor2 },
+    { name: 'Dr. Sabitha Vasanthan', degree: 'MDS., Ph.D., FDSRCPS (UK)', id: 2, image: drSabitha },
     { name: 'Dr. CHITHRA', degree: 'MDS', id: 3, image: doctor3 },
-    { name: 'Dr. John Peter', degree: 'MDS', id: 4, image: doctor4 }
+    { name: 'Dr. John Peter', degree: 'MDS', id: 4, image: drPeterJohn }
   ]);
 
   useEffect(() => {
