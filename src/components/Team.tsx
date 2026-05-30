@@ -44,7 +44,7 @@ const Team = () => {
     {
       name: 'Dr. Vasanthan',
       role: 'Orthodontist',
-      degree: 'MDS., Ph.D..',
+      degree: 'MDS, PhD, DHA, QCHP (Ortho)',
       yearsExperience: '15+ Years',
       image: drVasanthan,
       bio: 'Dr. Vasanthan is a dedicated orthodontist whose practice is defined by precision, innovation, and an unwavering commitment to lifelong learning. With a patient-centered approach, he transforms smiles through cutting-edge orthodontic solutions.',
