@@ -1,7 +1,7 @@
 import { motion, useMotionValue, useTransform, animate, useInView } from 'framer-motion';
 import { useEffect, useState, useRef } from 'react';
 import drVasanthan from '../assets/dr.vasanthan.jpeg';
-import doctor1 from '../assets/doctor-1.jpg';
+import drRajkumar from '../assets/dr.rajkumar.jpeg';
 import drSabitha from '../assets/dr.sabita.jpeg';
 import doctor3 from '../assets/doctor-3.jpg';
 import drPeterJohn from '../assets/dr.peter john.jpeg';
@@ -63,6 +63,7 @@ const Team = () => {
       degree: 'MDS., Ph.D., FDSRCPS (UK)',
       yearsExperience: '20+ Years',
       image: drSabitha,
+      imagePosition: 'center top',
       bio: 'Dr. Sabitha is a distinguished dental professional with over two decades of expertise in Oral and Maxillofacial Surgery, and Cosmetic Dentistry.',
       education: 'BDS from Saveetha Dental College & Hospital, MDS in Oral and Maxillofacial Surgery from Tamil Nadu Dr. MGR Medical University, PhD in Dentistry from Vinayaka Mission\'s Research Foundation.',
       experience: 'Over two decades of progressive achievements in Education, Clinical Practice, and Cosmetic dentistry. International credentials: MFDS RCPS(Glasgow) and FDS RCPS(Glasgow) from Royal College of Physicians & Surgeons of Glasgow, UK.',
@@ -83,11 +84,12 @@ const Team = () => {
       specialties: ['Pediatric Dentistry', 'Child Dental Care', 'Preventive Treatments']
     },
     {
-      name: 'Dr. John Peter',
+      name: 'Dr. Peter John',
       role: 'Implantologist',
       degree: 'MDS',
       yearsExperience: '25+ Years',
       image: drPeterJohn,
+      imagePosition: 'center top',
       bio: 'Prof. Dr. Sathiya Jeeva is a renowned implantologist with extensive experience in dental implants and advanced restorative procedures.',
       specialties: ['Dental Implants', 'Bone Grafting', 'Full Mouth Rehabilitation']
     },
@@ -103,9 +105,10 @@ const Team = () => {
     {
       name: 'Dr. Raj Kumar',
       role: 'Periodontist',
-      degree: 'MDS',
+      degree: 'BDS, MDS, (Perio), MFDSRCPS (Glasg) UK',
       yearsExperience: '8+ Years',
-      image: doctor1,
+      image: drRajkumar,
+      imagePosition: 'center top',
       bio: 'Dr. Raj Kumar specializes in periodontal treatments and gum health, providing comprehensive care for gum diseases and maintaining oral health.',
       specialties: ['Periodontal Treatment', 'Gum Surgery', 'Oral Health Maintenance']
     },
@@ -151,7 +154,7 @@ const Team = () => {
             >
               <div className="h-64 bg-gradient-to-b from-[var(--primary)]/20 to-transparent relative overflow-hidden flex items-center justify-center">
                 <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0ic3RyaXBlcyIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwMCI+PHJlY3Qgd2lkdGg9IjEwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2Q0YTU3NCIgb3BhY2l0eT0iMC4zIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI3N0cmlwZXMpIi8+PC9zdmc+')] opacity-30"></div>
-                  <img src={member.image} alt={member.name} className="w-full h-full object-cover object-[center_20%] relative z-10" />
+                  <img src={member.image} alt={member.name} style={{ objectPosition: member.imagePosition || 'center 20%' }} className="w-full h-full object-cover relative z-10" />
               </div>
               <div className="p-6 text-center">
                 <h3 className="text-[var(--primary)] font-bold text-lg mb-2">{member.name}</h3>

@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { FaTimes } from 'react-icons/fa';
 import drVasanthan from '../assets/dr.vasanthan.jpeg';
-import doctor1 from '../assets/doctor-1.jpg';
+import drRajkumar from '../assets/dr.rajkumar.jpeg';
 import drSabitha from '../assets/dr.sabita.jpeg';
 import doctor3 from '../assets/doctor-3.jpg';
 import drPeterJohn from '../assets/dr.peter john.jpeg';
@@ -57,12 +57,13 @@ const TeamPage = () => {
       specialties: ['Root Canal Treatment', 'Endodontic Surgery', 'Pulp Therapy', 'Dental Pain Management']
     },
     {
-      name: 'Dr. John Peter',
+      name: 'Dr. Peter John',
       role: 'Implantologist',
       degree: 'MDS',
       yearsExperience: '25+ Years',
       image: drPeterJohn,
-      bio: 'Dr. John Peter is a renowned implantologist with extensive experience in dental implants and advanced restorative procedures.',
+      imagePosition: 'center top',
+      bio: 'Dr. Peter John is a renowned implantologist with extensive experience in dental implants and advanced restorative procedures.',
       education: 'MDS in Oral and Maxillofacial Surgery with specialization in Implantology.',
       experience: 'Over 25 years of experience in dental implants, bone grafting, and full mouth rehabilitation.',
       specialties: ['Dental Implants', 'Bone Grafting', 'Full Mouth Rehabilitation', 'All-on-4 Implants']
@@ -81,12 +82,13 @@ const TeamPage = () => {
     {
       name: 'Dr. Raj Kumar',
       role: 'Periodontist',
-      degree: 'MDS',
+      degree: 'BDS, MDS, (Perio), MFDSRCPS (Glasg) UK',
       yearsExperience: '8+ Years',
-      image: doctor1,
+      image: drRajkumar,
+      imagePosition: 'center top',
       bio: 'Dr. Raj Kumar specializes in periodontal treatments and gum health, providing comprehensive care for gum diseases and maintaining oral health.',
-      education: 'MDS in Periodontics from a prestigious dental college.',
-      experience: 'Over 8 years of specialized experience in periodontal treatments and gum surgeries.',
+      education: 'BDS, MDS (Perio), and MFDS RCPS(Glasgow) credentials with a focus on advanced periodontal care.',
+      experience: '8+ years of specialized experience in periodontal treatments, gum surgery, and maintaining long-term oral health.',
       specialties: ['Periodontal Treatment', 'Gum Surgery', 'Oral Health Maintenance', 'Scaling and Root Planing']
     }
   ];
@@ -134,7 +136,8 @@ const TeamPage = () => {
                   <img
                     src={team[selectedDoctor].image}
                     alt={team[selectedDoctor].name}
-                    className="w-full h-96 object-cover object-[center_20%]"
+                    style={{ objectPosition: team[selectedDoctor].imagePosition || 'center 20%' }}
+                    className="w-full h-96 object-cover"
                   />
                 </div>
               </div>
@@ -214,7 +217,8 @@ const TeamPage = () => {
                 <img 
                   src={member.image} 
                   alt={member.name} 
-                  className="w-full h-full object-cover object-[center_20%] group-hover:scale-110 transition-transform duration-500" 
+                  style={{ objectPosition: member.imagePosition || 'center 20%' }}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
                 />
               </div>
               <div className="p-6 text-center">
