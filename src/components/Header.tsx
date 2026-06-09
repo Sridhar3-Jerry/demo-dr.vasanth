@@ -66,7 +66,6 @@ const Header = () => {
         {/* Desktop Menu */}
         <nav className="hidden md:flex items-center gap-8 font-semibold">
           {menuItems.slice(0, 2).map((item) => {
-            const Icon = item.icon;
             const isActive = location.pathname === item.href;
             return (
               <Link
@@ -122,7 +121,6 @@ const Header = () => {
           </div>
 
           {menuItems.slice(2).map((item) => {
-            const Icon = item.icon;
             const isActive = location.pathname === item.href;
             return (
               <Link
@@ -172,7 +170,6 @@ const Header = () => {
           >
             <nav className="flex flex-col">
               {mobileMenuItems.map((item) => {
-                const Icon = item.icon;
                 const isActive = location.pathname === item.href;
                 
                 if (item.isDropdown) {
@@ -193,7 +190,6 @@ const Header = () => {
                       {showServicesDropdown && (
                         <div style={{ backgroundColor: colors.background.light }}>
                           {services.map((service, index) => {
-                            const ServiceIcon = service.icon;
                             return (
                               <Link
                                 key={index}

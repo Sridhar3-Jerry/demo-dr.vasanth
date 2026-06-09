@@ -1,7 +1,6 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import { FaWhatsapp, FaTimes } from 'react-icons/fa';
-import { colors } from '../colors';
 
 const WhatsAppFloat = () => {
   const [showQR, setShowQR] = useState(false);
