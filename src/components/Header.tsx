@@ -57,9 +57,9 @@ const Header = () => {
           className="flex items-center"
         >
           <img src={dctLogo} alt="Dental Clip Logo" className="w-12 h-12 md:w-20 md:h-20 object-contain" />
-          <div className="hidden md:block">
-            <div className="font-bold text-xl" style={{ color: '#cfa781' }}>DENTAL CLIP</div>
-            <div className="font-bold text-xl" style={{ color: '#323232ff' }}>DENTAL CLINIC</div>
+          <div className="hidden md:flex flex-col space-y-1">
+            <div className="font-bold text-3xl leading-none" style={{ color: '#AA7747' }}>DENTAL CLIP</div>
+            <div className="font-bold text-3xl leading-none" style={{ color: '#323232ff' }}>DENTAL CLINIC</div>
           </div>
         </motion.div>
         
@@ -112,7 +112,7 @@ const Header = () => {
                       onMouseEnter={(e) => e.currentTarget.style.backgroundColor = colors.background.light}
                       onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
                     >
-                      <Icon style={{ color: colors.primary }} className="flex-shrink-0" />
+                      <Icon style={{ color: "#AA7747" }} className="flex-shrink-0" />
                       <span style={{ color: colors.secondary }}>{service.name}</span>
                     </Link>
                   );

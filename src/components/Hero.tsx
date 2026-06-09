@@ -61,7 +61,7 @@ const Hero = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
-            className="text-[var(--primary)] uppercase tracking-wider text-sm font-semibold mb-4 text-lg font-semibold text-center md:text-left"
+            className="text-[#AA7747] uppercase tracking-wider text-sm font-semibold mb-4 text-lg font-semibold text-center md:text-left"
           >
             Dental Clip
           </motion.p>
@@ -71,7 +71,7 @@ const Hero = () => {
             transition={{ delay: 0.3 }}
             className="text-4xl md:text-4xl lg:text-5xl font-bold text-[var(--secondary)] mb-6 leading-tight"
           >
-            THE MOST TRUSTED DENTAL CLINIC IN PARAMTHI VELUR
+            THE MOST TRUSTED DENTAL CLINIC IN PARAMATHI VELUR
           </motion.h1>
           {/* <motion.p 
             initial={{ opacity: 0 }}
@@ -88,7 +88,7 @@ const Hero = () => {
             className="text-gray-800 mb-6 text-lg"
           >
             
-            Welcome to<span className="font-semibold text-[var(--primary)]"> Dental Clip-Dental Clinic!</span> 
+            Welcome to<span className="font-semibold text-[#AA7747]"> Dental Clip-Dental Clinic!</span> 
           </motion.p>
           {/* <motion.p 
             initial={{ opacity: 0 }}
@@ -104,7 +104,7 @@ const Hero = () => {
             transition={{ delay: 0.5 }}
             className="text-gray-800 mb-8 leading-relaxed"
           >
-            At our <span className="font-semibold text-[var(--primary)]">Dental Clip,</span> we <span className="font-semibold">prioritize hygiene</span> for every patient and offer quality dental care with all facilities at a highly <span className="font-semibold">affordable cost.</span>
+            At our <span className="font-semibold text-[#AA7747]">Dental Clip,</span> we <span className="font-semibold">prioritize hygiene</span> for every patient and offer quality dental care with all facilities at a highly <span className="font-semibold">affordable cost.</span>
           </motion.p>
           <motion.p 
             initial={{ opacity: 0 }}
@@ -132,7 +132,7 @@ const Hero = () => {
             className="flex items-center gap-3 bg-white rounded-2xl p-4 shadow-lg inline-flex"
           >
             <span className="text-gray-800 font-semibold">Google Rating</span>
-            <span className="font-bold text-[var(--primary)] text-2xl">4.7</span>
+            <span className="font-bold text-[#AA7747] text-2xl">4.7</span>
             <div className="flex text-yellow-500">
               {[...Array(5)].map((_, i) => (
                 <motion.div
@@ -194,8 +194,8 @@ const Hero = () => {
                 <FaClock className="text-2xl" />
               </div>
               <div>
-                <p className="font-bold text-[var(--primary)] mb-1">Opening Hours</p>
-                <p className="text-sm text-gray-800">Mon to Sat 09:00 AM - 08:30 PM</p>
+                <p className="font-bold text-[#AA7747] mb-1">Opening Hours</p>
+                <p className="text-sm text-gray-800">Mon to Sat 09:00 AM - 08:30 PM  ( Sunday 09:00 Am to 01:00 Pm )</p>
               </div>
             </motion.div>
 
@@ -210,8 +210,8 @@ const Hero = () => {
                 <FaPhoneAlt className="text-2xl" />
               </div>
               <div>
-                <p className="font-bold text-[var(--primary)] mb-1">Need Dental Services?</p>
-                <p className="text-sm text-gray-800">Call: +91-9787644466</p>
+                <p className="font-bold text-[#AA7747] mb-1">Need Dental Services?</p>
+                <p className="text-sm text-gray-800">Call: +91-9344310422</p>
               </div>
             </motion.div>
         </div>

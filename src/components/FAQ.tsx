@@ -38,8 +38,8 @@ const FAQ = () => {
           className="text-left md:text-center mb-16"
         >
           <div className="flex items-center justify-center gap-3 mb-4">
-            <FaQuestionCircle className="text-[var(--primary)] text-3xl" />
-            <p className="text-[var(--primary)] uppercase tracking-wider text-sm font-semibold text-center">Everything You Need To Know</p>
+            <FaQuestionCircle className="text-[#AA7747] text-3xl" />
+            <p className="text-[#AA7747] uppercase tracking-wider text-sm font-semibold text-center">Everything You Need To Know</p>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-[var(--tertiary)] mb-6 text-left md:text-center">
             Frequently Asked Questions
@@ -63,11 +63,11 @@ const FAQ = () => {
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
                 className="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-gray-50 transition-colors group"
               >
-                <span className="text-gray-800 font-semibold text-lg pr-4 group-hover:text-[var(--primary)] transition-colors">{faq.question}</span>
+                <span className="text-gray-800 font-semibold text-lg pr-4 group-hover:text-[#AA7747] transition-colors">{faq.question}</span>
                 <motion.div
                   animate={{ rotate: openIndex === index ? 180 : 0 }}
                   transition={{ duration: 0.3 }}
-                  className="text-[var(--primary)] flex-shrink-0 w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center group-hover:bg-[var(--primary)] group-hover:text-white transition-all"
+                  className="text-[#AA7747] flex-shrink-0 w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center group-hover:bg-[var(--primary)] group-hover:text-white transition-all"
                 >
                   <FaChevronDown className="text-sm" />
                 </motion.div>

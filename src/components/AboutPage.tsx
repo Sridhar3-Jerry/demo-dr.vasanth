@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
-import { FaTooth, FaHeart, FaAward, FaUsers } from 'react-icons/fa';
+import { FaTooth, FaHandsHelping, FaAward, FaUsers, FaMedal } from 'react-icons/fa';
 import treatmentRoom from '../assets/treatment-room.jpeg';
+import dctLogo from '../assets/dct.png';
 
 const AboutPage = () => {
   return (
@@ -22,7 +23,7 @@ const AboutPage = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="bg-white rounded-3xl shadow-xl overflow-hidden mb-12"
         >
-          <img src={treatmentRoom} alt="Dental Clinic" className="w-full h-80 object-cover" />
+          <img src={treatmentRoom} alt="Dental Clinic" className="w-full h-[400px] md:h-[500px] object-cover" />
         </motion.div>
 
         <motion.div
@@ -51,7 +52,7 @@ const AboutPage = () => {
             >
               <img src={item.img} alt={item.title} className="w-full h-48 object-cover" />
               <div className="p-6">
-                <h3 className="text-2xl font-bold text-[var(--primary)] mb-3">{item.title}</h3>
+                <h3 className="text-2xl font-bold text-[#AA7747] mb-3">{item.title}</h3>
                 <p className="text-gray-700">{item.desc}</p>
               </div>
             </motion.div>
@@ -60,9 +61,9 @@ const AboutPage = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {[
-            { icon: FaTooth, title: 'Expert Care', desc: 'Skilled professionals dedicated to your smile' },
-            { icon: FaHeart, title: 'Patient First', desc: 'Compassionate service tailored to you' },
-            { icon: FaAward, title: 'Quality Service', desc: 'Excellence in every treatment' },
+            { isImage: true, img: dctLogo, title: 'Expert Care', desc: 'Skilled professionals dedicated to your smile' },
+            { icon: FaHandsHelping, title: 'Patient First', desc: 'Compassionate service tailored to you' },
+            { icon: FaMedal, title: 'Quality Service', desc: 'Excellence in every treatment' },
             { icon: FaUsers, title: 'Family Friendly', desc: 'Welcoming care for all ages' }
           ].map((item, i) => {
             const Icon = item.icon;
@@ -75,7 +76,11 @@ const AboutPage = () => {
                 whileHover={{ y: -8, scale: 1.02 }}
                 className="bg-white rounded-2xl p-8 shadow-lg text-center"
               >
-                <Icon className="text-5xl text-[var(--primary)] mx-auto mb-4" />
+                {item.isImage ? (
+                  <img src={item.img} alt={item.title} className="w-14 h-14 mx-auto mb-4 object-contain" />
+                ) : (
+                  Icon && <Icon className="text-5xl text-[#AA7747] mx-auto mb-4" />
+                )}
                 <h3 className="text-xl font-bold text-[var(--secondary)] mb-2">{item.title}</h3>
                 <p className="text-gray-600">{item.desc}</p>
               </motion.div>

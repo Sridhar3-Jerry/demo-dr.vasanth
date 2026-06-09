@@ -11,7 +11,7 @@ const Contact = () => {
           animate={{ opacity: 1, y: 0 }}
           className="mb-12"
         >
-          <p className="text-[var(--primary)] uppercase tracking-wider text-sm font-semibold mb-4 text-center">Get In Touch With Paramathi Velur's Preferred Dental Experts</p>
+          <p className="text-[#AA7747] uppercase tracking-wider text-sm font-semibold mb-4 text-center">Get In Touch With Paramathi Velur's Preferred Dental Experts</p>
           <h1 className="text-4xl md:text-5xl font-bold text-[var(--secondary)] mb-6 text-left md:text-center">
             We Are Always Ready to Help<br />You and Answer Your Questions
           </h1>
@@ -28,7 +28,7 @@ const Contact = () => {
           >
             <div className="bg-[var(--bg-light)] rounded-2xl p-6 shadow-lg border-2 border-[var(--border)]">
               <div className="flex items-center gap-4 mb-2">
-                <FaClock className="text-[var(--primary)] text-2xl" />
+                <FaClock className="text-[#AA7747] text-2xl" />
                 <h3 className="text-lg font-bold text-[var(--secondary)]">We're Open</h3>
               </div>
               <p className="text-gray-700 text-sm ml-10">Monday – Friday</p>
@@ -37,15 +37,15 @@ const Contact = () => {
 
             <div className="bg-[var(--bg-light)] rounded-2xl p-6 shadow-lg border-2 border-[var(--border)]">
               <div className="flex items-center gap-4 mb-2">
-                <FaPhoneAlt className="text-[var(--primary)] text-2xl" />
+                <FaPhoneAlt className="text-[#AA7747] text-2xl" />
                 <h3 className="text-lg font-bold text-[var(--secondary)]">Call Us Directly</h3>
               </div>
-              <a href="tel:+919344310422" className="block hover:text-[var(--primary)] font-medium text-gray-700 text-sm ml-10">+91-9344310422</a>
+              <a href="tel:+919344310422" className="block hover:text-[#AA7747] font-medium text-gray-700 text-sm ml-10">+91-9344310422</a>
             </div>
 
             <div className="bg-[var(--bg-light)] rounded-2xl p-6 shadow-lg border-2 border-[var(--border)]">
               <div className="flex items-center gap-4 mb-2">
-                <FaMapMarkerAlt className="text-[var(--primary)] text-2xl" />
+                <FaMapMarkerAlt className="text-[#AA7747] text-2xl" />
                 <h3 className="text-lg font-bold text-[var(--secondary)]">Clinic Location</h3>
               </div>
               <p className="text-gray-700 leading-relaxed text-sm ml-10">
@@ -56,10 +56,10 @@ const Contact = () => {
 
             <div className="bg-[var(--bg-light)] rounded-2xl p-6 shadow-lg border-2 border-[var(--border)]">
               <div className="flex items-center gap-4 mb-2">
-                <FaEnvelope className="text-[var(--primary)] text-2xl" />
+                <FaEnvelope className="text-[#AA7747] text-2xl" />
                 <h3 className="text-lg font-bold text-[var(--secondary)]">Send a Message</h3>
               </div>
-              <a href="mailto:dentalclip.dentalclinic@gmail.com" className="text-gray-700 hover:text-[var(--primary)] break-all font-medium text-sm ml-10">
+              <a href="mailto:dentalclip.dentalclinic@gmail.com" className="text-gray-700 hover:text-[#AA7747] break-all font-medium text-sm ml-10">
                 dentalclip.dentalclinic@gmail.com
               </a>
             </div>
@@ -75,10 +75,10 @@ const Contact = () => {
             <div className="bg-white rounded-3xl p-10 shadow-lg border-2 border-[var(--border)]">
               <h2 className="text-3xl font-bold text-[var(--secondary)] mb-4">Get In Touch</h2>
               <p className="text-gray-700 mb-6 leading-relaxed">
-                At <span className="font-semibold text-[var(--primary)]">Dental Clip. Dental Clinic</span>, your comfort and convenience come first. Whether you have a question about a specific treatment, a suggestion for our team, or you are ready to book your consultation, we are here for you.
+                At <span className="font-semibold text-[#AA7747]">Dental Clip. Dental Clinic</span>, your comfort and convenience come first. Whether you have a question about a specific treatment, a suggestion for our team, or you are ready to book your consultation, we are here for you.
               </p>
               <p className="text-gray-700 mb-8 leading-relaxed">
-                Simply fill out the form below with your details, and our patient coordinator will get back to you shortly. For immediate assistance or to schedule an <span className="font-semibold text-[var(--primary)]">emergency dental appointment in Paramathi Velur</span>, feel free to call us directly.
+                Simply fill out the form below with your details, and our patient coordinator will get back to you shortly. For immediate assistance or to schedule an <span className="font-semibold text-[#AA7747]">emergency dental appointment in Paramathi Velur</span>, feel free to call us directly.
               </p>
 
               <form className="space-y-5">

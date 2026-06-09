@@ -9,11 +9,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div className="lg:col-span-1 order-1">
-            <div className="flex items-center gap-3 mb-6">
-              <img src={dctLogo} alt="Dental Clip Logo" className="w-12 h-12 object-contain" />
-              <div>
-                <div className="font-bold text-xl" style={{ color: '#cfa781' }}>DENTAL CLIP</div>
-                <div className="font-bold text-xl" style={{ color: '#323232ff' }}>DENTAL CLINIC</div>
+            <div className="flex items-center  mb-6">
+              <img src={dctLogo} alt="Dental Clip Logo" className="w-14 h-14 object-contain" />
+              <div className="flex flex-col space-y-1">
+                <div className="font-bold text-3xl leading-none" style={{ color: '#AA7747' }}>DENTAL CLIP</div>
+                <div className="font-bold text-3xl leading-none" style={{ color: '#323232ff' }}>DENTAL CLINIC</div>
               </div>
             </div>
             <p className="text-gray-800 text-sm mb-6 leading-relaxed">
@@ -39,25 +39,25 @@ const Footer = () => {
           <div className="order-2">
             <h3 className="text-gray-900 font-bold text-lg mb-6">Quick Links</h3>
             <ul className="space-y-3">
-              <li><a href="/" className="text-gray-800 text-sm hover:text-[var(--primary)] transition-colors">Home</a></li>
-              <li><a href="/about" className="text-gray-800 text-sm hover:text-[var(--primary)] transition-colors">About Us</a></li>
-              <li><a href="/treatment/braces" className="text-gray-800 text-sm hover:text-[var(--primary)] transition-colors">Treatments</a></li>
-              <li><a href="/team" className="text-gray-800 text-sm hover:text-[var(--primary)] transition-colors">Our Team</a></li>
-              <li><a href="/gallery" className="text-gray-800 text-sm hover:text-[var(--primary)] transition-colors">Gallery</a></li>
-              <li><a href="/contact" className="text-gray-800 text-sm hover:text-[var(--primary)] transition-colors">Contact</a></li>
+              <li><a href="/" className="text-gray-800 text-sm hover:text-[#AA7747] transition-colors">Home</a></li>
+              <li><a href="/about" className="text-gray-800 text-sm hover:text-[#AA7747] transition-colors">About Us</a></li>
+              <li><a href="/treatment/braces" className="text-gray-800 text-sm hover:text-[#AA7747] transition-colors">Treatments</a></li>
+              <li><a href="/team" className="text-gray-800 text-sm hover:text-[#AA7747] transition-colors">Our Team</a></li>
+              <li><a href="/gallery" className="text-gray-800 text-sm hover:text-[#AA7747] transition-colors">Gallery</a></li>
+              <li><a href="/contact" className="text-gray-800 text-sm hover:text-[#AA7747] transition-colors">Contact</a></li>
             </ul>
           </div>
 
           {/* Services */}
           <div className="order-3">
-            <h3 className="text-gray-900 font-bold text-lg mb-6">Our Treatments</h3>
+            <h3 className="text-gray-900 font-bold text-lg mb-6">Our Treatment Provided</h3>
             <ul className="space-y-3">
-              <li><a href="/treatment/braces" className="text-gray-800 text-sm hover:text-[var(--primary)] transition-colors">Braces & Orthodontics</a></li>
-              <li><a href="/treatment/dental-implants" className="text-gray-800 text-sm hover:text-[var(--primary)] transition-colors">Dental Implants</a></li>
-              <li><a href="/treatment/cosmetic-dentistry" className="text-gray-800 text-sm hover:text-[var(--primary)] transition-colors">Cosmetic Dentistry</a></li>
-              <li><a href="/treatment/root-canal-treatment" className="text-gray-800 text-sm hover:text-[var(--primary)] transition-colors">Root Canal</a></li>
-              <li><a href="/treatment/laser-dentistry" className="text-gray-800 text-sm hover:text-[var(--primary)] transition-colors">Laser Dentistry</a></li>
-              <li><a href="/treatment/child-dentistry" className="text-gray-800 text-sm hover:text-[var(--primary)] transition-colors">Child Dentistry</a></li>
+              <li><a href="/treatment/braces" className="text-gray-800 text-sm hover:text-[#AA7747] transition-colors">Braces & Orthodontics</a></li>
+              <li><a href="/treatment/dental-implants" className="text-gray-800 text-sm hover:text-[#AA7747] transition-colors">Dental Implants</a></li>
+              <li><a href="/treatment/cosmetic-dentistry" className="text-gray-800 text-sm hover:text-[#AA7747] transition-colors">Cosmetic Dentistry</a></li>
+              <li><a href="/treatment/root-canal-treatment" className="text-gray-800 text-sm hover:text-[#AA7747] transition-colors">Root Canal</a></li>
+              <li><a href="/treatment/laser-dentistry" className="text-gray-800 text-sm hover:text-[#AA7747] transition-colors">Laser Dentistry</a></li>
+              <li><a href="/treatment/child-dentistry" className="text-gray-800 text-sm hover:text-[#AA7747] transition-colors">Child Dentistry</a></li>
             </ul>
           </div>
 
@@ -66,7 +66,7 @@ const Footer = () => {
             <h3 className="text-gray-900 font-bold text-lg mb-6">Contact Info</h3>
             <div className="space-y-4">
               <div className="flex items-start gap-3">
-                <FaMapMarkerAlt className="text-[var(--primary)] text-lg mt-1 flex-shrink-0" />
+                <FaMapMarkerAlt className="text-[#AA7747] text-lg mt-1 flex-shrink-0" />
                 <div>
                   <p className="text-gray-800 text-sm leading-relaxed">
                     First Floor, Latha Rajagopalan Hospital,<br />
@@ -76,19 +76,20 @@ const Footer = () => {
                 </div>
               </div>
               <div className="flex items-center gap-3">
-                <FaPhoneAlt className="text-[var(--primary)] text-lg flex-shrink-0" />
-                <a href="tel:+919344310422" className="text-gray-800 text-sm hover:text-[var(--primary)] transition-colors">+91-9344310422</a>
+                <FaPhoneAlt className="text-[#AA7747] text-lg flex-shrink-0" />
+                <a href="tel:+919344310422" className="text-gray-800 text-sm hover:text-[#AA7747] transition-colors">+91-9344310422</a>
               </div>
               <div className="flex items-center gap-3">
-                <FaEnvelope className="text-[var(--primary)] text-lg flex-shrink-0" />
-                <a href="mailto:dentalclip.dentalclinic@gmail.com" className="text-gray-800 text-sm hover:text-[var(--primary)] transition-colors break-all">
+                <FaEnvelope className="text-[#AA7747] text-lg flex-shrink-0" />
+                <a href="mailto:dentalclip.dentalclinic@gmail.com" className="text-gray-800 text-sm hover:text-[#AA7747] transition-colors break-all">
                   dentalclip.dentalclinic@gmail.com
                 </a>
               </div>
               <div className="flex items-center gap-3">
-                <FaClock className="text-[var(--primary)] text-lg flex-shrink-0" />
+                <FaClock className="text-[#AA7747] text-lg flex-shrink-0" />
                 <div className="text-gray-800 text-sm">
                   <p>Mon – Sat: 9:00 AM – 8:30 PM</p>
+                  <p>Sun: 9:00 AM - 1:00 PM</p>
                 </div>
               </div>
             </div>
@@ -100,8 +101,8 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-800 text-sm">© 2026 Dental Clip. Dental Clinic. All rights reserved.</p>
             <div className="flex gap-6">
-              <a href="#" className="text-gray-800 text-sm hover:text-[var(--primary)] transition-colors">Privacy Policy</a>
-              <a href="#" className="text-gray-800 text-sm hover:text-[var(--primary)] transition-colors">Terms of Service</a>
+              <a href="#" className="text-gray-800 text-sm hover:text-[#AA7747] transition-colors">Privacy Policy</a>
+              <a href="#" className="text-gray-800 text-sm hover:text-[#AA7747] transition-colors">Terms of Service</a>
             </div>
             <motion.button
               whileHover={{ scale: 1.1 }}

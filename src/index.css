@@ -14,3 +14,17 @@ html, body {
   overflow-x: hidden;
   width: 100%;
 }
+
+@theme {
+  /* Reducing default heading font sizes by 6px total */
+  --text-xl: 14px;
+  --text-xl--line-height: 1.75rem;
+  --text-2xl: 18px;
+  --text-2xl--line-height: 2rem;
+  --text-3xl: 24px;
+  --text-3xl--line-height: 2.25rem;
+  --text-4xl: 30px;
+  --text-4xl--line-height: 2.5rem;
+  --text-5xl: 42px;
+  --text-5xl--line-height: 1;
+}

@@ -28,7 +28,7 @@ const BookAppointment = () => {
           animate={{ opacity: 1, y: 0 }}
           className="text-left md:text-center mb-12"
         >
-          <p className="text-[var(--primary)] uppercase tracking-wider text-sm font-semibold mb-4 text-sm font-bold tracking-widest uppercase text-center">Schedule Your Visit</p>
+          <p className="text-[#AA7747] uppercase tracking-wider text-sm font-semibold mb-4 text-sm font-bold tracking-widest uppercase text-center">Schedule Your Visit</p>
           <h1 className="text-4xl md:text-5xl font-bold text-[var(--secondary)] mb-6 text-left md:text-center">Book Your Appointment</h1>
           <p className="text-gray-700 max-w-2xl mx-auto text-lg">
             Book your appointment today for expert dental care tailored to your needs. Healthy, beautiful smiles start with a simple step, schedule now!
@@ -61,7 +61,7 @@ const BookAppointment = () => {
                       type="date"
                       className="w-full px-4 py-3 rounded-xl border-2 border-[var(--border)] focus:border-[var(--primary)] focus:outline-none transition-colors"
                     />
-                    <FaCalendar className="absolute right-4 top-1/2 -translate-y-1/2 text-[var(--primary)] pointer-events-none" />
+                    <FaCalendar className="absolute right-4 top-1/2 -translate-y-1/2 text-[#AA7747] pointer-events-none" />
                   </div>
                 </div>
                 <div>
@@ -133,7 +133,7 @@ const BookAppointment = () => {
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-8">
                 <div className="flex items-center gap-4">
                   <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center">
-                    <FaClock className="text-[var(--primary)] text-2xl" />
+                    <FaClock className="text-[#AA7747] text-2xl" />
                   </div>
                   <div className="text-white">
                     <p className="font-bold text-xl mb-1">Opening Hours</p>
@@ -148,14 +148,14 @@ const BookAppointment = () => {
                 whileHover={{ y: -5 }}
                 className="bg-white rounded-2xl p-6 shadow-xl text-center"
               >
-                <div className="text-4xl font-bold text-[var(--primary)] mb-2">8,000+</div>
+                <div className="text-4xl font-bold text-[#AA7747] mb-2">8,000+</div>
                 <p className="text-gray-700">Happy Patients</p>
               </motion.div>
               <motion.div
                 whileHover={{ y: -5 }}
                 className="bg-white rounded-2xl p-6 shadow-xl text-center"
               >
-                <div className="text-4xl font-bold text-[var(--primary)] mb-2">4.7</div>
+                <div className="text-4xl font-bold text-[#AA7747] mb-2">4.7</div>
                 <p className="text-gray-700">Google Rating</p>
               </motion.div>
             </div>
@@ -164,19 +164,19 @@ const BookAppointment = () => {
               <h3 className="text-2xl font-bold mb-4 text-[var(--secondary)]">Why Choose Us?</h3>
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start gap-3">
-                  <span className="text-2xl text-[var(--primary)]">✓</span>
+                  <span className="text-2xl text-[#AA7747]">✓</span>
                   <span>Expert team with 15+ years experience</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-2xl text-[var(--primary)]">✓</span>
+                  <span className="text-2xl text-[#AA7747]">✓</span>
                   <span>State-of-the-art equipment</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-2xl text-[var(--primary)]">✓</span>
+                  <span className="text-2xl text-[#AA7747]">✓</span>
                   <span>Painless and comfortable procedures</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-2xl text-[var(--primary)]">✓</span>
+                  <span className="text-2xl text-[#AA7747]">✓</span>
                   <span>Flexible appointment scheduling</span>
                 </li>
               </ul>

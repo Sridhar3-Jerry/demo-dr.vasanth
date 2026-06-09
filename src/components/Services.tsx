@@ -102,15 +102,15 @@ const Services = () => {
             >
               <div className="flex items-center justify-between gap-3">
                 <div className="flex items-center gap-3 flex-1">
-                  <div className="w-10 h-10 bg-gradient-to-br from-[var(--primary)] to-[var(--primary)] rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform p-2">
+                  <div className="w-10 h-10 bg-[#F9EADB] rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform p-2">
                     <img src={dctLogo} alt="Treatment icon" className="w-full h-full object-contain" />
                   </div>
-                  <h3 className="text-sm md:text-base font-semibold text-[var(--secondary)] group-hover:text-[var(--primary)] transition-colors leading-tight">
+                  <h3 className="text-sm md:text-base font-semibold text-[var(--secondary)] group-hover:text-[#AA7747] transition-colors leading-tight">
                     {service.title}
                   </h3>
                 </div>
                 <div className="w-8 h-8 rounded-full border-2 border-[var(--primary)] flex items-center justify-center flex-shrink-0 group-hover:bg-[var(--primary)] transition-all">
-                  <span className="text-[var(--primary)] group-hover:text-white text-lg font-bold transition-colors">+</span>
+                  <span className="text-[#AA7747] group-hover:text-white text-lg font-bold transition-colors">+</span>
                 </div>
               </div>
             </motion.div>

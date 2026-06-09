@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaTooth } from 'react-icons/fa';
+import dctLogo from '../assets/dct.png';
 import whychooseus from '../assets/whychooseus.jpg'
 
 const WhyChooseUs = () => {
@@ -37,8 +37,8 @@ const WhyChooseUs = () => {
                   transition={{ delay: index * 0.1 }}
                   className="flex items-center gap-4 bg-[var(--bg-light)] p-4 rounded-lg border-l-4 border-[var(--primary)]"
                 >
-                  <div className="w-10 h-10 bg-[#fef3e6] rounded-lg flex items-center justify-center flex-shrink-0">
-                    <FaTooth className="text-[var(--primary)] text-xl" />
+                  <div className="w-10 h-10 bg-[#F9EADB] rounded-lg flex items-center justify-center flex-shrink-0 p-2">
+                    <img src={dctLogo} alt="Feature icon" className="w-full h-full object-contain" />
                   </div>
                   <p className="text-[var(--tertiary)] font-medium">{feature}</p>
                 </motion.div>

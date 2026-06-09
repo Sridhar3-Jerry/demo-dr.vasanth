@@ -133,7 +133,7 @@ const Team = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <p className="text-[var(--primary)] uppercase tracking-wider text-sm font-semibold mb-4">Meet Our Dental Team</p>
+          <p className="text-[#AA7747] uppercase tracking-wider text-sm font-semibold mb-4">Meet Our Dental Team</p>
           <h2 className="text-4xl md:text-5xl font-bold text-[var(--secondary)] mb-4">Committed to Your Smile</h2>
           <p className="text-gray-800 max-w-2xl mx-auto">
             Our experienced dental team is here to make every visit positive and personalized.<br />
@@ -157,7 +157,7 @@ const Team = () => {
                   <img src={member.image} alt={member.name} style={{ objectPosition: member.imagePosition || 'center 20%' }} className="w-full h-full object-cover relative z-10" />
               </div>
               <div className="p-6 text-center">
-                <h3 className="text-[var(--primary)] font-bold text-lg mb-2">{member.name}</h3>
+                <h3 className="text-[#AA7747] font-bold text-2xl mb-2">{member.name}</h3>
                 <p className="text-gray-600 text-sm font-semibold mb-2">{member.degree}</p>
                 <p className="text-gray-800 text-base font-semibold">{member.role}</p>
               </div>

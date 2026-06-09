@@ -128,7 +128,7 @@ const TeamPage = () => {
               onClick={handleClose}
               className="absolute top-6 right-6 z-10 bg-white rounded-full p-3 shadow-lg hover:bg-gray-100 transition-colors"
             >
-              <FaTimes className="text-[var(--primary)] text-xl" />
+              <FaTimes className="text-[#AA7747] text-xl" />
             </button>
             <div className="grid md:grid-cols-2 gap-8 p-8">
               <div>
@@ -142,8 +142,8 @@ const TeamPage = () => {
                 </div>
               </div>
               <div>
-                <h2 className="text-4xl font-light text-[var(--primary)] mb-3">{team[selectedDoctor].name}</h2>
-                <p className="text-[var(--primary)] text-lg mb-2">{team[selectedDoctor].role}</p>
+                <h2 className="text-4xl font-light text-[#AA7747] mb-3">{team[selectedDoctor].name}</h2>
+                <p className="text-[#AA7747] text-lg mb-2">{team[selectedDoctor].role}</p>
                 {team[selectedDoctor].degree && (
                   <p className="text-gray-600 text-sm mb-6">{team[selectedDoctor].degree}</p>
                 )}
@@ -151,20 +151,20 @@ const TeamPage = () => {
                 
                 {team[selectedDoctor].education && (
                   <div className="mb-4">
-                    <h3 className="text-lg font-semibold text-[var(--primary)] mb-2">Education</h3>
+                    <h3 className="text-lg font-semibold text-[#AA7747] mb-2">Education</h3>
                     <p className="text-gray-800 text-sm leading-relaxed">{team[selectedDoctor].education}</p>
                   </div>
                 )}
                 
                 {team[selectedDoctor].experience && (
                   <div className="mb-6">
-                    <h3 className="text-lg font-semibold text-[var(--primary)] mb-2">Experience</h3>
+                    <h3 className="text-lg font-semibold text-[#AA7747] mb-2">Experience</h3>
                     <p className="text-gray-800 text-sm leading-relaxed">{team[selectedDoctor].experience}</p>
                   </div>
                 )}
                 
                 <div>
-                  <h3 className="text-xl font-semibold text-[var(--primary)] mb-4">Specialties</h3>
+                  <h3 className="text-xl font-semibold text-[#AA7747] mb-4">Specialties</h3>
                   <div className="space-y-2">
                     {team[selectedDoctor].specialties.map((specialty, i) => (
                       <div key={i} className="flex items-start gap-2">
@@ -195,7 +195,7 @@ const TeamPage = () => {
           animate={{ opacity: 1, y: 0 }}
           className="text-left md:text-center mb-16"
         >
-          <p className="text-[var(--primary)] uppercase tracking-wider text-sm font-semibold mb-4 text-sm font-bold tracking-widest uppercase text-center">Meet Our Team</p>
+          <p className="text-[#AA7747] uppercase tracking-wider text-sm font-semibold mb-4 text-sm font-bold tracking-widest uppercase text-center">Meet Our Team</p>
           <h1 className="text-4xl md:text-5xl font-bold text-[var(--secondary)] mb-6 text-left md:text-center">Our Expert Dental Professionals</h1>
           <p className="text-gray-800 max-w-2xl mx-auto text-lg">
             Our experienced dental team is here to make every visit positive and personalized with gentle hands and caring hearts.
@@ -222,10 +222,10 @@ const TeamPage = () => {
                 />
               </div>
               <div className="p-6 text-center">
-                <h3 className="text-[var(--primary)] font-bold text-xl mb-2">{member.name}</h3>
+                <h3 className="text-[#AA7747] font-bold text-3xl mb-2">{member.name}</h3>
                 <p className="text-gray-600 text-base font-semibold mb-2">{member.degree}</p>
                 <p className="text-gray-800 text-lg font-semibold mb-4">{member.role}</p>
-                <button className="mt-4 text-[var(--primary)] font-semibold hover:text-[var(--primary)] transition-colors">
+                <button className="mt-4 text-[#AA7747] font-semibold hover:text-[#AA7747] transition-colors">
                   View Details →
                 </button>
               </div>

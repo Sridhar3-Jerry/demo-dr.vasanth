@@ -25,7 +25,7 @@ const TreatmentDetail = () => {
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           onClick={() => navigate('/')}
-          className="flex items-center gap-2 text-[var(--primary)] hover:text-gray-800 mb-6 font-semibold"
+          className="flex items-center gap-2 text-[#AA7747] hover:text-gray-800 mb-6 font-semibold"
         >
           <FaArrowLeft /> Back to Home
         </motion.button>
@@ -35,7 +35,7 @@ const TreatmentDetail = () => {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-8"
         >
-          <p className="text-[var(--primary)] mb-2 text-lg text-center">Our Specialities</p>
+          <p className="text-[#AA7747] mb-2 text-lg text-center">Our Specialities</p>
           <h1 className="text-3xl md:text-4xl font-bold text-[var(--secondary)] mb-6 text-center">{treatment.title}</h1>
         </motion.div>
 
@@ -97,7 +97,7 @@ const TreatmentDetail = () => {
                       animate={{ rotate: [0, 10, -10, 0] }}
                       transition={{ duration: 2, repeat: Infinity, repeatDelay: 3 }}
                     >
-                      <FaTooth className="text-[var(--primary)]" />
+                      <FaTooth className="text-[#AA7747]" />
                     </motion.div>
                     About This Treatment
                   </h2>
@@ -116,7 +116,7 @@ const TreatmentDetail = () => {
                     href="/book-appointment" 
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="inline-flex items-center gap-2 bg-white text-[var(--primary)] px-6 py-3 rounded-xl font-semibold shadow-md hover:shadow-xl transition-shadow"
+                    className="inline-flex items-center gap-2 bg-white text-[#AA7747] px-6 py-3 rounded-xl font-semibold shadow-md hover:shadow-xl transition-shadow"
                   >
                     <FaTooth /> Book Appointment
                   </motion.a>
@@ -191,7 +191,7 @@ const TreatmentDetail = () => {
                   <motion.span 
                     animate={{ scale: [1, 1.2, 1] }}
                     transition={{ duration: 2, repeat: Infinity, repeatDelay: 2 }}
-                    className="text-[var(--primary)]"
+                    className="text-[#AA7747]"
                   >
                     ✓
                   </motion.span>
@@ -219,7 +219,7 @@ const TreatmentDetail = () => {
                   <motion.span 
                     animate={{ scale: [1, 1.2, 1] }}
                     transition={{ duration: 2, repeat: Infinity, repeatDelay: 2, delay: 0.5 }}
-                    className="text-[var(--primary)]"
+                    className="text-[#AA7747]"
                   >
                     ✓
                   </motion.span>
@@ -247,7 +247,7 @@ const TreatmentDetail = () => {
                     href="/book-appointment" 
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="inline-flex items-center gap-2 bg-white text-[var(--primary)] px-5 py-3 rounded-xl font-semibold shadow-md"
+                    className="inline-flex items-center gap-2 bg-white text-[#AA7747] px-5 py-3 rounded-xl font-semibold shadow-md"
                   >
                     <FaTooth /> Book Appointment
                   </motion.a>
@@ -361,7 +361,7 @@ const TreatmentDetail = () => {
                     href="/book-appointment" 
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="inline-flex items-center gap-2 bg-white text-[var(--primary)] px-6 py-3 rounded-xl font-semibold shadow-md"
+                    className="inline-flex items-center gap-2 bg-white text-[#AA7747] px-6 py-3 rounded-xl font-semibold shadow-md"
                   >
                     <FaTooth /> Book Appointment
                   </motion.a>
@@ -391,7 +391,7 @@ const TreatmentDetail = () => {
               <motion.span
                 animate={{ scale: [1, 1.2, 1] }}
                 transition={{ duration: 2, repeat: Infinity, repeatDelay: 3 }}
-                className="text-[var(--primary)] text-3xl"
+                className="text-[#AA7747] text-3xl"
               >
                 •
               </motion.span>
@@ -488,7 +488,7 @@ const TreatmentDetail = () => {
                     viewport={{ once: true }}
                     transition={{ delay: index * 0.1 + 0.2, type: "spring" }}
                   >
-                    <FaCheckCircle className="text-[var(--primary)] text-2xl mt-1 flex-shrink-0" />
+                    <FaCheckCircle className="text-[#AA7747] text-2xl mt-1 flex-shrink-0" />
                   </motion.div>
                   <p className="text-gray-700 leading-relaxed">{benefit}</p>
                 </motion.div>
@@ -548,7 +548,7 @@ const TreatmentDetail = () => {
               transition={{ delay: 0.4 }}
               whileHover={{ scale: 1.1, rotate: 2 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center gap-3 bg-white text-[var(--primary)] px-10 py-4 rounded-2xl font-bold text-lg shadow-xl hover:shadow-2xl transition-all"
+              className="inline-flex items-center gap-3 bg-white text-[#AA7747] px-10 py-4 rounded-2xl font-bold text-lg shadow-xl hover:shadow-2xl transition-all"
             >
               <motion.div
                 animate={{ rotate: [0, 10, -10, 0] }}

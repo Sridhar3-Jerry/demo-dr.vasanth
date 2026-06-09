@@ -128,15 +128,15 @@ const DentalInsights = () => {
               onClick={handleClose}
               className="absolute top-6 right-6 z-10 bg-white rounded-full p-3 shadow-lg hover:bg-gray-100 transition-colors"
             >
-              <FaTimes className="text-[var(--primary)] text-xl" />
+              <FaTimes className="text-[#AA7747] text-xl" />
             </button>
             <div className="p-8">
               <div>
-                <h2 className="text-3xl font-bold text-[var(--primary)] mb-6">{insights[selectedInsight].title}</h2>
+                <h2 className="text-3xl font-bold text-[#AA7747] mb-6">{insights[selectedInsight].title}</h2>
                 <ul className="space-y-3 mb-6">
                   {insights[selectedInsight].content.map((point, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <span className="text-[var(--primary)] text-xl mt-1">•</span>
+                      <span className="text-[#AA7747] text-xl mt-1">•</span>
                       <span className="text-gray-800 text-lg">{point}</span>
                     </li>
                   ))}
@@ -170,7 +170,7 @@ const DentalInsights = () => {
           animate={{ opacity: 1, y: 0 }}
           className="text-left md:text-center mb-16"
         >
-          <p className="text-[var(--primary)] uppercase tracking-wider text-sm font-semibold mb-4 text-sm font-bold tracking-widest uppercase text-center">Dental Insights</p>
+          <p className="text-[#AA7747] uppercase tracking-wider text-sm font-semibold mb-4 text-sm font-bold tracking-widest uppercase text-center">Dental Insights</p>
           <h1 className="text-4xl md:text-5xl font-bold text-[var(--secondary)] mb-6 text-left md:text-center">Expert Tips for a Healthier Smile</h1>
           <p className="text-gray-800 max-w-2xl mx-auto text-lg">
             Stay informed with the latest dental care tips, treatment insights, and oral health advice from our experts.
@@ -197,13 +197,13 @@ const DentalInsights = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
               <div className="p-8">
-                <h3 className="text-[var(--primary)] font-bold text-xl mb-4 leading-tight group-hover:text-gray-800 transition-colors">
+                <h3 className="text-[#AA7747] font-bold text-xl mb-4 leading-tight group-hover:text-gray-800 transition-colors">
                   {insight.title}
                 </h3>
                 <p className="text-gray-800 leading-relaxed mb-5">
                   {insight.excerpt}
                 </p>
-                <button className="text-[var(--primary)] font-bold hover:text-[var(--primary)] transition-colors flex items-center gap-2">
+                <button className="text-[#AA7747] font-bold hover:text-[#AA7747] transition-colors flex items-center gap-2">
                   Read More <span className="group-hover:translate-x-2 transition-transform">→</span>
                 </button>
               </div>

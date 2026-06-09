@@ -49,12 +49,12 @@ const Braces = () => {
               transition={{ delay: index * 0.1 }}
               className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all"
             >
-              <h3 className="text-2xl font-bold text-[var(--primary)] mb-3">{type.title}</h3>
+              <h3 className="text-2xl font-bold text-[#AA7747] mb-3">{type.title}</h3>
               <p className="text-gray-600 mb-6">{type.description}</p>
               <ul className="space-y-3">
                 {type.features.map((feature, idx) => (
                   <li key={idx} className="flex items-center gap-3">
-                    <FaCheckCircle className="text-[var(--primary)] flex-shrink-0" />
+                    <FaCheckCircle className="text-[#AA7747] flex-shrink-0" />
                     <span className="text-gray-700">{feature}</span>
                   </li>
                 ))}
@@ -106,19 +106,19 @@ const Braces = () => {
               </h3>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
-                  <FaCheckCircle className="text-[var(--primary)] mt-1 flex-shrink-0" />
+                  <FaCheckCircle className="text-[#AA7747] mt-1 flex-shrink-0" />
                   <span className="text-gray-700">Correct misaligned teeth and improve bite</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <FaCheckCircle className="text-[var(--primary)] mt-1 flex-shrink-0" />
+                  <FaCheckCircle className="text-[#AA7747] mt-1 flex-shrink-0" />
                   <span className="text-gray-700">Enhance facial aesthetics and confidence</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <FaCheckCircle className="text-[var(--primary)] mt-1 flex-shrink-0" />
+                  <FaCheckCircle className="text-[#AA7747] mt-1 flex-shrink-0" />
                   <span className="text-gray-700">Prevent dental issues and improve oral health</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <FaCheckCircle className="text-[var(--primary)] mt-1 flex-shrink-0" />
+                  <FaCheckCircle className="text-[#AA7747] mt-1 flex-shrink-0" />
                   <span className="text-gray-700">Suitable for children, teens, and adults</span>
                 </li>
               </ul>

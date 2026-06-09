@@ -82,7 +82,7 @@ const Testimonials = () => {
           viewport={{ once: true }}
           className="text-left md:text-center mb-16"
         >
-          <p className="text-[var(--primary)] uppercase tracking-wider text-sm font-semibold mb-4 text-center">Testimonials</p>
+          <p className="text-[#AA7747] uppercase tracking-wider text-sm font-semibold mb-4 text-center">Testimonials</p>
           <h2 className="text-4xl md:text-5xl font-bold text-[var(--secondary)] mb-4 text-left md:text-center">Our Happy Customers</h2>
           <p className="text-gray-800 max-w-2xl mx-auto">
             Join thousands of happy patients who trust us for gentle, expert care and beautiful smiles. Your perfect dental experience starts here!
@@ -115,7 +115,7 @@ const Testimonials = () => {
                     </div>
                     <div className="flex gap-1 mb-4 mt-4">
                       {[...Array(5)].map((_, i) => (
-                        <FaStar key={i} className="text-[var(--primary)] text-lg" />
+                        <FaStar key={i} className="text-[#AA7747] text-lg" />
                       ))}
                     </div>
                     <motion.div
@@ -128,7 +128,7 @@ const Testimonials = () => {
                       {testimonial.text.length > testimonial.shortText.length && (
                         <button
                           onClick={() => toggleExpanded(actualIndex)}
-                          className="text-[var(--primary)] text-sm font-semibold mt-2 hover:underline transition-colors"
+                          className="text-[#AA7747] text-sm font-semibold mt-2 hover:underline transition-colors"
                         >
                           {isExpanded ? 'Read Less' : 'Read More'}
                         </button>
@@ -151,13 +151,13 @@ const Testimonials = () => {
 
           <button
             onClick={handlePrev}
-            className="absolute left-0 top-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-xl flex items-center justify-center text-[var(--primary)] hover:bg-[var(--primary)] hover:text-white transition-all z-10"
+            className="absolute left-0 top-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-xl flex items-center justify-center text-[#AA7747] hover:bg-[var(--primary)] hover:text-white transition-all z-10"
           >
             <FaChevronLeft className="text-xl" />
           </button>
           <button
             onClick={handleNext}
-            className="absolute right-0 top-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-xl flex items-center justify-center text-[var(--primary)] hover:bg-[var(--primary)] hover:text-white transition-all z-10"
+            className="absolute right-0 top-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-xl flex items-center justify-center text-[#AA7747] hover:bg-[var(--primary)] hover:text-white transition-all z-10"
           >
             <FaChevronRight className="text-xl" />
           </button>

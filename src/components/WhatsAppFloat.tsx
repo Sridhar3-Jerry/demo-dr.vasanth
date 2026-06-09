@@ -57,7 +57,7 @@ const WhatsAppFloat = () => {
               onClick={(e) => e.stopPropagation()}
             >
               <div className="flex justify-between items-center mb-6">
-                <h3 className="text-xl font-bold" style={{ color: colors.primary }}>
+                <h3 className="text-xl font-bold" style={{ color: "#AA7747" }}>
                   Scan QR Code
                 </h3>
                 <button
