@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaTooth, FaHandsHelping, FaAward, FaUsers, FaMedal } from 'react-icons/fa';
+import { FaHandsHelping, FaUsers, FaMedal } from 'react-icons/fa';
 import treatmentRoom from '../assets/treatment-room.jpeg';
 import dctLogo from '../assets/dct.png';
 
