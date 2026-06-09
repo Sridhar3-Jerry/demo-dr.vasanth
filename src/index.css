@@ -9,3 +9,8 @@
   --bg-light: #fafafa;
   --bg-light-alt: #fef3e6;
 }
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}

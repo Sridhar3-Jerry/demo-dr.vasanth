@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FaTooth, FaChild, FaTeethOpen, FaSyringe, FaCrown, FaSmile, FaXRay, FaUserMd, FaStethoscope, FaHome, FaInfoCircle, FaUsers, FaImages, FaPhoneAlt, FaBars, FaTimes } from 'react-icons/fa';
 import { colors } from '../colors';
+import dctLogo from '../assets/dct.png';
 
 const Header = () => {
   const [showServicesDropdown, setShowServicesDropdown] = useState(false);
@@ -47,18 +48,18 @@ const Header = () => {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
-      style={{ backgroundColor: colors.white }}
+      style={{ backgroundColor: '#F9EADB' }}
       className="px-4 md:px-6 py-2 md:py-2 fixed top-0 left-0 right-0 z-50 shadow-md"
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <motion.div 
           whileHover={{ scale: 1.05 }}
-          className="flex items-center gap-2"
+          className="flex items-center"
         >
-          <img src="/dental clip logo.png" alt="Dental Clip Logo" className="w-16 h-16 md:w-24 md:h-24 object-contain" />
+          <img src={dctLogo} alt="Dental Clip Logo" className="w-12 h-12 md:w-20 md:h-20 object-contain" />
           <div className="hidden md:block">
-            <div className="font-bold text-xl" style={{ color: colors.primary }}>DENTAL CLIP</div>
-            <div className="text-xs tracking-wider font-medium" style={{ color: colors.secondary }}>DENTAL CLINIC</div>
+            <div className="font-bold text-xl" style={{ color: '#cfa781' }}>DENTAL CLIP</div>
+            <div className="font-bold text-xl" style={{ color: '#323232ff' }}>DENTAL CLINIC</div>
           </div>
         </motion.div>
         
@@ -71,10 +72,9 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                style={{ color: isActive ? colors.primary : colors.secondary }}
+                style={{ color: isActive ? '#965a22' : colors.secondary }}
                 className="flex items-center gap-2 transition-colors hover:opacity-80"
               >
-                <Icon className="text-md" />
                 {item.name}
               </Link>
             );
@@ -90,7 +90,6 @@ const Header = () => {
               style={{ color: colors.secondary }}
               className="cursor-pointer flex items-center gap-2 hover:opacity-80 transition-colors"
             >
-              <FaTooth className="text-md" />
               Treatments
             </a>
             
@@ -129,10 +128,9 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                style={{ color: isActive ? colors.primary : colors.secondary }}
+                style={{ color: isActive ? '#965a22' : colors.secondary }}
                 className="flex items-center gap-2 transition-colors hover:opacity-80"
               >
-                <Icon className="text-md" />
                 {item.name}
               </Link>
             );
@@ -154,7 +152,7 @@ const Header = () => {
         {/* Mobile Hamburger */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          style={{ color: colors.primary }}
+          style={{ color: colors.secondary }}
           className="md:hidden text-2xl"
         >
           {mobileMenuOpen ? <FaTimes /> : <FaBars />}
@@ -169,25 +167,25 @@ const Header = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            style={{ backgroundColor: colors.white }}
+            style={{ backgroundColor: '#F9EADB' }}
             className="md:hidden rounded-2xl mt-4 overflow-hidden shadow-xl max-h-[80vh] overflow-y-auto"
           >
             <nav className="flex flex-col">
               {mobileMenuItems.map((item) => {
                 const Icon = item.icon;
+                const isActive = location.pathname === item.href;
                 
                 if (item.isDropdown) {
                   return (
                     <div key={item.name} className="border-b" style={{ borderBottomColor: colors.border }}>
                       <button
                         onClick={() => setShowServicesDropdown(!showServicesDropdown)}
-                        style={{ color: colors.primary }}
+                        style={{ color: colors.secondary }}
                         className="w-full flex items-center justify-between gap-3 px-6 py-4 transition-colors"
                         onMouseEnter={(e) => e.currentTarget.style.backgroundColor = colors.background.light}
                         onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
                       >
                         <div className="flex items-center gap-3">
-                          <Icon />
                           {item.name}
                         </div>
                         <span className={`transition-transform ${showServicesDropdown ? 'rotate-180' : ''}`}>▼</span>
@@ -205,7 +203,6 @@ const Header = () => {
                                 onMouseEnter={(e) => e.currentTarget.style.backgroundColor = colors.white}
                                 onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
                               >
-                                <ServiceIcon style={{ color: colors.primary }} />
                                 <span>{service.name}</span>
                               </Link>
                             );
@@ -221,12 +218,11 @@ const Header = () => {
                     key={item.name}
                     href={item.href}
                     onClick={() => setMobileMenuOpen(false)}
-                    style={{ color: colors.primary, borderBottomColor: colors.border }}
+                    style={{ color: isActive ? '#965a22' : colors.secondary, borderBottomColor: colors.border }}
                     className="flex items-center gap-3 px-6 py-4 transition-colors border-b"
                     onMouseEnter={(e) => e.currentTarget.style.backgroundColor = colors.background.light}
                     onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
                   >
-                    <Icon />
                     {item.name}
                   </a>
                 );

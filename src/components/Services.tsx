@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
+import dctLogo from '../assets/dct.png';
 
 const Services = () => {
   const navigate = useNavigate();
@@ -101,8 +102,8 @@ const Services = () => {
             >
               <div className="flex items-center justify-between gap-3">
                 <div className="flex items-center gap-3 flex-1">
-                  <div className="w-10 h-10 bg-gradient-to-br from-[var(--primary)] to-[var(--primary)] rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
-                    <span className="text-xl">🦷</span>
+                  <div className="w-10 h-10 bg-gradient-to-br from-[var(--primary)] to-[var(--primary)] rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform p-2">
+                    <img src={dctLogo} alt="Treatment icon" className="w-full h-full object-contain" />
                   </div>
                   <h3 className="text-sm md:text-base font-semibold text-[var(--secondary)] group-hover:text-[var(--primary)] transition-colors leading-tight">
                     {service.title}
@@ -121,3 +122,4 @@ const Services = () => {
 };
 
 export default Services;
+// Force HMR rebuild
