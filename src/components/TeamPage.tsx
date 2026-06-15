@@ -3,10 +3,11 @@ import { useState } from 'react';
 import { FaTimes } from 'react-icons/fa';
 import drVasanthan from '../assets/dr.vasanthan.jpeg';
 import drRajkumar from '../assets/dr.rajkumar.jpeg';
+import drKumarNew from '../assets/dr kumar.jpeg';
 import drSabitha from '../assets/dr.sabita.jpeg';
 import doctor3 from '../assets/doctor-3.jpg';
 import drPeterJohn from '../assets/dr.peter john.jpeg';
-import doctor5 from '../assets/doctor-5.jpg';
+import drSenthilNew from '../assets/dr senthil.jpeg';
 
 const TeamPage = () => {
   const [selectedDoctor, setSelectedDoctor] = useState<number | null>(null);
@@ -70,10 +71,10 @@ const TeamPage = () => {
     },
     {
       name: 'Dr. Senthil',
-      role: 'Oral and maxillofacial surgeon- Implant Specialist',
+      role: 'Implantologist & Oral Maxillo Facial Surgeon',
       degree: 'MDS',
       yearsExperience: '12+ Years',
-      image: doctor5,
+      image: drSenthilNew,
       bio: 'Dr. Senthil is an expert in oral and maxillofacial surgery with specialized training in dental implants, combining surgical precision with implant expertise.',
       education: 'MDS in Oral and Maxillofacial Surgery with advanced implant training.',
       experience: 'Over 12 years of experience in oral surgery, dental implants, and complex surgical procedures.',
@@ -90,6 +91,18 @@ const TeamPage = () => {
       education: 'BDS, MDS (Perio), and MFDS RCPS(Glasgow) credentials with a focus on advanced periodontal care.',
       experience: '8+ years of specialized experience in periodontal treatments, gum surgery, and maintaining long-term oral health.',
       specialties: ['Periodontal Treatment', 'Gum Surgery', 'Oral Health Maintenance', 'Scaling and Root Planing']
+    },
+    {
+      name: 'Dr. Kumar',
+      role: 'Oral Medicine & Radiologist',
+      degree: 'MDS',
+      yearsExperience: '5+ Years',
+      image: drKumarNew,
+      imagePosition: 'center top',
+      bio: 'Dr. Kumar specializes in oral medicine and radiology, providing expert diagnosis and comprehensive care for various oral conditions.',
+      education: 'MDS in Oral Medicine and Radiology.',
+      experience: 'Specialized experience in oral medicine, radiology, and advanced diagnostic procedures.',
+      specialties: ['Oral Medicine', 'Dental Radiology', 'Diagnosis and Treatment Planning']
     }
   ];
 

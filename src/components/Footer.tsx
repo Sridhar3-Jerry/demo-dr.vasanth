@@ -12,8 +12,8 @@ const Footer = () => {
             <div className="flex items-center  mb-6">
               <img src={dctLogo} alt="Dental Clip Logo" className="w-14 h-14 object-contain" />
               <div className="flex flex-col space-y-1">
-                <div className="font-bold text-3xl leading-none" style={{ color: '#AA7747' }}>DENTAL CLIP</div>
-                <div className="font-bold text-3xl leading-none" style={{ color: '#323232ff' }}>DENTAL CLINIC</div>
+                <div className="font-bold text-[1.7rem] leading-none" style={{ color: '#AA7747' }}>DENTAL CLIP</div>
+                <div className="font-bold text-[1.4rem] leading-none" style={{ color: '#34090b' }}>DENTAL CLINIC</div>
               </div>
             </div>
             <p className="text-gray-800 text-sm mb-6 leading-relaxed">
@@ -50,12 +50,13 @@ const Footer = () => {
 
           {/* Services */}
           <div className="order-3">
-            <h3 className="text-gray-900 font-bold text-lg mb-6">Our Treatment Provided</h3>
+            <h3 className="text-gray-900 font-bold text-lg mb-6">Treatments</h3>
             <ul className="space-y-3">
               <li><a href="/treatment/braces" className="text-gray-800 text-sm hover:text-[#AA7747] transition-colors">Braces & Orthodontics</a></li>
               <li><a href="/treatment/dental-implants" className="text-gray-800 text-sm hover:text-[#AA7747] transition-colors">Dental Implants</a></li>
               <li><a href="/treatment/cosmetic-dentistry" className="text-gray-800 text-sm hover:text-[#AA7747] transition-colors">Cosmetic Dentistry</a></li>
-              <li><a href="/treatment/root-canal-treatment" className="text-gray-800 text-sm hover:text-[#AA7747] transition-colors">Root Canal</a></li>
+              <li><a href="/treatment/invisalign" className="text-gray-800 text-sm hover:text-[#AA7747] transition-colors">Invisalign</a></li>
+              <li><a href="/treatment/root-canal-treatment" className="text-gray-800 text-sm hover:text-[#AA7747] transition-colors">Root Canal Treatment</a></li>
               <li><a href="/treatment/laser-dentistry" className="text-gray-800 text-sm hover:text-[#AA7747] transition-colors">Laser Dentistry</a></li>
               <li><a href="/treatment/child-dentistry" className="text-gray-800 text-sm hover:text-[#AA7747] transition-colors">Child Dentistry</a></li>
             </ul>
@@ -63,7 +64,7 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div className="order-4">
-            <h3 className="text-gray-900 font-bold text-lg mb-6">Contact Info</h3>
+            <h3 className="text-gray-900 font-bold text-lg mb-6">Contact</h3>
             <div className="space-y-4">
               <div className="flex items-start gap-3">
                 <FaMapMarkerAlt className="text-[#AA7747] text-lg mt-1 flex-shrink-0" />
@@ -88,8 +89,8 @@ const Footer = () => {
               <div className="flex items-center gap-3">
                 <FaClock className="text-[#AA7747] text-lg flex-shrink-0" />
                 <div className="text-gray-800 text-sm">
-                  <p>Mon – Sat: 9:00 AM – 8:30 PM</p>
-                  <p>Sun: 9:00 AM - 1:00 PM</p>
+                  <p>Monday to Saturday: 09:00 am - 08:30 pm</p>
+                  <p>Sunday : 09:00 am - 01:00 pm</p>
                 </div>
               </div>
             </div>

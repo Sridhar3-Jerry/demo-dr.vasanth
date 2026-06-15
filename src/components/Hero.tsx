@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
-import { FaClock, FaPhoneAlt, FaStar } from 'react-icons/fa';
+import { FaRegClock, FaHeadset, FaStar } from 'react-icons/fa';
 import drVasanthan from '../assets/dr.vasanthan.jpeg';
 import drSabitha from '../assets/dr.sabita.jpeg';
 import doctor3 from '../assets/doctor-3.jpg';
@@ -104,7 +104,7 @@ const Hero = () => {
             transition={{ delay: 0.5 }}
             className="text-gray-800 mb-8 leading-relaxed"
           >
-            At our <span className="font-semibold text-[#AA7747]">Dental Clip,</span> we <span className="font-semibold">prioritize hygiene</span> for every patient and offer quality dental care with all facilities at a highly <span className="font-semibold">affordable cost.</span>
+            At our <span className="font-semibold text-[#AA7747]">Dental Clip-Dental Clinic,</span> we <span className="font-semibold">prioritize hygiene</span> for every patient and offer quality dental care with all facilities at a highly <span className="font-semibold">affordable cost.</span>
           </motion.p>
           <motion.p 
             initial={{ opacity: 0 }}
@@ -190,12 +190,13 @@ const Hero = () => {
               whileHover={{ scale: 1.05, y: -5 }}
               className="bg-white rounded-3xl shadow-2xl p-6 flex items-center gap-4 border border-[var(--border)]"
             >
-              <div className="w-14 h-14 bg-gradient-to-br from-[var(--primary)] to-[var(--primary)] rounded-2xl flex items-center justify-center text-white flex-shrink-0">
-                <FaClock className="text-2xl" />
+              <div className="w-10 h-10 bg-gradient-to-br from-[var(--primary)] to-[var(--primary)] rounded-xl flex items-center justify-center text-white flex-shrink-0">
+                <FaRegClock className="text-4xl" />
               </div>
               <div>
                 <p className="font-bold text-[#AA7747] mb-1">Opening Hours</p>
-                <p className="text-sm text-gray-800">Mon to Sat 09:00 AM - 08:30 PM  ( Sunday 09:00 Am to 01:00 Pm )</p>
+                <p className="text-sm text-gray-800">Monday to Saturday : 09:00 am - 08:30 pm</p>
+                <p className="text-sm text-gray-800">Sunday : 09:00 am to 01:00 pm </p>
               </div>
             </motion.div>
 
@@ -206,8 +207,8 @@ const Hero = () => {
               whileHover={{ scale: 1.05, y: -5 }}
               className="bg-white rounded-3xl shadow-2xl p-6 flex items-center gap-4 border border-[var(--border)]"
             >
-              <div className="w-14 h-14 bg-gradient-to-br from-[var(--primary)] to-[#9a7a5c] rounded-2xl flex items-center justify-center text-white flex-shrink-0">
-                <FaPhoneAlt className="text-2xl" />
+              <div className="w-10 h-10 bg-gradient-to-br from-[var(--primary)] to-[#9a7a5c] rounded-xl flex items-center justify-center text-white flex-shrink-0">
+                <FaHeadset className="text-4xl" />
               </div>
               <div>
                 <p className="font-bold text-[#AA7747] mb-1">Need Dental Services?</p>

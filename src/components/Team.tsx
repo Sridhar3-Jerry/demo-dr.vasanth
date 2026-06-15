@@ -1,11 +1,12 @@
 import { motion, useMotionValue, useTransform, animate, useInView } from 'framer-motion';
 import { useEffect, useState, useRef } from 'react';
 import drVasanthan from '../assets/dr.vasanthan.jpeg';
+import drKumarNew from '../assets/dr kumar.jpeg';
 import drRajkumar from '../assets/dr.rajkumar.jpeg';
 import drSabitha from '../assets/dr.sabita.jpeg';
 import doctor3 from '../assets/doctor-3.jpg';
 import drPeterJohn from '../assets/dr.peter john.jpeg';
-import doctor5 from '../assets/doctor-5.jpg';
+import drSenthilNew from '../assets/dr senthil.jpeg';
 
 const Counter = ({ value, suffix = '' }: { value: number; suffix?: string }) => {
   const count = useMotionValue(0);
@@ -95,12 +96,12 @@ const Team = () => {
     },
     {
       name: 'Dr. Senthil',
-      role: 'Oral and maxillofacial surgeon- Implant Specialist',
+      role: 'Implantologist & Oral Maxillo Facial Surgeon',
       degree: 'MDS',
       yearsExperience: '12+ Years',
-      image: doctor5,
-      bio: 'Dr. Adhavan is an expert in root canal treatments and aesthetic dentistry, combining technical precision with artistic vision for beautiful smiles.',
-      specialties: ['Root Canal Treatment', 'Smile Makeovers', 'Aesthetic Dentistry']
+      image: drSenthilNew,
+      bio: 'Dr. Senthil is an expert in oral and maxillofacial surgery with specialized training in dental implants, combining surgical precision with implant expertise.',
+      specialties: ['Oral Surgery', 'Dental Implants', 'Wisdom Tooth Extraction', 'Jaw Surgery']
     },
     {
       name: 'Dr. Raj Kumar',
@@ -111,6 +112,16 @@ const Team = () => {
       imagePosition: 'center top',
       bio: 'Dr. Raj Kumar specializes in periodontal treatments and gum health, providing comprehensive care for gum diseases and maintaining oral health.',
       specialties: ['Periodontal Treatment', 'Gum Surgery', 'Oral Health Maintenance']
+    },
+    {
+      name: 'Dr. Kumar',
+      role: 'Oral Medicine & Radiologist',
+      degree: 'MDS',
+      yearsExperience: '5+ Years',
+      image: drKumarNew,
+      imagePosition: 'center top',
+      bio: 'Dr. Kumar specializes in oral medicine and radiology, providing expert diagnosis and comprehensive care for various oral conditions.',
+      specialties: ['Oral Medicine', 'Dental Radiology', 'Diagnosis and Treatment Planning']
     },
    
   ];

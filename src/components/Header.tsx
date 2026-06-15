@@ -58,8 +58,8 @@ const Header = () => {
         >
           <img src={dctLogo} alt="Dental Clip Logo" className="w-12 h-12 md:w-20 md:h-20 object-contain" />
           <div className="hidden md:flex flex-col space-y-1">
-            <div className="font-bold text-3xl leading-none" style={{ color: '#AA7747' }}>DENTAL CLIP</div>
-            <div className="font-bold text-3xl leading-none" style={{ color: '#323232ff' }}>DENTAL CLINIC</div>
+            <div className="font-bold text-[1.7rem] leading-none" style={{ color: '#AA7747' }}>DENTAL CLIP</div>
+            <div className="font-bold text-[1.4rem] leading-none" style={{ color: '#34090b' }}>DENTAL CLINIC</div>
           </div>
         </motion.div>
         

@@ -11,7 +11,7 @@ const Contact = () => {
           animate={{ opacity: 1, y: 0 }}
           className="mb-12"
         >
-          <p className="text-[#AA7747] uppercase tracking-wider text-sm font-semibold mb-4 text-center">Get In Touch With Paramathi Velur's Preferred Dental Experts</p>
+         
           <h1 className="text-4xl md:text-5xl font-bold text-[var(--secondary)] mb-6 text-left md:text-center">
             We Are Always Ready to Help<br />You and Answer Your Questions
           </h1>
@@ -31,8 +31,10 @@ const Contact = () => {
                 <FaClock className="text-[#AA7747] text-2xl" />
                 <h3 className="text-lg font-bold text-[var(--secondary)]">We're Open</h3>
               </div>
-              <p className="text-gray-700 text-sm ml-10">Monday – Friday</p>
-              <p className="text-gray-700 font-semibold text-sm ml-10">09.00 Am – 8.30 Pm</p>
+              <p className="text-gray-700 text-sm ml-10">Monday – Saturday: 09.00 am – 8.30 pm</p>
+              
+              <p className="text-gray-700 text-sm ml-10">Sunday: 09.00 am – 01.00 mm</p>
+              
             </div>
 
             <div className="bg-[var(--bg-light)] rounded-2xl p-6 shadow-lg border-2 border-[var(--border)]">
@@ -46,7 +48,7 @@ const Contact = () => {
             <div className="bg-[var(--bg-light)] rounded-2xl p-6 shadow-lg border-2 border-[var(--border)]">
               <div className="flex items-center gap-4 mb-2">
                 <FaMapMarkerAlt className="text-[#AA7747] text-2xl" />
-                <h3 className="text-lg font-bold text-[var(--secondary)]">Clinic Location</h3>
+                <h3 className="text-lg font-bold text-[var(--secondary)]">Location</h3>
               </div>
               <p className="text-gray-700 leading-relaxed text-sm ml-10">
                 First Floor, Latha Rajagopalan Hospital, Old Bypass Road, Paramathi Velur, Namakkal – 638182,<br />

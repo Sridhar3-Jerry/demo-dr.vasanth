@@ -84,8 +84,7 @@ const Services = () => {
         >
           <h2 className="text-4xl md:text-5xl font-bold text-[var(--tertiary)] mb-4">Our Treatments</h2>
           <p className="text-gray-800 max-w-3xl mx-auto">
-            From general dentistry wellness, to perfecting cosmetic imperfections, to restoring implants and fillings, to those painful oral emergencies—we have you covered.
-          </p>
+            Comprehensive dental treatments meet elite expertise—crafted for your ultimate comfort.</p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

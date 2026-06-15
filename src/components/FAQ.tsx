@@ -38,7 +38,7 @@ const FAQ = () => {
           className="text-left md:text-center mb-16"
         >
           <div className="flex items-center justify-center gap-3 mb-4">
-            <FaQuestionCircle className="text-[#AA7747] text-3xl" />
+            {/* <FaQuestionCircle className="text-[#AA7747] text-3xl" /> */}
             <p className="text-[#AA7747] uppercase tracking-wider text-sm font-semibold text-center">Everything You Need To Know</p>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-[var(--tertiary)] mb-6 text-left md:text-center">
