@@ -33,7 +33,7 @@ const TeamPage = () => {
     {
       name: 'Dr. Sabitha Vasanthan',
       role: 'Oral and Maxillofacial Surgeon',
-      degree: 'MDS., Ph.D., FDSRCPS (UK)',
+      degree: 'MDS., Ph D., MFDS RCPS (Glasg)UK., FDS RCPS (Glasg)UK., Fellow in Forensic Odontology.,',
       yearsExperience: '20+ Years',
       image: drSabitha,
       bio: 'Dr. Sabitha is a distinguished dental professional with over two decades of expertise in Oral and Maxillofacial Surgery, and Cosmetic Dentistry.',

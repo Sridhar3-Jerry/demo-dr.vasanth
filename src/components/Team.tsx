@@ -61,7 +61,7 @@ const Team = () => {
     {
       name: 'Dr. Sabitha Vasanthan',
       role: 'Oral and Maxillofacial Surgeon',
-      degree: 'MDS., Ph.D., FDSRCPS (UK)',
+      degree: 'MDS., Ph D., MFDS RCPS (Glasg)UK., FDS RCPS (Glasg)UK., Fellow in Forensic Odontology.,',
       yearsExperience: '20+ Years',
       image: drSabitha,
       imagePosition: 'center top',

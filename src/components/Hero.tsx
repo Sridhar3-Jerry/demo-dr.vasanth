@@ -9,7 +9,7 @@ import drPeterJohn from '../assets/dr.peter john.jpeg';
 const Hero = () => {
   const [doctors, setDoctors] = useState([
     { name: 'Dr. Vasanthan', degree: 'MDS, PhD, DHA, QCHP (Ortho)', id: 1, image: drVasanthan },
-    { name: 'Dr. Sabitha Vasanthan', degree: 'MDS., Ph.D., FDSRCPS (UK)', id: 2, image: drSabitha },
+    { name: 'Dr. Sabitha Vasanthan', degree: 'MDS., Ph D., MFDS RCPS (Glasg)UK., FDS RCPS (Glasg)UK., Fellow in Forensic Odontology.,', id: 2, image: drSabitha },
     { name: 'Dr. CHITHRA', degree: 'MDS', id: 3, image: doctor3 },
     { name: 'Dr. John Peter', degree: 'MDS', id: 4, image: drPeterJohn }
   ]);
