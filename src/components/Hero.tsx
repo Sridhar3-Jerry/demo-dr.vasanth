@@ -57,14 +57,7 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="order-2 md:order-1"
         >
-          <motion.p 
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2 }}
-            className="text-[#AA7747] uppercase tracking-wider text-sm font-semibold mb-4 text-lg font-semibold text-center md:text-left"
-          >
-            Dental Clip
-          </motion.p>
+          
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
