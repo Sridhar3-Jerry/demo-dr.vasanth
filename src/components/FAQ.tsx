@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import { FaChevronDown, FaQuestionCircle } from 'react-icons/fa';
+import { FaChevronDown } from 'react-icons/fa';
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
