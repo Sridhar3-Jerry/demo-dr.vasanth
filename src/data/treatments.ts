@@ -15,8 +15,7 @@ import Endodontics1 from '../assets/Endodontics-1.png';
 import Endodontics2 from '../assets/Endodontics-2.png';
 import DentalImplants1 from '../assets/Dental Implants-1.png';
 import DentalImplants2 from '../assets/Dental Implants-2.png';
-import OralSurgery1 from '../assets/Oral and maxillo facial surgery-1.png';
-import OralSurgery2 from '../assets/Oral and maxillo facial surgery-2.png';
+
 import Periodontics1 from '../assets/Periodontics-1.png';
 import Periodontics2 from '../assets/Periodontics-2.png';
 import PediatricDentistry1 from '../assets/Pediatric Dentistry-1.png';
