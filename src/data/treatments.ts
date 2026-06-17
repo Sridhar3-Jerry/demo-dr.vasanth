@@ -22,6 +22,9 @@ import Periodontics2 from '../assets/Periodontics-2.png';
 import PediatricDentistry1 from '../assets/Pediatric Dentistry-1.png';
 import PediatricDentistry2 from '../assets/Pediatric Dentistry-2.png';
 import PediatricDentistry3 from '../assets/Pediatric Dentistry-3.png';
+import Tmj1 from '../assets/tmj-01.png';
+import Tmj2 from '../assets/tmj-02.png';
+import WisdomTooth1 from '../assets/wisdomtooth-01.png';
 
 export interface Treatment {
   id: string;
@@ -314,8 +317,8 @@ export const treatmentData: Treatment[] = [
     id: 'tmj-treatment',
     title: 'TMJ / TMD Treatments',
     images: [
-      OralSurgery1,
-      OralSurgery2
+      Tmj1,
+      Tmj2
     ],
     introduction: 'We provide advanced TMJ / TMD Treatments designed to relieve jaw pain, improve jaw function, and restore comfort in your daily life.',
     description: 'The temporomandibular joint (TMJ) connects the jawbone to the skull and plays an important role in speaking, chewing, and mouth movement. When this joint or the surrounding muscles become strained or damaged, it can lead to Temporomandibular Disorders (TMD), causing pain, discomfort, and difficulty in jaw movement. Our experienced dental specialists offer personalized treatment solutions to help manage and treat TMJ-related conditions effectively. TMJ disorders can develop due to several reasons, including teeth grinding, jaw clenching, stress, arthritis, injury, bite misalignment, or excessive pressure on the jaw joint. Patients suffering from TMJ problems may experience symptoms such as jaw pain, headaches, facial pain, clicking or popping sounds while opening the mouth, difficulty chewing, ear pain, jaw locking, neck pain, or stiffness around the jaw muscles. We begin the treatment process with a detailed consultation and comprehensive dental evaluation. Our specialists carefully examine the jaw joint, bite alignment, muscle movement, and related symptoms. Digital imaging and diagnostic methods may also be used to better understand the condition and create a personalized treatment plan. Depending on the severity of the condition, our TMJ / TMD treatments may include bite correction, custom mouthguards or night guards, jaw exercises, muscle relaxation therapy, pain management, stress management guidance, and advanced dental procedures when necessary. We use modern technology and minimally invasive techniques to ensure safe, comfortable, and effective treatment with improved jaw function and reduced discomfort. Our team is committed to providing compassionate and patient-focused care in a hygienic and comfortable environment. We understand how chronic jaw pain and discomfort can affect daily activities, sleep quality, eating habits, and overall well-being. That is why we focus on providing treatments that not only relieve symptoms but also improve long-term jaw health and quality of life.',
@@ -405,8 +408,7 @@ export const treatmentData: Treatment[] = [
     id: 'wisdom-tooth-removal',
     title: 'Wisdom Tooth Removal',
     images: [
-      OralSurgery1,
-      OralSurgery2
+      WisdomTooth1
     ],
     introduction: 'We provide advanced Wisdom Tooth Removal treatment to help patients relieve pain, prevent dental complications, and maintain better oral health.',
     description: 'Wisdom teeth can often grow improperly or become impacted, causing discomfort, swelling, infection, and crowding of nearby teeth. Our experienced dental specialists offer safe and effective wisdom tooth extraction tailored to each patient\'s condition and comfort. Wisdom tooth removal is a common dental procedure recommended for patients experiencing pain, gum infection, jaw stiffness, swelling, or impacted wisdom teeth. Using advanced dental technology and modern extraction techniques, we carefully remove problematic wisdom teeth while ensuring minimal discomfort and a smooth treatment experience. Our team focuses on providing safe, comfortable, and stress-free dental care with proper anesthesia and personalized attention throughout the procedure. Before treatment, we perform a detailed dental examination and digital X-rays to evaluate the position of the wisdom teeth and create the most suitable treatment plan. We are committed to maintaining a hygienic and patient-friendly environment for quality dental care.',

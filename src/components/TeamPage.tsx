@@ -5,7 +5,7 @@ import drVasanthan from '../assets/dr.vasanthan.jpeg';
 import drRajkumar from '../assets/dr.rajkumar.jpeg';
 import drKumarNew from '../assets/dr kumar.jpeg';
 import drSabitha from '../assets/dr.sabita.jpeg';
-import doctor3 from '../assets/doctor-3.jpg';
+import drChithra from '../assets/dr chithra.jpeg';
 import drPeterJohn from '../assets/dr.peter john.jpeg';
 import drSenthilNew from '../assets/dr senthil.jpeg';
 
@@ -47,12 +47,13 @@ const TeamPage = () => {
       ]
     },
     {
-      name: 'Dr. CHITHRA',
+      name: 'Dr. Chithra',
       role: 'Endodontist',
       degree: 'MDS',
       yearsExperience: '10+ Years',
-      image: doctor3,
-      bio: 'Dr. CHITHRA specializes in endodontic treatments, providing expert root canal therapy and saving natural teeth with advanced techniques.',
+      image: drChithra,
+      imagePosition: 'center center',
+      bio: 'Dr. Chithra specializes in endodontic treatments, providing expert root canal therapy and saving natural teeth with advanced techniques.',
       education: 'MDS in Endodontics from a prestigious dental college.',
       experience: 'Over 10 years of specialized experience in endodontic treatments and root canal procedures.',
       specialties: ['Root Canal Treatment', 'Endodontic Surgery', 'Pulp Therapy', 'Dental Pain Management']

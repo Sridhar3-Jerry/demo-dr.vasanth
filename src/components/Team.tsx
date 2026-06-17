@@ -4,7 +4,7 @@ import drVasanthan from '../assets/dr.vasanthan.jpeg';
 import drKumarNew from '../assets/dr kumar.jpeg';
 import drRajkumar from '../assets/dr.rajkumar.jpeg';
 import drSabitha from '../assets/dr.sabita.jpeg';
-import doctor3 from '../assets/doctor-3.jpg';
+import drChithra from '../assets/dr chithra.jpeg';
 import drPeterJohn from '../assets/dr.peter john.jpeg';
 import drSenthilNew from '../assets/dr senthil.jpeg';
 
@@ -76,13 +76,14 @@ const Team = () => {
       ]
     },
     {
-      name: 'Dr. CHITHRA',
+      name: 'Dr. Chithra',
       role: 'Endodontist',
       degree: 'MDS',
       yearsExperience: '10+ Years',
-      image: doctor3,
-      bio: 'Dr. Basil specializes in pediatric dentistry, making dental visits fun and stress-free for children. His gentle approach helps kids develop healthy dental habits.',
-      specialties: ['Pediatric Dentistry', 'Child Dental Care', 'Preventive Treatments']
+      image: drChithra,
+      imagePosition: 'center center',
+      bio: 'Dr. Chithra specializes in endodontic treatments, providing expert root canal therapy and saving natural teeth with advanced techniques.',
+      specialties: ['Root Canal Treatment', 'Endodontic Surgery', 'Pulp Therapy', 'Dental Pain Management']
     },
     {
       name: 'Dr. Peter John',

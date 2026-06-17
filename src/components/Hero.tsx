@@ -3,14 +3,14 @@ import { useState, useEffect } from 'react';
 import { FaRegClock, FaHeadset, FaStar } from 'react-icons/fa';
 import drVasanthan from '../assets/dr.vasanthan.jpeg';
 import drSabitha from '../assets/dr.sabita.jpeg';
-import doctor3 from '../assets/doctor-3.jpg';
+import drChithra from '../assets/dr chithra.jpeg';
 import drPeterJohn from '../assets/dr.peter john.jpeg';
 
 const Hero = () => {
   const [doctors, setDoctors] = useState([
     { name: 'Dr. Vasanthan', degree: 'MDS, PhD, DHA, QCHP (Ortho)', id: 1, image: drVasanthan },
     { name: 'Dr. Sabitha Vasanthan', degree: 'MDS., Ph D., MFDS RCPS (Glasg)UK., FDS RCPS (Glasg)UK., Fellow in Forensic Odontology.,', id: 2, image: drSabitha },
-    { name: 'Dr. CHITHRA', degree: 'MDS', id: 3, image: doctor3 },
+    { name: 'Dr. Chithra', degree: 'MDS', id: 3, image: drChithra },
     { name: 'Dr. John Peter', degree: 'MDS', id: 4, image: drPeterJohn }
   ]);
 
