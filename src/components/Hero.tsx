@@ -2,14 +2,14 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { FaRegClock, FaHeadset, FaStar } from 'react-icons/fa';
 import drVasanthan from '../assets/dr.vasanthan.jpeg';
-import drSabitha from '../assets/dr.sabita.jpeg';
+import drSabitha from '../assets/dr sabita-1.jpeg';
 import drChithra from '../assets/dr chithra.jpeg';
 import drPeterJohn from '../assets/dr.peter john.jpeg';
 
 const Hero = () => {
   const [doctors, setDoctors] = useState([
     { name: 'Dr. Vasanthan', degree: 'MDS, PhD, DHA, QCHP (Ortho)', id: 1, image: drVasanthan },
-    { name: 'Dr. Sabitha Vasanthan', degree: 'MDS., Ph D., MFDS RCPS (Glasg)UK., FDS RCPS (Glasg)UK., Fellow in Forensic Odontology.,', id: 2, image: drSabitha },
+    { name: 'Dr. Sabitha Vasanthan', degree: 'MDS., Ph D., MFDS RCPS (Glasg)UK., FDS RCPS (Glasg)UK., Fellow in Forensic Odontology.,', id: 2, image: drSabitha, imagePosition: '0% bottom' },
     { name: 'Dr. Chithra', degree: 'MDS', id: 3, image: drChithra },
     { name: 'Dr. John Peter', degree: 'MDS', id: 4, image: drPeterJohn }
   ]);
@@ -42,7 +42,7 @@ const Hero = () => {
               transition={{ duration: 0.5 }}
               className="absolute inset-0"
             >
-              <img src={doctors[0].image} alt={doctors[0].name} className="w-full h-full object-cover" />
+              <img src={doctors[0].image} alt={doctors[0].name} className="w-full h-full object-cover" style={{ objectPosition: doctors[0].imagePosition || 'center center' }} />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
                 <p className="font-bold text-xl mb-1 text-white">{doctors[0].name}</p>
                 <p className="text-sm text-white/90">{doctors[0].degree}</p>
@@ -157,7 +157,7 @@ const Hero = () => {
                 transition={{ duration: 0.8, ease: 'easeInOut' }}
                 className={`${cardPositions[index].className} rounded-[2rem] overflow-hidden shadow-2xl`}
               >
-                <img src={doctor.image} alt={doctor.name} className="w-full h-full object-cover" />
+                <img src={doctor.image} alt={doctor.name} className="w-full h-full object-cover" style={{ objectPosition: doctor.imagePosition || 'center center' }} />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
                   <p className="font-bold text-lg mb-1 text-white">{doctor.name}</p>
                   <p className="text-sm text-white/90">{doctor.degree}</p>

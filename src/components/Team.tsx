@@ -3,7 +3,7 @@ import { useEffect, useState, useRef } from 'react';
 import drVasanthan from '../assets/dr.vasanthan.jpeg';
 import drKumarNew from '../assets/dr kumar.jpeg';
 import drRajkumar from '../assets/dr.rajkumar.jpeg';
-import drSabitha from '../assets/dr.sabita.jpeg';
+import drSabitha from '../assets/dr sabita-1.jpeg';
 import drChithra from '../assets/dr chithra.jpeg';
 import drPeterJohn from '../assets/dr.peter john.jpeg';
 import drSenthilNew from '../assets/dr senthil.jpeg';
@@ -64,7 +64,7 @@ const Team = () => {
       degree: 'MDS., Ph D., MFDS RCPS (Glasg)UK., FDS RCPS (Glasg)UK., Fellow in Forensic Odontology.,',
       yearsExperience: '20+ Years',
       image: drSabitha,
-      imagePosition: 'center top',
+      imagePosition: '0% top',
       bio: 'Dr. Sabitha is a distinguished dental professional with over two decades of expertise in Oral and Maxillofacial Surgery, and Cosmetic Dentistry.',
       education: 'BDS from Saveetha Dental College & Hospital, MDS in Oral and Maxillofacial Surgery from Tamil Nadu Dr. MGR Medical University, PhD in Dentistry from Vinayaka Mission\'s Research Foundation.',
       experience: 'Over two decades of progressive achievements in Education, Clinical Practice, and Cosmetic dentistry. International credentials: MFDS RCPS(Glasgow) and FDS RCPS(Glasgow) from Royal College of Physicians & Surgeons of Glasgow, UK.',

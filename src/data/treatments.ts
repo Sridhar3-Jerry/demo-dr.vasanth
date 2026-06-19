@@ -24,6 +24,7 @@ import PediatricDentistry3 from '../assets/Pediatric Dentistry-3.png';
 import Tmj1 from '../assets/tmj-01.png';
 import Tmj2 from '../assets/tmj-02.png';
 import WisdomTooth1 from '../assets/wisdomtooth-01.png';
+import WisdomTooth2 from '../assets/wisdomtooth-02.png';
 
 export interface Treatment {
   id: string;
@@ -407,7 +408,8 @@ export const treatmentData: Treatment[] = [
     id: 'wisdom-tooth-removal',
     title: 'Wisdom Tooth Removal',
     images: [
-      WisdomTooth1
+      WisdomTooth1,
+      WisdomTooth2
     ],
     introduction: 'We provide advanced Wisdom Tooth Removal treatment to help patients relieve pain, prevent dental complications, and maintain better oral health.',
     description: 'Wisdom teeth can often grow improperly or become impacted, causing discomfort, swelling, infection, and crowding of nearby teeth. Our experienced dental specialists offer safe and effective wisdom tooth extraction tailored to each patient\'s condition and comfort. Wisdom tooth removal is a common dental procedure recommended for patients experiencing pain, gum infection, jaw stiffness, swelling, or impacted wisdom teeth. Using advanced dental technology and modern extraction techniques, we carefully remove problematic wisdom teeth while ensuring minimal discomfort and a smooth treatment experience. Our team focuses on providing safe, comfortable, and stress-free dental care with proper anesthesia and personalized attention throughout the procedure. Before treatment, we perform a detailed dental examination and digital X-rays to evaluate the position of the wisdom teeth and create the most suitable treatment plan. We are committed to maintaining a hygienic and patient-friendly environment for quality dental care.',
