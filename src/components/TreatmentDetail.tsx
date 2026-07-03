@@ -1,7 +1,12 @@
 import { motion } from 'framer-motion';
-import { FaArrowLeft, FaCheckCircle, FaTooth } from 'react-icons/fa';
+import { FaArrowLeft, FaCheckCircle } from 'react-icons/fa';
 import { useNavigate, useParams } from 'react-router-dom';
 import { treatmentData } from '../data/treatments';
+import dctLogo from '../assets/dct.png';
+
+const ToothIcon = ({ className, style }: { className?: string, style?: React.CSSProperties }) => (
+  <img src={dctLogo} alt="Tooth" className={className} style={{ width: '1.6em', height: '1.6em', display: 'inline-block', objectFit: 'contain', ...style }} />
+);
 
 const TreatmentDetail = () => {
   const { id } = useParams();
@@ -97,7 +102,7 @@ const TreatmentDetail = () => {
                       animate={{ rotate: [0, 10, -10, 0] }}
                       transition={{ duration: 2, repeat: Infinity, repeatDelay: 3 }}
                     >
-                      <FaTooth className="text-[#AA7747]" />
+                      <ToothIcon className="text-[#AA7747]" />
                     </motion.div>
                     About This Treatment
                   </h2>
@@ -118,7 +123,7 @@ const TreatmentDetail = () => {
                     whileTap={{ scale: 0.95 }}
                     className="inline-flex items-center gap-2 bg-white text-[#AA7747] px-6 py-3 rounded-xl font-semibold shadow-md hover:shadow-xl transition-shadow"
                   >
-                    <FaTooth /> Book Appointment
+                    <ToothIcon /> Book Appointment
                   </motion.a>
                 </motion.div>
               </motion.div>
@@ -238,8 +243,9 @@ const TreatmentDetail = () => {
                   <motion.div
                     animate={{ rotate: [0, 10, -10, 0] }}
                     transition={{ duration: 3, repeat: Infinity }}
+                    className="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg"
                   >
-                    <FaTooth className="text-5xl mx-auto mb-4" />
+                    <ToothIcon className="text-4xl" />
                   </motion.div>
                   <h3 className="text-xl font-bold mb-2">Book Appointment</h3>
                   <p className="mb-4 opacity-90">Schedule your consultation today</p>
@@ -249,7 +255,7 @@ const TreatmentDetail = () => {
                     whileTap={{ scale: 0.95 }}
                     className="inline-flex items-center gap-2 bg-white text-[#AA7747] px-5 py-3 rounded-xl font-semibold shadow-md"
                   >
-                    <FaTooth /> Book Appointment
+                    <ToothIcon /> Book Appointment
                   </motion.a>
                 </div>
               </motion.div>
@@ -276,9 +282,9 @@ const TreatmentDetail = () => {
                   <motion.div
                     animate={{ rotate: 360 }}
                     transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                    className="w-10 h-10 bg-gradient-to-br from-[var(--primary)] to-[#8b6f47] rounded-full flex items-center justify-center"
+                    className="w-12 h-12 bg-white shadow-md rounded-full flex items-center justify-center"
                   >
-                    <FaTooth className="text-white text-lg" />
+                    <ToothIcon className="text-xl" />
                   </motion.div>
                   Treatment Overview
                 </motion.h2>
@@ -352,8 +358,9 @@ const TreatmentDetail = () => {
                   <motion.div
                     animate={{ y: [0, -10, 0] }}
                     transition={{ duration: 2, repeat: Infinity, repeatDelay: 1 }}
+                    className="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg"
                   >
-                    <FaTooth className="text-4xl mx-auto mb-3" />
+                    <ToothIcon className="text-4xl" />
                   </motion.div>
                   <h3 className="text-xl font-bold mb-2">Ready to Start?</h3>
                   <p className="mb-4 opacity-90">Contact us for a consultation</p>
@@ -363,7 +370,7 @@ const TreatmentDetail = () => {
                     whileTap={{ scale: 0.95 }}
                     className="inline-flex items-center gap-2 bg-white text-[#AA7747] px-6 py-3 rounded-xl font-semibold shadow-md"
                   >
-                    <FaTooth /> Book Appointment
+                    <ToothIcon /> Book Appointment
                   </motion.a>
                 </motion.div>
               </motion.div>
@@ -554,7 +561,7 @@ const TreatmentDetail = () => {
                 animate={{ rotate: [0, 10, -10, 0] }}
                 transition={{ duration: 2, repeat: Infinity, repeatDelay: 2 }}
               >
-                <FaTooth />
+                <ToothIcon />
               </motion.div>
               Book Appointment
             </motion.a>

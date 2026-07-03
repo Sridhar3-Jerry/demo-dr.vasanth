@@ -2,11 +2,11 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { FaTimes } from 'react-icons/fa';
 import outerPoster from '../assets/shutter-poster.png';
-import receptionist from '../assets/receptionist.jpeg';
-import treatmentRoom from '../assets/treatment-room.jpeg';
+import receptionist from '../assets/receptionist-new.png';
+import dentalRoom from '../assets/dental room.png';
 import faq from '../assets/faq.jpg';
-import doctor1 from '../assets/doctor-1.jpg';
-import drSabitha from '../assets/dr sabita-1.jpeg';
+import drVasanthan from '../assets/dr vasanthan-new.png';
+import drSabitha from '../assets/dr sabitha new.png';
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -14,9 +14,9 @@ const Gallery = () => {
   const galleryImages = [
     { src: outerPoster, title: 'Modern Dental Clinic', description: 'Our state-of-the-art dental facility with modern equipment' },
     { src: receptionist, title: 'Reception Area', description: 'Comfortable and welcoming reception area for our patients' },
-    { src: treatmentRoom, title: 'Treatment Room', description: 'Clean and hygienic treatment rooms with advanced technology' },
+    { src: dentalRoom, title: 'Treatment Room', description: 'Clean and hygienic treatment rooms with advanced technology' },
     { src: faq, title: 'Consultation Area', description: 'Private consultation rooms for patient discussions' },
-    { src: doctor1, title: 'Our Expert Team', description: 'Experienced dental professionals providing quality care' },
+    { src: drVasanthan, title: 'Our Expert Team', description: 'Experienced dental professionals providing quality care', imagePosition: 'center top' },
     { src: drSabitha, title: 'Patient Care', description: 'Dedicated staff ensuring comfortable patient experience', imagePosition: '0% top' }
   ];
 

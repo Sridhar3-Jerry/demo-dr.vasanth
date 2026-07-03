@@ -1,9 +1,13 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { FaTooth, FaChild, FaTeethOpen, FaSyringe, FaCrown, FaSmile, FaXRay, FaUserMd, FaStethoscope, FaHome, FaInfoCircle, FaUsers, FaImages, FaPhoneAlt, FaBars, FaTimes } from 'react-icons/fa';
+import { FaChild, FaTeethOpen, FaSyringe, FaCrown, FaSmile, FaXRay, FaUserMd, FaStethoscope, FaHome, FaInfoCircle, FaUsers, FaImages, FaPhoneAlt, FaBars, FaTimes } from 'react-icons/fa';
 import { colors } from '../colors';
 import dctLogo from '../assets/dct.png';
+
+const ToothIcon = ({ className, style }: { className?: string, style?: React.CSSProperties }) => (
+  <img src={dctLogo} alt="Tooth" className={className} style={{ width: '1.2em', height: '1.2em', display: 'inline-block', objectFit: 'contain', ...style }} />
+);
 
 const Header = () => {
   const [showServicesDropdown, setShowServicesDropdown] = useState(false);
@@ -21,7 +25,7 @@ const Header = () => {
   const mobileMenuItems = [
     { name: 'Home', icon: FaHome, href: '/' },
     { name: 'About Us', icon: FaInfoCircle, href: '/about' },
-    { name: 'Treatments', icon: FaTooth, href: '#services', isDropdown: true },
+    { name: 'Treatments', icon: ToothIcon, href: '#services', isDropdown: true },
     { name: 'Our Team', icon: FaUsers, href: '/team' },
     { name: 'Gallery', icon: FaImages, href: '/gallery' },
     { name: 'Contact', icon: FaPhoneAlt, href: '/contact' }
@@ -31,12 +35,12 @@ const Header = () => {
     { name: 'Braces', icon: FaSmile, id: 'braces' },
     { name: 'Invisalign', icon: FaTeethOpen, id: 'invisalign' },
     { name: 'Cosmetic Dentistry', icon: FaSmile, id: 'cosmetic-dentistry' },
-    { name: 'Veneers/Laminates', icon: FaTooth, id: 'veneers' },
+    { name: 'Veneers/Laminates', icon: ToothIcon, id: 'veneers' },
     { name: 'Laser Dentistry', icon: FaXRay, id: 'laser-dentistry' },
     { name: 'Root Canal Treatment', icon: FaSyringe, id: 'root-canal-treatment' },
-    { name: 'Dental Filling', icon: FaTooth, id: 'dental-filling' },
+    { name: 'Dental Filling', icon: ToothIcon, id: 'dental-filling' },
     { name: 'Dental Crown and Bridges', icon: FaCrown, id: 'dental-crown-bridges' },
-    { name: 'Dental Implants', icon: FaTooth, id: 'dental-implants' },
+    { name: 'Dental Implants', icon: ToothIcon, id: 'dental-implants' },
     { name: 'TMJ/TMD Treatments', icon: FaUserMd, id: 'tmj-treatment' },
     { name: 'Gum Recontouring', icon: FaTeethOpen, id: 'gum-recontouring' },
     { name: 'Child Dentistry', icon: FaChild, id: 'child-dentistry' },
@@ -56,10 +60,10 @@ const Header = () => {
           whileHover={{ scale: 1.05 }}
           className="flex items-center"
         >
-          <img src={dctLogo} alt="Dental Clip Logo" className="w-12 h-12 md:w-20 md:h-20 object-contain" />
-          <div className="hidden md:flex flex-col space-y-1">
-            <div className="font-bold text-[1.7rem] leading-none" style={{ color: '#AA7747' }}>DENTAL CLIP</div>
-            <div className="font-bold text-[1.4rem] leading-none" style={{ color: '#34090b' }}>DENTAL CLINIC</div>
+          <img src={dctLogo} alt="Dental Clip Logo" className="w-14 h-14 md:w-20 md:h-20 object-contain -mr-1 md:mr-0" />
+          <div className="flex flex-col justify-center">
+            <div className="font-bold text-[1.3rem] md:text-[1.7rem] leading-none mb-1 md:mb-1.5" style={{ color: '#AA7747' }}>DENTAL CLIP</div>
+            <div className="font-bold text-[1.07rem] md:text-[1.4rem] leading-none" style={{ color: '#34090b' }}>DENTAL CLINIC</div>
           </div>
         </motion.div>
         

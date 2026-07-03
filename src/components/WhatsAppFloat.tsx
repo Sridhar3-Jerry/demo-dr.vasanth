@@ -1,18 +1,37 @@
 import { motion, AnimatePresence } from 'framer-motion';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { FaWhatsapp, FaTimes } from 'react-icons/fa';
 
 const WhatsAppFloat = () => {
   const [showQR, setShowQR] = useState(false);
+  const [currentMessage, setCurrentMessage] = useState('Hello Dental Clip. Dental clinic i would like to book an appointment');
   const phoneNumber = '919344310422'; // WhatsApp number
-  const message = 'Hello! I would like to book an appointment at Dental Clip.Dental.';
+  const defaultMessage = 'Hello Dental Clip. Dental clinic i would like to book an appointment';
+
+  useEffect(() => {
+    const handleOpenQR = (e: Event) => {
+      const customEvent = e as CustomEvent;
+      const msg = customEvent.detail?.message || defaultMessage;
+      setCurrentMessage(msg);
+      
+      const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      if (isMobile) {
+        window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(msg)}`, '_blank');
+      } else {
+        setShowQR(true);
+      }
+    };
+    window.addEventListener('openWhatsAppQR', handleOpenQR as EventListener);
+    return () => window.removeEventListener('openWhatsAppQR', handleOpenQR as EventListener);
+  }, []);
 
   const handleWhatsAppClick = () => {
+    setCurrentMessage(defaultMessage);
     const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     
     if (isMobile) {
       // Direct WhatsApp chat for mobile
-      window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
+      window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(defaultMessage)}`, '_blank');
     } else {
       // Show QR code for desktop
       setShowQR(true);
@@ -70,7 +89,7 @@ const WhatsAppFloat = () => {
               <div className="text-center">
                 <div className="bg-white p-4 rounded-2xl shadow-lg mb-4">
                   <img
-                    src={`https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`)}`}
+                    src={`https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(currentMessage)}`)}`}
                     alt="WhatsApp QR Code"
                     className="w-48 h-48 mx-auto"
                   />

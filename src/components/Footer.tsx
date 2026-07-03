@@ -20,13 +20,13 @@ const Footer = () => {
               The destination for creating a beautiful smile.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="w-8 h-8 rounded-lg bg-[var(--primary)] flex items-center justify-center text-gray-900 hover:bg-opacity-80 transition-all">
+              <a href="https://www.facebook.com/share/1B6FAnsdYK/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-lg bg-[var(--primary)] flex items-center justify-center text-gray-900 hover:bg-opacity-80 transition-all">
                 <FaFacebookF className="text-base" />
               </a>
-              <a href="#" className="w-8 h-8 rounded-lg bg-[var(--primary)] flex items-center justify-center text-gray-900 hover:bg-opacity-80 transition-all">
+              <button onClick={(e) => { e.preventDefault(); window.dispatchEvent(new Event('openWhatsAppQR')); }} className="w-8 h-8 rounded-lg bg-[var(--primary)] flex items-center justify-center text-gray-900 hover:bg-opacity-80 transition-all cursor-pointer">
                 <FaWhatsapp className="text-base" />
-              </a>
-              <a href="#" className="w-8 h-8 rounded-lg bg-[var(--primary)] flex items-center justify-center text-gray-900 hover:bg-opacity-80 transition-all">
+              </button>
+              <a href="https://www.instagram.com/dentalclip_in?igsh=MWV1cTRieGs5dzA4aA==" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-lg bg-[var(--primary)] flex items-center justify-center text-gray-900 hover:bg-opacity-80 transition-all">
                 <FaInstagram className="text-base" />
               </a>
               <a href="#" className="w-8 h-8 rounded-lg bg-[var(--primary)] flex items-center justify-center text-gray-900 hover:bg-opacity-80 transition-all">
@@ -82,8 +82,8 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <FaEnvelope className="text-[#AA7747] text-lg flex-shrink-0" />
-                <a href="mailto:dentalclip.dentalclinic@gmail.com" className="text-gray-800 text-sm hover:text-[#AA7747] transition-colors break-all">
-                  dentalclip.dentalclinic@gmail.com
+                <a href="mailto:dentalclip01@gmail.com" className="text-gray-800 text-sm hover:text-[#AA7747] transition-colors break-all">
+                  dentalclip01@gmail.com
                 </a>
               </div>
               <div className="flex items-center gap-3">

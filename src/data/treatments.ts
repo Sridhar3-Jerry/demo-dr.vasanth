@@ -8,6 +8,7 @@ import Invisalign3 from '../assets/invisalign-3.jpg';
 import Restorativedentistry from '../assets/Restorativedentistry.png';
 import Prosthodontics1 from '../assets/Prosthodontics-1.png';
 import Prosthodontics2 from '../assets/Prosthodontics-2.png';
+import CosmeticDentist3 from '../assets/cosmetic-dentist-3.jpg';
 import LaserDentistry1 from '../assets/Laser Dentistry-1.png';
 import LaserDentistry2 from '../assets/Laser Dentistry-2.png';
 import LaserDentistry3 from '../assets/Laser Dentistry-3.png';
@@ -106,7 +107,8 @@ export const treatmentData: Treatment[] = [
     id: 'cosmetic-dentistry',
     title: 'Cosmetic Dentistry',
     images: [
-      Restorativedentistry
+      Restorativedentistry,
+      CosmeticDentist3,
     ],
     introduction: 'We offer advanced Cosmetic Dentistry treatments designed to improve the appearance of your smile and boost your confidence.',
     description: 'A beautiful smile can make a lasting impression, and our experienced dental specialists provide personalized cosmetic solutions to enhance the shape, color, alignment, and overall aesthetics of your teeth. Cosmetic dentistry includes a variety of treatments such as teeth whitening, smile makeovers, dental veneers, bonding, gum contouring, and tooth reshaping. Whether you have stained, chipped, uneven, misaligned, or damaged teeth, we use modern dental technology and advanced techniques to deliver natural-looking and long-lasting results tailored to your smile goals. Our team focuses on providing safe, comfortable, and minimally invasive cosmetic dental care in a hygienic and patient-friendly environment. Before starting treatment, we conduct a detailed consultation to understand your concerns and create a customized treatment plan that suits your dental needs and expectations.',
@@ -231,7 +233,9 @@ export const treatmentData: Treatment[] = [
     id: 'dental-filling',
     title: 'Dental Filling',
     images: [
-      Restorativedentistry
+      Restorativedentistry,
+      Endodontics1,
+      Endodontics2
     ],
     introduction: 'Dental fillings restore teeth damaged by cavities. A dental filling in Paramathi Velur is usually done in a short planned visit. The tooth is checked first, the damaged part is removed, and the area is restored carefully. The last step is to make sure the filling feels even while biting.',
     description: 'A dental fillings treatment in Paramathi Velur is usually advised when the tooth can still be repaired directly. Types of Dental Fillings Used for Different Needs: Tooth-Coloured Composite Fillings (Match natural tooth shades and suit many routine cavity repairs), Glass Ionomer Fillings (Useful in selected cases where fluoride release may help), Amalgam Fillings (Strong and cost-effective for back teeth under heavy chewing pressure), Gold Fillings (Very durable and long-lasting, but usually chosen less due to cost), Temporary Fillings (Used for short-term sealing until final treatment is completed), Replacement Fillings (Used when an old filling has failed, leaked, or worn out). Who May Need a Dental Filling? Small to moderate tooth decay, Sensitivity to sweets, cold, or pressure, A dark spot or visible hole in the tooth, A chipped edge or worn area, Food gets trapped in the same place often, An old filling that has cracked, worn down, or loosened. A dental filling is recommended only after checking whether the tooth can support it well: Depth and spread of the cavity, Pain history and lingering sensitivity, Amount of healthy tooth still present, Tooth position and chewing load, Cracks or damaged old restorations, Needs for an X-ray to see hidden decay. When Is A Filling Enough, And When Is It Not? A filling is usually enough when decay affects the outer part of the tooth and the tooth still has enough structure to hold a direct restoration. If the decay has reached the pulp, the tooth may need root canal treatment. If a large part of the tooth is weak or broken, a crown may support it better.',

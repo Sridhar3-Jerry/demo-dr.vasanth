@@ -1,13 +1,14 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { FaTimes } from 'react-icons/fa';
-import drVasanthan from '../assets/dr.vasanthan.jpeg';
+import drVasanthan from '../assets/dr vasanthan-new.png';
 import drRajkumar from '../assets/dr.rajkumar.jpeg';
 import drKumarNew from '../assets/dr kumar.jpeg';
-import drSabitha from '../assets/dr sabita-1.jpeg';
-import drChithra from '../assets/dr chithra.jpeg';
+import drSabitha from '../assets/dr sabitha new.png';
+import drChithra from '../assets/dr chithra-new.png';
 import drPeterJohn from '../assets/dr.peter john.jpeg';
 import drSenthilNew from '../assets/dr senthil.jpeg';
+import drPreethi from '../assets/dr preethi.jpg';
 
 const TeamPage = () => {
   const [selectedDoctor, setSelectedDoctor] = useState<number | null>(null);
@@ -20,6 +21,7 @@ const TeamPage = () => {
       degree: 'MDS, PhD, DHA, QCHP (Ortho)',
       yearsExperience: '15+ Years',
       image: drVasanthan,
+      imagePosition: 'center top',
       bio: 'Dr. Vasanthan is a dedicated orthodontist whose practice is defined by precision, innovation, and an unwavering commitment to lifelong learning. With a patient-centered approach, he transforms smiles through cutting-edge orthodontic solutions.',
       education: 'BDS from Tamil Nadu Dr. MGR Medical University, MDS in Orthodontics from Saveetha University, PhD from Vinayaka Mission\'s Research Foundation University.',
       experience: 'Professor and Head of Department of Orthodontics at Vinayaka Mission Dental College. International licenses: DHA (Dubai) and QCHP (Qatar).',
@@ -50,7 +52,7 @@ const TeamPage = () => {
     {
       name: 'Dr. Chithra',
       role: 'Endodontist',
-      degree: 'MDS',
+      degree: 'BDS.,MDS., (Endo)',
       yearsExperience: '10+ Years',
       image: drChithra,
       imagePosition: 'center center',
@@ -60,13 +62,13 @@ const TeamPage = () => {
       specialties: ['Root Canal Treatment', 'Endodontic Surgery', 'Pulp Therapy', 'Dental Pain Management']
     },
     {
-      name: 'Dr. Peter John',
+      name: 'Dr. John Peter',
       role: 'Implantologist',
-      degree: 'MDS',
+      degree: 'BDS.,MDS., (Prostho)',
       yearsExperience: '25+ Years',
       image: drPeterJohn,
       imagePosition: 'center top',
-      bio: 'Dr. Peter John is a renowned implantologist with extensive experience in dental implants and advanced restorative procedures.',
+      bio: 'Dr. John Peter is a renowned implantologist with extensive experience in dental implants and advanced restorative procedures.',
       education: 'MDS in Oral and Maxillofacial Surgery with specialization in Implantology.',
       experience: 'Over 25 years of experience in dental implants, bone grafting, and full mouth rehabilitation.',
       specialties: ['Dental Implants', 'Bone Grafting', 'Full Mouth Rehabilitation', 'All-on-4 Implants']
@@ -74,7 +76,7 @@ const TeamPage = () => {
     {
       name: 'Dr. Senthil',
       role: 'Implantologist & Oral Maxillo Facial Surgeon',
-      degree: 'MDS',
+      degree: 'BDS.,MDS.,(OMFS)',
       yearsExperience: '12+ Years',
       image: drSenthilNew,
       bio: 'Dr. Senthil is an expert in oral and maxillofacial surgery with specialized training in dental implants, combining surgical precision with implant expertise.',
@@ -97,7 +99,7 @@ const TeamPage = () => {
     {
       name: 'Dr. Kumar',
       role: 'Oral Medicine & Radiologist',
-      degree: 'MDS',
+      degree: 'BDS.,MDS., (OMR)',
       yearsExperience: '5+ Years',
       image: drKumarNew,
       imagePosition: 'center top',
@@ -105,6 +107,18 @@ const TeamPage = () => {
       education: 'MDS in Oral Medicine and Radiology.',
       experience: 'Specialized experience in oral medicine, radiology, and advanced diagnostic procedures.',
       specialties: ['Oral Medicine', 'Dental Radiology', 'Diagnosis and Treatment Planning']
+    },
+    {
+      name: 'Dr. P.S. Preethi',
+      role: 'General Dental Surgeon',
+      degree: 'BDS.,',
+      yearsExperience: '5+ Years',
+      image: drPreethi,
+      imagePosition: 'center 50%',
+      bio: 'Dr. P.S. Preethi is a dedicated general dental surgeon committed to providing comprehensive dental care and ensuring optimal oral health for her patients.',
+      education: 'BDS., General Dental Surgery.',
+      experience: 'Experience in general dentistry, preventive care, and comprehensive oral health management.',
+      specialties: ['General Dentistry', 'Preventive Care', 'Dental Consultations']
     }
   ];
 
@@ -210,7 +224,7 @@ const TeamPage = () => {
           animate={{ opacity: 1, y: 0 }}
           className="text-left md:text-center mb-16"
         >
-          <p className="text-[#AA7747] uppercase tracking-wider text-sm font-semibold mb-4 text-sm font-bold tracking-widest uppercase text-center">Meet Our Team</p>
+          <p className="text-[#AA7747] text-sm font-bold tracking-widest uppercase text-center mb-4">Meet Our Team</p>
           <h1 className="text-4xl md:text-5xl font-bold text-[var(--secondary)] mb-6 text-left md:text-center">Our Expert Dental Professionals</h1>
           <p className="text-gray-800 max-w-2xl mx-auto text-lg">
             Our experienced dental team is here to make every visit positive and personalized with gentle hands and caring hearts.
@@ -236,7 +250,7 @@ const TeamPage = () => {
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" 
                 />
               </div>
-              <div className="p-6 text-center">
+              <div className="p-6 pt-8 text-center">
                 <h3 className="text-[#AA7747] font-bold text-3xl mb-2">{member.name}</h3>
                 <p className="text-gray-600 text-base font-semibold mb-2">{member.degree}</p>
                 <p className="text-gray-800 text-lg font-semibold mb-4">{member.role}</p>

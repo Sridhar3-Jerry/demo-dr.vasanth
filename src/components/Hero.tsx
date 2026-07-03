@@ -1,17 +1,17 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { FaRegClock, FaHeadset, FaStar } from 'react-icons/fa';
-import drVasanthan from '../assets/dr.vasanthan.jpeg';
-import drSabitha from '../assets/dr sabita-1.jpeg';
-import drChithra from '../assets/dr chithra.jpeg';
+import drVasanthan from '../assets/dr vasanthan-new.png';
+import drSabitha from '../assets/dr sabitha new.png';
+import drRajkumar from '../assets/dr.rajkumar.jpeg';
 import drPeterJohn from '../assets/dr.peter john.jpeg';
 
 const Hero = () => {
   const [doctors, setDoctors] = useState([
-    { name: 'Dr. Vasanthan', degree: 'MDS, PhD, DHA, QCHP (Ortho)', id: 1, image: drVasanthan },
+    { name: 'Dr. Vasanthan', degree: 'MDS, PhD, DHA, QCHP (Ortho)', id: 1, image: drVasanthan, imagePosition: 'center top' },
     { name: 'Dr. Sabitha Vasanthan', degree: 'MDS., Ph D., MFDS RCPS (Glasg)UK., FDS RCPS (Glasg)UK., Fellow in Forensic Odontology.,', id: 2, image: drSabitha, imagePosition: '0% bottom' },
-    { name: 'Dr. Chithra', degree: 'MDS', id: 3, image: drChithra },
-    { name: 'Dr. John Peter', degree: 'MDS', id: 4, image: drPeterJohn }
+    { name: 'Dr. John Peter', degree: 'BDS.,MDS., (Prostho)', id: 3, image: drPeterJohn, imagePosition: 'center top' },
+    { name: 'Dr. Raj Kumar', degree: 'BDS, MDS, (Perio), MFDSRCPS (Glasg) UK', id: 4, image: drRajkumar, imagePosition: 'center top' }
   ]);
 
   useEffect(() => {

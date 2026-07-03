@@ -1,12 +1,13 @@
 import { motion, useMotionValue, useTransform, animate, useInView } from 'framer-motion';
 import { useEffect, useState, useRef } from 'react';
-import drVasanthan from '../assets/dr.vasanthan.jpeg';
+import drVasanthan from '../assets/dr vasanthan-new.png';
 import drKumarNew from '../assets/dr kumar.jpeg';
 import drRajkumar from '../assets/dr.rajkumar.jpeg';
-import drSabitha from '../assets/dr sabita-1.jpeg';
-import drChithra from '../assets/dr chithra.jpeg';
+import drSabitha from '../assets/dr sabitha new.png';
+import drChithra from '../assets/dr chithra-new.png';
 import drPeterJohn from '../assets/dr.peter john.jpeg';
 import drSenthilNew from '../assets/dr senthil.jpeg';
+import drPreethi from '../assets/dr preethi.jpg';
 
 const Counter = ({ value, suffix = '' }: { value: number; suffix?: string }) => {
   const count = useMotionValue(0);
@@ -48,6 +49,7 @@ const Team = () => {
       degree: 'MDS, PhD, DHA, QCHP (Ortho)',
       yearsExperience: '15+ Years',
       image: drVasanthan,
+      imagePosition: 'center top',
       bio: 'Dr. Vasanthan is a dedicated orthodontist whose practice is defined by precision, innovation, and an unwavering commitment to lifelong learning. With a patient-centered approach, he transforms smiles through cutting-edge orthodontic solutions.',
       education: 'BDS from Tamil Nadu Dr. MGR Medical University, MDS in Orthodontics from Saveetha University, PhD from Vinayaka Mission\'s Research Foundation University.',
       experience: 'Professor and Head of Department of Orthodontics at Vinayaka Mission Dental College. International licenses: DHA (Dubai) and QCHP (Qatar).',
@@ -78,7 +80,7 @@ const Team = () => {
     {
       name: 'Dr. Chithra',
       role: 'Endodontist',
-      degree: 'MDS',
+      degree: 'BDS.,MDS., (Endo)',
       yearsExperience: '10+ Years',
       image: drChithra,
       imagePosition: 'center center',
@@ -86,9 +88,9 @@ const Team = () => {
       specialties: ['Root Canal Treatment', 'Endodontic Surgery', 'Pulp Therapy', 'Dental Pain Management']
     },
     {
-      name: 'Dr. Peter John',
+      name: 'Dr. John Peter',
       role: 'Implantologist',
-      degree: 'MDS',
+      degree: 'BDS.,MDS., (Prostho)',
       yearsExperience: '25+ Years',
       image: drPeterJohn,
       imagePosition: 'center top',
@@ -98,7 +100,7 @@ const Team = () => {
     {
       name: 'Dr. Senthil',
       role: 'Implantologist & Oral Maxillo Facial Surgeon',
-      degree: 'MDS',
+      degree: 'BDS.,MDS.,(OMFS)',
       yearsExperience: '12+ Years',
       image: drSenthilNew,
       bio: 'Dr. Senthil is an expert in oral and maxillofacial surgery with specialized training in dental implants, combining surgical precision with implant expertise.',
@@ -117,14 +119,23 @@ const Team = () => {
     {
       name: 'Dr. Kumar',
       role: 'Oral Medicine & Radiologist',
-      degree: 'MDS',
+      degree: 'BDS.,MDS., (OMR)',
       yearsExperience: '5+ Years',
       image: drKumarNew,
       imagePosition: 'center top',
       bio: 'Dr. Kumar specializes in oral medicine and radiology, providing expert diagnosis and comprehensive care for various oral conditions.',
       specialties: ['Oral Medicine', 'Dental Radiology', 'Diagnosis and Treatment Planning']
     },
-   
+    {
+      name: 'Dr. P.S. Preethi',
+      role: 'General Dental Surgeon',
+      degree: 'BDS.,',
+      yearsExperience: '5+ Years',
+      image: drPreethi,
+      imagePosition: 'center 50%',
+      bio: 'Dr. P.S. Preethi is a dedicated general dental surgeon committed to providing comprehensive dental care and ensuring optimal oral health for her patients.',
+      specialties: ['General Dentistry', 'Preventive Care', 'Dental Consultations']
+    }
   ];
 
   const stats = [
@@ -168,7 +179,7 @@ const Team = () => {
                 <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0ic3RyaXBlcyIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwMCI+PHJlY3Qgd2lkdGg9IjEwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI2Q0YTU3NCIgb3BhY2l0eT0iMC4zIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI3N0cmlwZXMpIi8+PC9zdmc+')] opacity-30"></div>
                   <img src={member.image} alt={member.name} style={{ objectPosition: member.imagePosition || 'center 20%' }} className="w-full h-full object-cover relative z-10" />
               </div>
-              <div className="p-6 text-center">
+              <div className="p-6 pt-8 text-center">
                 <h3 className="text-[#AA7747] font-bold text-2xl mb-2">{member.name}</h3>
                 <p className="text-gray-600 text-sm font-semibold mb-2">{member.degree}</p>
                 <p className="text-gray-800 text-base font-semibold">{member.role}</p>

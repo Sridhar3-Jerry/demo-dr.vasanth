@@ -61,8 +61,8 @@ const Contact = () => {
                 <FaEnvelope className="text-[#AA7747] text-2xl" />
                 <h3 className="text-lg font-bold text-[var(--secondary)]">Send a Message</h3>
               </div>
-              <a href="mailto:dentalclip.dentalclinic@gmail.com" className="text-gray-700 hover:text-[#AA7747] break-all font-medium text-sm ml-10">
-                dentalclip.dentalclinic@gmail.com
+              <a href="mailto:dentalclip01@gmail.com" className="text-gray-700 hover:text-[#AA7747] break-all font-medium text-sm ml-10">
+                dentalclip01@gmail.com
               </a>
             </div>
           </motion.div>
@@ -83,25 +83,44 @@ const Contact = () => {
                 Simply fill out the form below with your details, and our patient coordinator will get back to you shortly. For immediate assistance or to schedule an <span className="font-semibold text-[#AA7747]">emergency dental appointment in Paramathi Velur</span>, feel free to call us directly.
               </p>
 
-              <form className="space-y-5">
+              <form className="space-y-5" onSubmit={(e) => {
+                e.preventDefault();
+                const formData = new FormData(e.currentTarget);
+                const name = formData.get('name');
+                const email = formData.get('email');
+                const phone = formData.get('phone');
+                const message = formData.get('message');
+
+                const whatsappMessage = `Hello Dental Clip. Dental clinic i would like to book an appointment\n*Name:* ${name}\n*Phone:* ${phone}\n*Email:* ${email || 'N/A'}${message ? `\n*Message:* ${message}` : ''}`;
+                
+                window.dispatchEvent(new CustomEvent('openWhatsAppQR', {
+                  detail: { message: whatsappMessage }
+                }));
+              }}>
                 <div className="grid md:grid-cols-2 gap-5">
                   <input
                     type="text"
+                    name="name"
+                    required
                     placeholder="Your Name"
                     className="px-5 py-4 bg-white border-2 border-[var(--border)] rounded-xl focus:outline-none focus:border-[var(--primary)] text-black placeholder-gray-400 transition-colors"
                   />
                   <input
                     type="email"
+                    name="email"
                     placeholder="Your Email"
                     className="px-5 py-4 bg-white border-2 border-[var(--border)] rounded-xl focus:outline-none focus:border-[var(--primary)] text-black placeholder-gray-400 transition-colors"
                   />
                 </div>
                 <input
                   type="tel"
+                  name="phone"
+                  required
                   placeholder="Your Phone"
                   className="w-full px-5 py-4 bg-white border-2 border-[var(--border)] rounded-xl focus:outline-none focus:border-[var(--primary)] text-black placeholder-gray-400 transition-colors"
                 />
                 <textarea
+                  name="message"
                   placeholder="Your Message"
                   rows={6}
                   className="w-full px-5 py-4 bg-white border-2 border-[var(--border)] rounded-xl focus:outline-none focus:border-[var(--primary)] text-black placeholder-gray-400 resize-none transition-colors"
@@ -110,7 +129,7 @@ const Contact = () => {
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   type="submit"
-                  className="w-full bg-[var(--primary)] text-white py-4 rounded-xl font-bold text-lg hover:bg-[var(--primary-hover)] transition-colors"
+                  className="w-full bg-[var(--primary)] text-white py-4 rounded-xl font-bold text-lg hover:bg-[var(--primary-hover)] transition-colors cursor-pointer"
                 >
                   Send Message
                 </motion.button>

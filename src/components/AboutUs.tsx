@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import treatmentRoom from '../assets/treatment-room.jpeg';
+import dentalRoom from '../assets/dental room.png';
 import aboutUsImage2 from '../assets/dental-banner-new.png';
 
 const AboutUs = () => {
@@ -15,7 +15,7 @@ const AboutUs = () => {
         >
           <motion.img
             whileHover={{ scale: 1.02 }}
-            src={treatmentRoom}
+            src={dentalRoom}
             alt="Dental Clip. Dental Clinic Reception"
             className="w-full h-[400px] md:h-[280px] object-cover rounded-2xl shadow-lg"
           />
